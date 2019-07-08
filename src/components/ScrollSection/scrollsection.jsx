@@ -2,10 +2,10 @@ import React from "react";
 import Zoom from "react-reveal/Zoom";
 import Flip from "react-reveal/Flip";
 
-const ScrollSection = ({ heading, visible, background, bgAnimId }) => {
+const ScrollSection = ({ heading, visible, background, bgAnimId, sectionId }) => {
   return (
     <section
-      className={"cd-section" + (visible ? " visible" : "")}
+      className={"cd-section" + (visible ? " visible" : "")} id={sectionId}
     >
       <div style={{ background }} className="content--canvasss" id={bgAnimId}>
         <Flip>
