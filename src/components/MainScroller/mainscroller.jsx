@@ -10,6 +10,9 @@ class MainScroller extends Component {
   render() {
     return (
       <div id="mainScrollerDiv" data-hijacking="on" data-animation="parallax">
+      {/* <div id="mainNavigation">
+      Hello
+      </div> */}
         {/* <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax --> */}
         {/* <div id="maaCanvas" style={{width:"100vw",height:"100vh"}}></div> */}
 
@@ -42,7 +45,7 @@ class MainScroller extends Component {
           heading="Section 5"
           sectionId="section-5"
         />
-        <nav>
+        {/* <nav>
           <ul className="cd-vertical-nav">
             <li>
               <a className="cd-prev inactive">Next</a>
@@ -80,7 +83,7 @@ class MainScroller extends Component {
               </a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
     );
   }

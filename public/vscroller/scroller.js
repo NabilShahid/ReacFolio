@@ -29,8 +29,8 @@ jQuery(document).ready(function($) {
           nextSection(e, false);
         } else {
           setTimeout(() => {
-            nextSection(e, i == toSection ? 700 : 250);
-          }, counter * 300);
+            nextSection(e, i == toSection ? 700 : 250);//slow anim : fast anim
+          }, counter * 300); // anim after time. should be greater than fast anim
           counter++;
         }
       }

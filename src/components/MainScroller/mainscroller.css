@@ -1,4 +1,9 @@
-
+#mainNavigation{
+  position: absolute;
+  background: red;
+  width: 100%;
+  z-index: 1;
+}
 
 #mainScrollerDiv {
   
