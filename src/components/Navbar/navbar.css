@@ -1,11 +1,12 @@
 .container{
-    padding: 20px 0;
+    padding-top: 14px;
+    padding-bottom: 18px;
 }
 .container a
 {
     color: #FFF;
     text-decoration: none;
-    font: 20px Raleway;
+    font: 18px Raleway;
     margin: 0px 10px;
     padding: 10px 10px;
     position: relative;
@@ -23,14 +24,14 @@ div.brackets a:before, div.brackets a:after
 
 div.brackets a:before
 {
-    content: '(';
+    content: '{';
     left: -10px;
     transform: translateX(10px);
 }
 
 div.brackets a:after
 {
-    content: ')';
+    content: '}';
     right: -10px;
     transform: translateX(-10px);
 }

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
 import MainScroller from './components/MainScroller/mainscroller'
 ReactDOM.render(<MainScroller />, document.getElementById('root'));
 

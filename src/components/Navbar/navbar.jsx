@@ -8,7 +8,7 @@ class Navbar extends Component {
     const { options } = this.state;
     const { changeFullpageSlide,outsideSlideChange,activeIndex } = this.props;
     return (
-      <div className="container  brackets">
+      <div className="container brackets">
         {options.map((op, i) => (
           <a
             className={activeIndex == i ? "selectedNavItem" : ""}
