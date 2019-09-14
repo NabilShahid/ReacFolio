@@ -4,6 +4,7 @@ import Particles from "../Particles/particles";
 import Navbar from "../Navbar/navbar";
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
+import Flip from "react-reveal/Flip";
 const { changeFullpageSlide, changeHorizontalSlide } = Fullpage;
 const fullPageOptions = {
   // for mouse/wheel events
@@ -13,9 +14,9 @@ const fullPageOptions = {
   // for touchStart/touchEnd/mobile scrolling
   // represents the level of force required to generate a slide change on mobile, 10 is default
   touchSensitivity: 1,
-  scrollSpeed: 500,
+  scrollSpeed: 350,
   hideScrollBars: true,
-  enableArrowKeys: false
+  enableArrowKeys: true
 };
 
 const horizontalSliderProps = {
@@ -42,50 +43,50 @@ const slides = [
     >
       <Particles />
     </div>
-    <div style={{color:"white"}}>Hello 123</div>
+    <div style={{ color: "white" }}></div>
   </Slide>,
-  <Slide style={{ background: "green" }}> Slide 2 </Slide>,
-  <Slide style={{ background: "blue" }}> Slide 3 </Slide>,
+  <Slide style={{ background: "green" }}>
+    {" "}
+    <Flip>
+      <p>Markup that will be revealed on scroll</p>
+    </Flip>{" "}
+  </Slide>,
+  <Slide style={{ background: "blue" }}>
+    {" "}
+    <Flip>
+      <p>Markup that will be revealed on scroll</p>
+    </Flip>{" "}
+  </Slide>,
   <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
-  <Slide style={{ background: "yellow" }}> Slide 4 </Slide>
+  <Slide>
+    {" "}
+    <Flip>
+      <p>Markup that will be revealed on scroll</p>
+    </Flip>{" "}
+  </Slide>
 ];
 fullPageOptions.slides = slides;
 class MainScroller extends Component {
-  state = {};
+  state = {
+    activeIndex:0
+  };
   componentDidMount() {}
   render() {
+    const {activeIndex}=this.state;
     return (
       <div>
         <div id="navbarDiv">
-        <Navbar changeFullpageSlide={changeFullpageSlide}/>
-
-        </div>
-        {/* <Particles/> */}
-        {/* <nav> <ul className="main-nav-menu">
-            <li>
-              <a className="main-nav-item" id="section-1-Link" onClick={()=>{changeFullpageSlide(0)}}>
-                Section 1
-              </a>
-            </li>
-            <li>
-              <a className="main-nav-item" id="section-2-Link" onClick={()=>{changeFullpageSlide(1)}}>
-                Section 2
-              </a>
-            </li>
-            <li>
-              <a className="main-nav-item" id="section-3-Link" onClick={()=>{changeFullpageSlide(2)}}>
-                Section 3
-              </a>
-            </li>
-            <li>
-              <a className="main-nav-item" id="section-4-Link" onClick={()=>{changeFullpageSlide(3)}}>
-                Section 4
-              </a>
-            </li>
-            </ul></nav>*/}
-        <Fullpage {...fullPageOptions} />
+          <Navbar changeFullpageSlide={changeFullpageSlide} activeIndex={activeIndex} outsideSlideChange={this.outsideSlideChange}/>
+        </div>       
+        <Fullpage onSlideChangeStart={this.onSlideChangeStart} {...fullPageOptions} />
       </div>
     );
+  }
+  onSlideChangeStart=(a,b,c,{activeSlide})=>{
+   this.setState({activeIndex:activeSlide});
+  }
+  outsideSlideChange=(index)=>{
+   this.setState({activeIndex:index});
   }
   componentWillUnmount() {}
   ren12der123() {

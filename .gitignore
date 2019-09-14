@@ -23,3 +23,9 @@ src/envprod.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.firebase/hosting.YnVpbGQ.cache
+package-lock.json
+.firebaserc
+firebase.json
+.gitignore
+package-lock.json
