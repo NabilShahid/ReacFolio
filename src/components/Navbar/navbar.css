@@ -24,14 +24,14 @@ div.brackets a:before, div.brackets a:after
 
 div.brackets a:before
 {
-    content: '{';
+    content: '[';
     left: -10px;
     transform: translateX(10px);
 }
 
 div.brackets a:after
 {
-    content: '}';
+    content: ']';
     right: -10px;
     transform: translateX(-10px);
 }
