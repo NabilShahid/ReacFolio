@@ -66,13 +66,13 @@ const IntroText = () => {
     
        <div className="textDiv">
        <p className="rotateTextP">Hi, I am a </p>
-       <p style={{marginLeft:"10px"}} className="rotateTextP">
+       <div id="rotatingSpans" className="rotateTextP">
          <span className="word">FullStack Developer</span>
          <span className="word">Front End Developer</span>
          <span className="word">Backend Engineer</span>
          <span className="word">JavaScript Developer</span>
          <span className="word">Database Programmer</span>        
-       </p>
+       </div>
      </div>
      
    
