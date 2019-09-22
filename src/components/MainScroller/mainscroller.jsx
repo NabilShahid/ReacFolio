@@ -3,6 +3,7 @@ import "./mainscroller.css";
 import Particles from "../Particles/particles";
 import IntroText from "../IntroText/introtext";
 import Navbar from "../Navbar/navbar";
+import UserInfo from "../UserInfo/userinfo";
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
 import Flip from "react-reveal/Flip";
@@ -28,8 +29,8 @@ const horizontalSliderProps = {
 };
 
 const subSections = [
-  <Slide style={{ background: "white" }}> Slide 2.1 </Slide>,
-  <Slide> Slide 2.2 </Slide>
+  <Slide style={{ background: "white", fontSize:"100px" }}> Slide 2.1 </Slide>,
+  <Slide > Slide 2.2 </Slide>
 ];
 horizontalSliderProps.slides = subSections;
 
@@ -85,6 +86,7 @@ class MainScroller extends Component {
           <div className="row">
             <div className="col-sm-7">
               {/* Nabil Shahid */}
+              <UserInfo userName="Nabil Shahid"/>
             </div>
             <div className="col-sm-5" style={{textAlign:"right"}}>
               <Navbar
