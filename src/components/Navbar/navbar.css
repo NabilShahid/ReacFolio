@@ -1,14 +1,16 @@
 .container{
     padding-top: 14px;
     padding-bottom: 18px;
+    overflow-x:auto;
+    white-space: nowrap; 
 }
 .container a
 {
     color: #FFF;
     text-decoration: none;
-    font: 20px;
+    font-size: 18px;
     margin: 0px 10px;
-    padding: 10px 10px;
+    padding: 3px 10px;
     position: relative;
     z-index: 0;
     cursor: pointer;
@@ -17,7 +19,7 @@ div.brackets a:before, div.brackets a:after
 {
     position: absolute;
     opacity: 0;
-    font-size: 35px;
+    font-size: 27px;
     top: 0px;
     transition: all 0.3s;
 }

@@ -84,11 +84,11 @@ class MainScroller extends Component {
       <div>
         <div id="navbarDiv">
           <div className="row">
-            <div className="col-sm-7">
+            <div className="col-sm-3">
               {/* Nabil Shahid */}
               <UserInfo userName="Nabil Shahid"/>
             </div>
-            <div className="col-sm-5" style={{textAlign:"right"}}>
+            <div className="col-sm-9" style={{textAlign:"right"}}>
               <Navbar
                 changeFullpageSlide={changeFullpageSlide}
                 activeIndex={activeIndex}
