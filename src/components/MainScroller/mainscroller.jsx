@@ -3,6 +3,7 @@ import "./mainscroller.css";
 import Particles from "../Particles/particles";
 import IntroText from "../IntroText/introtext";
 import Navbar from "../Navbar/navbar";
+import ProjectsPage from "../ProjectsPage/projectspage";
 import UserInfo from "../UserInfo/userinfo";
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
@@ -52,11 +53,9 @@ const sections = [
     </div>
     <div style={{ color: "white" }}></div>
   </Slide>,
-  <Slide style={{ background: "grey" }}>
+  <Slide>
     {" "}
-    <Flip>
-      <p>Markup that will be revealed on scroll</p>
-    </Flip>{" "}
+    <ProjectsPage/>
   </Slide>,
   <Slide style={{ background: "white" }}>
     {" "}
@@ -82,7 +81,7 @@ class MainScroller extends Component {
     const { activeIndex } = this.state;
     return (
       <div>
-        <div id="navbarDiv">
+        <div id="navbarDiv" style={{backgroundColor:(activeIndex==0?"#0000001a":"#6f6f6f")}}>
           <div className="row">
             <div className="col-sm-3">
               {/* Nabil Shahid */}
@@ -110,6 +109,7 @@ class MainScroller extends Component {
   outsideSlideChange = index => {
     this.setState({ activeIndex: index });
   };
+  
 }
 
 export default MainScroller;
