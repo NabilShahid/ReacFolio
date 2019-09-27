@@ -8,7 +8,7 @@ import UserInfo from "../UserInfo/userinfo";
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
 import Flip from "react-reveal/Flip";
-import AngularIcon from "../../../src/assets/images/angular.png";
+// import AngularIcon from "../../../src/assets/images/angular.png";
 const { changeFullpageSlide, changeHorizontalSlide } = Fullpage;
 const fullPageOptions = {
   // for mouse/wheel events

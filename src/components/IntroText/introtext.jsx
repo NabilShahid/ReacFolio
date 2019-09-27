@@ -60,7 +60,7 @@ setTimeout(() => {
 
   changeWord();
   setInterval(changeWord, 4000);
-});
+},1000);
 const IntroText = () => {
   return (
     
