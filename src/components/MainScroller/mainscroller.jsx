@@ -30,7 +30,7 @@ const horizontalSliderProps = {
 };
 
 const subSections = [
-  <Slide style={{ background: "white", fontSize:"100px" }}> Slide 2.1 </Slide>,
+  <Slide style={{ background: "red", fontSize:"100px" }}> Slide 2.1 </Slide>,
   <Slide > Slide 2.2 </Slide>
 ];
 horizontalSliderProps.slides = subSections;
@@ -81,7 +81,7 @@ class MainScroller extends Component {
     const { activeIndex } = this.state;
     return (
       <div>
-        <div id="navbarDiv" style={{backgroundColor:(activeIndex==0?"#0000001a":"#6f6f6f")}}>
+        <div id="navbarDiv" style={{backgroundColor:(activeIndex==0?"#0000001a":"#4c4c4c"),transition:"0.4s"}}>
           <div className="row">
             <div className="col-sm-3">
               {/* Nabil Shahid */}

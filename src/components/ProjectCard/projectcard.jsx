@@ -6,10 +6,9 @@ class ProjectCard extends Component {
     const { Name, Description, Color, ImageFile } = this.props.project;
     return (
       <div className="projectCard">
-        <div className="projectCardHeader" style={{ backgroundColor: Color }}>
+        {/* <div className="projectCardHeader" style={{ backgroundColor: Color }}>
           <div className="projectName">{Name}</div>
-        </div>
-        <div className="projectCardBody">
+        </div> */}
           <div className="projectCardImgDiv">
             <img
               className="projectCardImg"
@@ -17,6 +16,7 @@ class ProjectCard extends Component {
             />{" "}
           </div>
           <div className="projectCardInfoDiv">
+            <div className="projectName" style={{fontWeight:"bold"}}>{Name}</div>
             <div className="projectDescription">{Description}</div>
             <div className="projectTechnologies">
               <div style={{fontWeight:"bold"}}>Technogies</div>
@@ -30,7 +30,6 @@ class ProjectCard extends Component {
             />{" "}
             </div>
           </div>
-        </div>
       </div>
     );
   }

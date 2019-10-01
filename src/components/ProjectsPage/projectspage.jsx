@@ -8,7 +8,7 @@ class ProjectsPage extends Component {
   render() {
     return (
       <div id="projectsPage">
-        <div id="projectPageTitle">Projects</div>
+        {/* <div id="projectPageTitle">My Recent Work</div> */}
         <div className="row">
           <div className="col-sm-4">
             <ProjectCard project={PROJECTS[0]} />
