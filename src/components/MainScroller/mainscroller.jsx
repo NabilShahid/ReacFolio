@@ -4,6 +4,7 @@ import Particles from "../Particles/particles";
 import IntroText from "../IntroText/introtext";
 import Navbar from "../Navbar/navbar";
 import ProjectsPage from "../ProjectsPage/projectspage";
+import ExperiencePage from "../ExperiencePage/experiencepage";
 import UserInfo from "../UserInfo/userinfo";
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
@@ -30,8 +31,8 @@ const horizontalSliderProps = {
 };
 
 const subSections = [
-  <Slide style={{ background: "red", fontSize:"100px" }}> Slide 2.1 </Slide>,
-  <Slide > Slide 2.2 </Slide>
+  <Slide style={{ background: "red", fontSize: "100px" }}> Slide 2.1 </Slide>,
+  <Slide> Slide 2.2 </Slide>
 ];
 horizontalSliderProps.slides = subSections;
 
@@ -47,21 +48,18 @@ const sections = [
       }}
     >
       <Particles />
-      <IntroText/>
+      <IntroText />
       {/* <img src={AngularIcon} /> */}
- 
     </div>
     <div style={{ color: "white" }}></div>
   </Slide>,
   <Slide>
     {" "}
-    <ProjectsPage/>
+    <ProjectsPage />
   </Slide>,
   <Slide style={{ background: "white" }}>
     {" "}
-    <Flip>
-      <p>Markup that will be revealed on scroll</p>
-    </Flip>{" "}
+    <ExperiencePage />
   </Slide>,
   <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
   <Slide>
@@ -81,13 +79,19 @@ class MainScroller extends Component {
     const { activeIndex } = this.state;
     return (
       <div>
-        <div id="navbarDiv" style={{backgroundColor:(activeIndex==0?"#0000001a":"#4c4c4c"),transition:"0.4s"}}>
+        <div
+          id="navbarDiv"
+          style={{
+            backgroundColor: activeIndex == 0 ? "#0000001a" : "#4c4c4c"
+            
+          }}
+        >
           <div className="row">
             <div className="col-sm-3">
               {/* Nabil Shahid */}
-              <UserInfo userName="Nabil Shahid"/>
+              <UserInfo userName="Nabil Shahid" />
             </div>
-            <div className="col-sm-9" style={{textAlign:"right"}}>
+            <div className="col-sm-9" style={{ textAlign: "right" }}>
               <Navbar
                 changeFullpageSlide={changeFullpageSlide}
                 activeIndex={activeIndex}
@@ -109,7 +113,6 @@ class MainScroller extends Component {
   outsideSlideChange = index => {
     this.setState({ activeIndex: index });
   };
-  
 }
 
 export default MainScroller;
