@@ -50,7 +50,6 @@ setTimeout(() => {
       letter.className = "letter";
       letter.innerHTML = content.charAt(i);
       if(letter.innerHTML==" ")letter.innerHTML="&nbsp;"
-      console.log('content.charAt(i) :', content.charAt(i));
       word.appendChild(letter);
       letters.push(letter);
     }

@@ -22,6 +22,97 @@ class ProjectsPage extends Component {
             <ProjectCard project={PROJECTS[2]} />
           </div>
         </div>
+        <div className="row">
+          <div className="col-sm-4">
+            <ProjectCard project={PROJECTS[0]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[1]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[2]} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4">
+            <ProjectCard project={PROJECTS[0]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[1]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[2]} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4">
+            <ProjectCard project={PROJECTS[0]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[1]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[2]} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4">
+            <ProjectCard project={PROJECTS[0]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[1]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[2]} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4">
+            <ProjectCard project={PROJECTS[0]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[1]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[2]} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4">
+            <ProjectCard project={PROJECTS[0]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[1]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[2]} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-4">
+            <ProjectCard project={PROJECTS[0]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[1]} />
+          </div>
+          <div className="col-sm-4">
+            {" "}
+            <ProjectCard project={PROJECTS[2]} />
+          </div>
+        </div>
       </div>
     );
   }

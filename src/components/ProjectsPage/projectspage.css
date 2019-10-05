@@ -1,4 +1,6 @@
 #projectsPage {
   margin-top: 65px;
   padding: 0px 15px;
+  overflow-y: auto;
+  height: 100%;
 }
