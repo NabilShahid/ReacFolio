@@ -192,9 +192,7 @@ class MainScroller extends Component {
       <div>
         <div
           id="navbarDiv"
-          style={{
-            backgroundColor: activeIndex == 0 ? "unset" : "#4c4c4c"
-          }}
+          className={activeIndex == 0 ? "navbarFirstPage" : "navbarPage"}
         >
           <div className="row">
             <div className="col-sm-3">

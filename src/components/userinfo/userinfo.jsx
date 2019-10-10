@@ -6,7 +6,7 @@ const UserInfo = ({ userName }) => {
   return (
     <div id="userInfoDiv">
       <div style={{ display: "inline-block" }} id="userImage">
-        <img id="userImage" src={CvPic} />
+        {/* <img id="userImage" src={CvPic} /> */}
       </div>
       <span id="userName">{userName}</span>
     </div>

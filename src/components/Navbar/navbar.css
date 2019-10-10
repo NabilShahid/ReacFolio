@@ -1,6 +1,6 @@
 .container{
-    padding-top: 14px;
-    padding-bottom: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     overflow-x:auto;
     white-space: nowrap; 
     font-family: 'Cairo';
@@ -11,7 +11,7 @@
     text-decoration: none;
     font-size: 18px;
     margin: 0px 10px;
-    padding: 3px 10px;
+    padding: 8px 10px;
     position: relative;
     z-index: 0;
     cursor: pointer;
@@ -29,6 +29,7 @@ div.brackets a:before
 {
     content: '[';
     left: -10px;
+    top: 5px;
     transform: translateX(10px);
 }
 
@@ -36,6 +37,7 @@ div.brackets a:after
 {
     content: ']';
     right: -10px;
+    top: 5px;
     transform: translateX(-10px);
 }
 
@@ -43,9 +45,4 @@ div.brackets a:hover:before, div.brackets a:hover:after
 {
     opacity: 1;
     transform: translateX(0px);
-}
-
-
-.selectedNavItem{
-    border-bottom: 1px solid white;
 }
