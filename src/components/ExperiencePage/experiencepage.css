@@ -1,7 +1,4 @@
-/* #experiencePage {
-    margin-top: 20vh;
-    padding: 0px 15px;
-    height: 100%;
-    overflow-y: auto;
-  }
-   */
+#experiencePage {
+  height: 100%;
+  overflow-y: auto;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import CvPic from "../../../src/assets/images/CVPIC.jpg";
+import CvPic from "../../../src/assets/images/download.png";
 import "./userinfo.css";
 
 const UserInfo = ({ userName }) => {

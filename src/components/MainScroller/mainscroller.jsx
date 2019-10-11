@@ -28,6 +28,10 @@ const fullPageOptions = {
   infinite: true
 };
 
+const allSlidesStyle={ 
+  padding: "60px 10px 5px 10px"
+}
+
 const horizontalSliderProps = {
   name: "horizontalSlider1", // name is required
   infinite: true // enable infinite scrolling
@@ -54,18 +58,17 @@ const sections = [
       <IntroText />
       {/* <img src={AngularIcon} /> */}
     </div>
-    <div style={{ color: "white" }}></div>
-  </Slide>,
-  <Slide>
+   </Slide>,
+  <Slide style={{ background: "white",...allSlidesStyle }}>
     {" "}
     <ProjectsPage />
   </Slide>,
-  <Slide style={{ background: "white" }}>
+  <Slide style={{ background: "#d8d8d8",...allSlidesStyle }}>
     {" "}
     <ExperiencePage />
   </Slide>,
   <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
-  <Slide>
+  <Slide style={{ background: "white",...allSlidesStyle }} >
     {" "}
     {/* <Flip> */}
     <div style={{ height: "100%", overflow: "scroll" }}>

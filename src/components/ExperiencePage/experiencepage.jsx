@@ -47,6 +47,8 @@ class ExperiencePage extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2008 - 2010"
+            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
+
             iconStyle={{ background: "var(--main-blue)", color: "#fff" }}
             // icon={<WorkIcon />}
           >
@@ -59,6 +61,8 @@ class ExperiencePage extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2006 - 2008"
+            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
+
             iconStyle={{ background: "var(--main-blue)", color: "#fff" }}
             // icon={<WorkIcon />}
           >
@@ -71,6 +75,8 @@ class ExperiencePage extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="April 2013"
+            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
+
             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
             // icon={<SchoolIcon />}
           >
@@ -85,6 +91,8 @@ class ExperiencePage extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="November 2012"
+            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
+
             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
             // icon={<SchoolIcon />}
           >
@@ -99,6 +107,8 @@ class ExperiencePage extends Component {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="2002 - 2006"
+            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
+
             iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
             // icon={<SchoolIcon />}
           >
