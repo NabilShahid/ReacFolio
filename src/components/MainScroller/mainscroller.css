@@ -10,14 +10,14 @@
   box-shadow: unset;
 }
 .navbarPage {
-  background-color: var(--main-blue);
+  background: var(--main-gradient);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .navbarFirstPage .selectedNavItem{
   /* color: #03A9F4!important; */
-  border-bottom: 2px solid #03A9F4;
+  border-bottom: 2px solid #003046;
 }
 .navbarPage .selectedNavItem{
-  color: #03A9F4!important;
-  border-bottom: 2px solid #03A9F4;
+  color: #003046!important;
+  border-bottom: 2px solid #003046;
 }

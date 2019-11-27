@@ -67,7 +67,10 @@ const sections = [
     {" "}
     <ExperiencePage />
   </Slide>,
-  <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
+  <Slide style={{ background: "#d8d8d8",...allSlidesStyle }}>
+    Hello
+  </Slide>,
+  // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
   <Slide style={{ background: "white",...allSlidesStyle }} >
     {" "}
     {/* <Flip> */}

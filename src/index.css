@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Cairo|Rubik&display=swap");
 :root {
   /* Global colors */
-  --main-blue: #0d4a7b;
+  --main-blue: #1c7aca;
   --main-green: #1ad4b1;
+  --main-gradient:linear-gradient(to left,#277abf,#0c5397)
+
 }
 
 html {
@@ -18,7 +20,23 @@ div {
   font-family: "Rubik", serif;
 }
 
-/* code {
-  font-family: Raleway,source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFFFFF; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CCCCCC; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #CCCCCC; 
+}
