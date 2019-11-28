@@ -21,3 +21,15 @@
   color: #003046!important;
   border-bottom: 2px solid #003046;
 }
+/* #socialLinks{
+  position: absolute;
+  color: white;
+  top: 62vh;
+  left: 7vw;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #socialLinks{
+     top: 45vh;
+   }
+
+} */

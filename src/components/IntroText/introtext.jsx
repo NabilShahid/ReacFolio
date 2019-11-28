@@ -1,5 +1,7 @@
 import React from "react";
 import "./introtext.css";
+import ProfileLinks from "../ProfileLinks/profilelinks";
+
 setTimeout(() => {
   var words = document.getElementsByClassName("word");
   var wordArray = [];
@@ -49,7 +51,7 @@ setTimeout(() => {
       var letter = document.createElement("span");
       letter.className = "letter";
       letter.innerHTML = content.charAt(i);
-      if(letter.innerHTML==" ")letter.innerHTML="&nbsp;"
+      if (letter.innerHTML == " ") letter.innerHTML = "&nbsp;";
       word.appendChild(letter);
       letters.push(letter);
     }
@@ -59,22 +61,22 @@ setTimeout(() => {
 
   changeWord();
   setInterval(changeWord, 4000);
-},1000);
+}, 1000);
 const IntroText = () => {
   return (
-    
-       <div className="textDiv">
-       <p className="rotateTextP">Hi, I am a </p>
-       <div id="rotatingSpans" className="rotateTextP">
-         <span className="word">FullStack Developer</span>
-         <span className="word">Front End Developer</span>
-         <span className="word">Backend Engineer</span>
-         <span className="word">JavaScript Developer</span>
-         <span className="word">Database Programmer</span>        
-       </div>
-     </div>
-     
-   
+    <div className="textDiv">
+      <p className="rotateTextP">Hi, I am a </p>
+      <div id="rotatingSpans" className="rotateTextP">
+        <span className="word">FullStack Developer</span>
+        <span className="word">Front End Developer</span>
+        <span className="word">Backend Engineer</span>
+        <span className="word">JavaScript Developer</span>
+        <span className="word">Database Programmer</span>
+      </div>
+      <div style={{marginTop:"70px"}}>
+       <ProfileLinks/>
+      </div>
+    </div>
 
     // <div>
     //   <div className="Iam">
@@ -102,7 +104,7 @@ const IntroText = () => {
     //     <span className="word">Front End Developer</span>
     //     <span className="word">Backend Engineer</span>
     //     <span className="word">JavaScript Developer</span>
-    //     <span className="word">Database Programmer</span>        
+    //     <span className="word">Database Programmer</span>
     //   </p>
     // </div>
   );

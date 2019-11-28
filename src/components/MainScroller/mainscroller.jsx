@@ -8,6 +8,8 @@ import ExperiencePage from "../ExperiencePage/experiencepage";
 import UserInfo from "../UserInfo/userinfo";
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
+import { ReactComponent as StackOverflowLogo } from "../../assets/svgs/so-icon.svg";
+
 import Flip from "react-reveal/Flip";
 import ScrollSwipe from "scroll-swipe";
 // import $ from 'jquery';
@@ -49,7 +51,6 @@ const sections = [
     <div
       style={{
         position: "absolute",
-        zIndex: "-1",
         height: "100vh",
         width: "100vw"
       }}
@@ -68,7 +69,7 @@ const sections = [
     <ExperiencePage />
   </Slide>,
   <Slide style={{ background: "#d8d8d8",...allSlidesStyle }}>
-    Hello
+    <a href="https://www.google.com" target="_blank">asdf</a>
   </Slide>,
   // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
   <Slide style={{ background: "white",...allSlidesStyle }} >
