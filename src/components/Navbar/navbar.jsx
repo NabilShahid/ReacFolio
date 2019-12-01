@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "./navbar.css";
 class Navbar extends Component {
   state = {
-    options: ["Home", "Articles", "Portfolio", "About", "Contacts"]
+    options: ["Home", "About", "Projects", "Experience", "Contact"]
     };
   render() {
     const { options } = this.state;

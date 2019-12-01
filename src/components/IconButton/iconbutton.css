@@ -6,6 +6,8 @@
    border-radius: 30px;
    cursor: pointer;
    transition: 0.3s;
+   height: 45px;
+   width: 45px;
 }
 .iconButton:hover {
     background: #8888888a;

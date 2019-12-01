@@ -8,7 +8,7 @@ const ProfileLinks = () => {
   return (
     <div style={{display:"flex"}}>
         <IconButton Icon={GitHubLogo}  Link="Github" Style={iconStyle}/>
-        <IconButton Icon={StackOverflowLogo} Link="https://stackoverflow.com/users/10406529/nabil-shahid" Text="Github" Style={iconStyle}/>
+        <IconButton Icon={StackOverflowLogo} Link="https://stackoverflow.com/users/10406529/nabil-shahid" Text="Github" Style={{height:"27px",width:"27px"}}/>
         <IconButton Icon={LinkedInLogo} Link="Github" Style={iconStyle}/>
       {/* <GitHubLogo style={iconStyle} />
       <StackOverflowLogo style={{...iconStyle,marginLeft:"10px"}} />

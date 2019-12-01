@@ -6,6 +6,7 @@ import Navbar from "../Navbar/navbar";
 import ProjectsPage from "../ProjectsPage/projectspage";
 import ExperiencePage from "../ExperiencePage/experiencepage";
 import UserInfo from "../UserInfo/userinfo";
+
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
 import { ReactComponent as StackOverflowLogo } from "../../assets/svgs/so-icon.svg";
@@ -30,9 +31,9 @@ const fullPageOptions = {
   infinite: true
 };
 
-const allSlidesStyle={ 
+const allSlidesStyle = {
   padding: "60px 10px 5px 10px"
-}
+};
 
 const horizontalSliderProps = {
   name: "horizontalSlider1", // name is required
@@ -57,22 +58,27 @@ const sections = [
     >
       <Particles />
       <IntroText />
+      {/* <div id="logosImage">
+        <img src={LogosImage} />
+      </div> */}
       {/* <img src={AngularIcon} /> */}
     </div>
-   </Slide>,
-  <Slide style={{ background: "white",...allSlidesStyle }}>
+  </Slide>,
+  <Slide style={{ background: "white", ...allSlidesStyle }}>
     {" "}
     <ProjectsPage />
   </Slide>,
-  <Slide style={{ background: "#d8d8d8",...allSlidesStyle }}>
+  <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
     {" "}
     <ExperiencePage />
   </Slide>,
-  <Slide style={{ background: "#d8d8d8",...allSlidesStyle }}>
-    <a href="https://www.google.com" target="_blank">asdf</a>
+  <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+    <a href="https://www.google.com" target="_blank">
+      asdf
+    </a>
   </Slide>,
   // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
-  <Slide style={{ background: "white",...allSlidesStyle }} >
+  <Slide style={{ background: "white", ...allSlidesStyle }}>
     {" "}
     {/* <Flip> */}
     <div style={{ height: "100%", overflow: "scroll" }}>
