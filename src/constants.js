@@ -1,20 +1,23 @@
 export const PROJECTS=[
     {
-        Name:"GoHaB",
+        Name:"Gohab",
         Description:"Hello how are you very good okoko.",
-        Color:"#03A9F4",
-        ImageFile:"appstudio.PNG"
+        Color:"#2779be",
+        ImageFile:"gohab.PNG",
+        Technologies:["Javascript","React","Node","Firebase"]
     },
     {
-        Name:"RarpidFlow App Studio",
+        Name:"RarpidFlow",
         Description:"Hello how are you very good okoko.",
         Color:"#7C4DFF",
-        ImageFile:"appstudio.PNG"
+        ImageFile:"rapidflow.PNG",
+        Technologies:["Javascript","Angular","Csharp"]
     },
     {
-        Name:"RarpidFlow NT",
+        Name:"RapidFlow App Studio",
         Description:"Hello how are you very good okoko.",
         Color:"#8BC34A",
-        ImageFile:"appstudio.PNG"
+        ImageFile:"appstudio.PNG",
+        Technologies:["Javascript","Node","Postgresql"]
     }
 ]

@@ -1,27 +1,75 @@
 .projectCard {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  
+  /* border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; */
+  border-radius: 5px;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  background-color: white;
 }
 
-.projectCardInfoDiv{
-    margin-top: 8px;
-    padding: 0px 8px;
-
+.projectCardInfoDiv {
+  margin-top: 8px;
+  padding: 0px 8px;
+  font-size: 13px;
 }
-.projectDescription{
+.projectDescription {
   font-size: 13px;
 }
 
 .projectCardImg {
-  width: 98%;
+  width: 97%;
   border-radius: 3px;
   margin-top: 5px;
+  transition: 0.3s;
+}
+.projectCardImg:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 .projectCardImgDiv {
   text-align: center;
+  position: relative;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0px 25px;
+  background: #e2e2e2;
+
 }
-.projectTechnologyImg{
-width: 35px;
+.projectTechnologyImg {
+  width: 35px;
+}
+
+.projectName {
+  padding: 4px 0px;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #c5c5c5;
+}
+.projectInfoHeader {
+  margin-top: 20px;
+}
+.projectTechnologies {
+  margin: 10px 0px;
+}
+
+.projectNameText{
+  padding: 6px 26px;
+  color: white;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.projectLearnMoreDiv{
+  font-size: 15px;
+    color: #679eda;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 9px;
+    cursor: pointer;
 }
