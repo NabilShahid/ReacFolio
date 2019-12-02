@@ -12,17 +12,16 @@ class ProjectCard extends Component {
       ImageFile,
       Technologies
     } = this.props.project;
-    const {action}=this.props;
+    const { action, project } = this.props;
     return (
       <div className="projectCard" style={{ borderBottomColor: Color }}>
-        {/* <div className="projectCardHeader" style={{ backgroundColor: Color }}>
-          <div className="projectName">{Name}</div>
-        </div> */}
-        <div className="projectCardImgDiv" >
-          <div className="projectName"><span className="projectNameText" style={{background:Color}}>
+        <div className="projectCardImgDiv">
+          <div className="projectName">
+            <div className="projectNameText" style={{ background: Color }}>
+              {Name}
+            </div>
+            <div style={{ color: Color }} onClick={()=>{action(project)}} className="projectLearnMoreDiv">Details</div>
 
-          {Name}
-          </span>
           </div>
           <img
             className="projectCardImg"
@@ -41,7 +40,6 @@ class ProjectCard extends Component {
               />
             ))}
           </div>
-          <div onClick={action} className="projectLearnMoreDiv">Learn More</div>
         </div>
       </div>
     );

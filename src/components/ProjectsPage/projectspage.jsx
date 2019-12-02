@@ -4,30 +4,23 @@ import { PROJECTS } from "../../constants";
 
 import "./projectspage.css";
 import Modal from "react-responsive-modal";
+import ProjectInfo from "../ProjectInfo/projectinfo";
 
 class ProjectsPage extends Component {
-  state = {modalOpen:false};
-  toggle = () => {
-    let { toggle } = this.state
+  state = {modalOpen:false,selectedProject:{}};
   
-    this.setState({ toggle: !toggle })
-  }
-  setModalVisibility=()=>{
+  setModalVisibility=(selectedProject)=>{
     debugger
     const {modalOpen}=this.state;
-    this.setState({modalOpen:!modalOpen})
+    this.setState({modalOpen:!modalOpen,selectedProject})
   }
   render() {
-    const {modalOpen}=this.state;
+    const {modalOpen,selectedProject}=this.state;
+    
     return (
       <div id="projectsPage">
        <Modal open={modalOpen} onClose={this.setModalVisibility}>
-          <h4>Simple centered modal</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
-            hendrerit risus, sed porttitor quam.
-          </p>
+        <ProjectInfo project={selectedProject}/>
         </Modal>
         {/* <div id="projectPageTitle">My Recent Work</div> */}
         <div>

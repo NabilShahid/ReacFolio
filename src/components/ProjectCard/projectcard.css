@@ -1,6 +1,6 @@
 .projectCard {
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-  
+
   /* border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; */
   border-radius: 5px;
@@ -38,14 +38,14 @@
   cursor: pointer;
   padding: 0px 25px;
   background: #e2e2e2;
-
 }
 .projectTechnologyImg {
   width: 35px;
 }
 
 .projectName {
-  padding: 4px 0px;
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -58,18 +58,16 @@
   margin: 10px 0px;
 }
 
-.projectNameText{
-  padding: 6px 26px;
+.projectNameText {
+  padding: 6px 15px;
   color: white;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
 
-.projectLearnMoreDiv{
-  font-size: 15px;
-    color: #679eda;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 9px;
-    cursor: pointer;
+.projectLearnMoreDiv {
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 3px;
 }
