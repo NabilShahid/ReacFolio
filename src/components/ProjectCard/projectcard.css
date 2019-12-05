@@ -31,13 +31,14 @@
 .projectCardImgDiv {
   text-align: center;
   position: relative;
-  height: 200px;
+  height: 205px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   padding: 0px 25px;
-  background: #e2e2e2;
+  padding-top: 5px;
+  /* background: #f9f9f9; */
 }
 .projectTechnologyImg {
   width: 35px;
@@ -59,15 +60,16 @@
 }
 
 .projectNameText {
-  padding: 6px 15px;
+  padding: 3px 15px;
   color: white;
   border-top-left-radius: 7px;
+  font-size: 13px;
   border-top-right-radius: 7px;
 }
 
 .projectLearnMoreDiv {
   font-size: 13px;
-  font-weight: bold;
+  /* font-weight: bold; */
   cursor: pointer;
-  padding: 6px 3px;
+  padding: 3px;
 }

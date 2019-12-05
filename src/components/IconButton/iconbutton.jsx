@@ -1,12 +1,11 @@
 import React from "react";
 import "./iconbutton.css";
-const IconButton = ({ Icon, Style, Link }) => {
+const IconButton = ({ Icon, Style, Link, Text }) => {
   return (
-    <a className="iconButtonLink" href={Link} target="_blank">
-      <div className="iconButton">
-        <Icon style={Style} />
-      </div>
-    </a>
+    <div className="iconButton">
+      <Icon style={Style} />
+      <span className="iconButtonText">{Text}</span>
+    </div>
   );
 };
 

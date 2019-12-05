@@ -1,6 +1,6 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
-
+import "./projectinfo.css";
  const path = process.env.PUBLIC_URL + "/assets/images/ProjectsImages/";
 // const images = [
 //   {
@@ -23,8 +23,7 @@ const getImagesArrayForGallery = (imageCount, folderName, parentPath) => {
     const imagePath = parentPath + folderName + "/" + (i + 1)+".PNG";
     images.push({
       original: imagePath,
-      thumbnail: imagePath,
-      sizes:"300px"
+      thumbnail: imagePath
     });
   }
   console.log("images :", images);
@@ -37,12 +36,12 @@ const ProjectInfo = ({ project }) => {
     path
   );
   return (
-    <div className="projectsInforDiv">
-      <div>{project.Name}</div>
-      <div>{project.Description}</div>
+    <div className="projectsInfoDiv">
       <div className="gallery">
-        <ImageGallery size="100px" items={images} />
+        <ImageGallery showFullscreenButton={false} showPlayButton={false} size="100px" items={images} />
       </div>
+      <div style={{color:project.Color}} className="projectInfoName">{project.Name}</div>
+      <div className="projectInfoDescription">{project.Description}</div>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 #projectsPage {
   height: 100%;
+  padding: 0px 10px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .modal {
   outline: none;

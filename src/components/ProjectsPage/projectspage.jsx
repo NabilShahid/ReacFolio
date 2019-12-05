@@ -10,7 +10,6 @@ class ProjectsPage extends Component {
   state = {modalOpen:false,selectedProject:{}};
   
   setModalVisibility=(selectedProject)=>{
-    debugger
     const {modalOpen}=this.state;
     this.setState({modalOpen:!modalOpen,selectedProject})
   }
