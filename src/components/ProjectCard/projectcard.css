@@ -1,16 +1,13 @@
 .projectCard {
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-
-  /* border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; */
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.11);
   border-radius: 5px;
   border-bottom-width: 6px;
   border-bottom-style: solid;
-  background-color: white;
+  background:#e6e6e6;
 }
 
 .projectCardInfoDiv {
-  margin-top: 8px;
+  /* margin-top: 8px; */
   padding: 0px 8px;
   font-size: 13px;
 }
@@ -53,7 +50,8 @@
   border-bottom: 1px solid #c5c5c5;
 }
 .projectInfoHeader {
-  margin-top: 20px;
+  margin-top: 13px;
+    color: #125b9f;
 }
 .projectTechnologies {
   margin: 10px 0px;
@@ -62,14 +60,13 @@
 .projectNameText {
   padding: 3px 15px;
   color: white;
-  border-top-left-radius: 7px;
+  border-top-left-radius: 3px;
   font-size: 13px;
-  border-top-right-radius: 7px;
+  border-top-right-radius: 3px;
 }
 
 .projectLearnMoreDiv {
   font-size: 13px;
-  /* font-weight: bold; */
-  cursor: pointer;
+   cursor: pointer;
   padding: 3px;
 }

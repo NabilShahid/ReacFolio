@@ -22,6 +22,10 @@ div {
   font-family: "Rubik", serif;
 }
 
+.styles_modal__gNwvD{
+  padding: 0px 8px 8px 8px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 4px;

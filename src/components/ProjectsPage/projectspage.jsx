@@ -22,9 +22,7 @@ class ProjectsPage extends Component {
         <ProjectInfo project={selectedProject}/>
         </Modal>
         {/* <div id="projectPageTitle">My Recent Work</div> */}
-        <div>
-          Worked as a FullStack developer on the following projects
-        </div>
+      
         <div className="row">
           <div className="col-sm-4">
             <ProjectCard action={this.setModalVisibility} project={PROJECTS[0]} />

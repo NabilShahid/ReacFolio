@@ -31,7 +31,7 @@ class ProjectCard extends Component {
         </div>
         <div className="projectCardInfoDiv">
           <div className="projectDescription">{Description}</div>
-          <div className="projectInfoHeader">Technogies:</div>
+          <div className="projectInfoHeader">Technogies</div>
           <div className="projectTechnologies">
             {Technologies.map(t => (
               <Icon
@@ -41,6 +41,7 @@ class ProjectCard extends Component {
             ))}
           </div>
         </div>
+         
       </div>
     );
   }
