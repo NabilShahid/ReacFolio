@@ -4,7 +4,7 @@
   border-bottom-width: 4px;
   border-bottom-style: solid;
   max-width: 420px;
-  background:white;;
+  background: white;
 }
 
 .projectCardInfoDiv {
@@ -20,17 +20,17 @@
   width: 97%;
   border-radius: 3px;
   margin-top: 5px;
+  margin-bottom: 10px;
   transition: 0.3s;
 }
 .projectCardImg:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
-.projectCardImgDiv {
+.projectCardContentDiv {
   text-align: center;
   position: relative;
-  height: 225px;
-  border-top-left-radius: 5px;
+   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: hidden;
   cursor: pointer;
@@ -38,38 +38,47 @@
   padding-top: 5px;
   /* background: #f9f9f9; */
 }
-.projectTechnologyImg {
-  width: 35px;
-}
 
 .projectName {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
+  margin-top: 20px;
   /* margin-top: 5px;
   margin-bottom: 5px; */
- }
+}
 .projectInfoHeader {
   /* margin-top: 13px; */
-    color: #125b9f;
+  color: #125b9f;
 }
 .projectTechnologies {
   margin: 10px 0px;
+  text-align: left;
 }
 
 .projectNameText {
-  padding: 3px 15px;
   color: #4b4f4e;
-  /* border-top-left-radius: 8px; */
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
-  /* border-top-right-radius: 8px; */
-  /* width: 100%; */
+  padding: 4px 2px;
 }
 
 .projectLearnMoreDiv {
   font-size: 13px;
-   cursor: pointer;
-  padding: 3px;
+  padding: 4px 0px;
+  cursor: pointer;
+  /* padding: 3px; */
   /* display: none; */
+}
+
+.projectCardAvatar {
+  background: #f661ff;
+  position: absolute;
+  margin-top: 1px;
+  /* display: flex; */
+  z-index: 1;
+  top: -30px;
+  border-radius: 3px;
+  left: 26px;
+  padding: 7px 13px;
 }

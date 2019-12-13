@@ -5,12 +5,14 @@ import Firebase from "@iconify/icons-logos/firebase";
 import Javascript from "@iconify/icons-logos/javascript";
 import Node from "@iconify/icons-logos/nodejs-icon";
 import Csharp from "@iconify/icons-logos/c-sharp";
-
 import Vscode from "@iconify/icons-logos/visual-studio-code";
 import Npm from "@iconify/icons-logos/npm";
 import Nest from "@iconify/icons-logos/nestjs";
-
 import Redux from "@iconify/icons-logos/redux";
+ 
+import Web from '@iconify/icons-ls/web';
+// import Mobile from '@iconify/icons-icomoon-free/mobile2';
+
 
 export const TechologiesIcons = {
   Postgresql,
@@ -25,3 +27,11 @@ export const TechologiesIcons = {
   Nest,
   Redux
 };
+
+export const PlatformIcons={
+  Web,
+  // Mobile
+}
+// npm install   @iconify/icons-ls
+// import { Icon, InlineIcon } from '@iconify/react';
+// import webIcon from '@iconify/icons-ls/web';

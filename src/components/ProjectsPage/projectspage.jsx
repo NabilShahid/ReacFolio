@@ -26,28 +26,22 @@ class ProjectsPage extends Component {
 
         <div className="row">
           <div className="col-sm-4">
-            <LightSpeed mountOnEnter={true} left>
-              <ProjectCard
-                action={this.setModalVisibility}
-                project={PROJECTS[0]}
-              />
-            </LightSpeed>
+            <ProjectCard
+              action={this.setModalVisibility}
+              project={PROJECTS[0]}
+            />
           </div>
           <div className="col-sm-4">
-            <LightSpeed duration={5000} left>
-              <ProjectCard
-                action={this.setModalVisibility}
-                project={PROJECTS[1]}
-              />
-            </LightSpeed>
+            <ProjectCard
+              action={this.setModalVisibility}
+              project={PROJECTS[1]}
+            />
           </div>
           <div className="col-sm-4">
-            <LightSpeed duration={5000} left>
-              <ProjectCard
-                action={this.setModalVisibility}
-                project={PROJECTS[2]}
-              />
-            </LightSpeed>
+            <ProjectCard
+              action={this.setModalVisibility}
+              project={PROJECTS[2]}
+            />
           </div>
         </div>
       </div>
