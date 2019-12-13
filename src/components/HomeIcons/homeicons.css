@@ -1,0 +1,19 @@
+.homeIcons{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.homeIconsRow{
+    display: flex;
+    /* flex-direction: row; */
+}
+.homeIconsCol{
+    width: 55px;
+    height: 55px;
+    margin: 3px 7px;
+}
+.homeIconsBorder{
+    background: #014e673b;
+    height: 29px;
+    transform: rotate(137deg) translateX(94px) translateY(-60px) scaleX(3);
+}

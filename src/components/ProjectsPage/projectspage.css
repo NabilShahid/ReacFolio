@@ -19,6 +19,9 @@
   will-change: transform;
   transform: translate3d(0, 0, 0);
 }
+.projectGridContainer{
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .modal {

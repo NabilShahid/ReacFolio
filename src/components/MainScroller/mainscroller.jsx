@@ -13,6 +13,7 @@ import { ReactComponent as StackOverflowLogo } from "../../assets/svgs/so-icon.s
 
 import Flip from "react-reveal/Flip";
 import ScrollSwipe from "scroll-swipe";
+import HomeIcons from "../HomeIcons/homeicons";
 // import $ from 'jquery';
 
 // import AngularIcon from "../../../src/assets/images/angular.png";
@@ -58,6 +59,7 @@ const sections = [
     >
       <Particles />
       <IntroText />
+      <HomeIcons/>
       {/* <div id="logosImage">
         <img src={LogosImage} />
       </div> */}

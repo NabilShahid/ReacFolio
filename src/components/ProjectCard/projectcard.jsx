@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./projectcard.css";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
+import { ReactComponent as InfoIcon } from "../../assets/svgs/information.svg";
 class ProjectCard extends Component {
   state = {};
   render() {
@@ -17,11 +18,19 @@ class ProjectCard extends Component {
       <div className="projectCard" style={{ borderBottomColor: Color }}>
         <div className="projectCardImgDiv">
           <div className="projectName">
-            <div className="projectNameText" style={{ background: Color }}>
-              {Name}
+            <div className="projectNameText">{Name}</div>
+            <div
+              style={{ color: Color }}
+              onClick={() => {
+                action(project);
+              }}
+              className="projectLearnMoreDiv"
+            >
+              Details
+              {/* <InfoIcon
+                style={{ width: "22px", height: "22px", fill: Color }}
+              /> */}
             </div>
-            <div style={{ color: Color }} onClick={()=>{action(project)}} className="projectLearnMoreDiv">Details</div>
-
           </div>
           <img
             className="projectCardImg"
@@ -30,7 +39,7 @@ class ProjectCard extends Component {
           />{" "}
         </div>
         <div className="projectCardInfoDiv">
-          <div className="projectDescription">{Description}</div>
+          {/* <div className="projectDescription">{Description}</div> */}
           <div className="projectInfoHeader">Technogies</div>
           <div className="projectTechnologies">
             {Technologies.map(t => (
@@ -41,7 +50,6 @@ class ProjectCard extends Component {
             ))}
           </div>
         </div>
-         
       </div>
     );
   }
