@@ -2,14 +2,22 @@ import React from "react";
 import "./homeicons.css";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
-const iconStyle={width:'45px',height:'45px'}
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
+
+const iconStyle={width:'50px',height:'50px'}
+
 const HomeIcons = () => {
   return (
     <div className="homeIcons">
-        <div className="homeIconsBorder">
+        {/* <div className="homeIconsBorder">
     
-        </div>
+        </div> */}
+        
+
+        
       <div className="homeIconsTable">
+      <Pulse duration={2800} forever={true}>
         <div className="homeIconsRow">
           <div className="homeIconsCol"></div>
           <div className="homeIconsCol"></div>
@@ -23,6 +31,8 @@ const HomeIcons = () => {
             />{" "}
           </div>
         </div>
+        </Pulse>
+        <Pulse duration={3100} forever={true}>
         <div className="homeIconsRow">
           <div className="homeIconsCol"></div>
           <div className="homeIconsCol"></div>
@@ -42,6 +52,8 @@ const HomeIcons = () => {
             />{" "}
           </div>
         </div>
+        </Pulse>
+        <Pulse duration={3400} forever={true}>
         <div className="homeIconsRow">
           <div className="homeIconsCol"></div>
           <div className="homeIconsCol"></div>
@@ -67,6 +79,8 @@ const HomeIcons = () => {
             />{" "}
           </div>
         </div>
+        </Pulse>
+        <Pulse duration={3700} forever={true}>
         <div className="homeIconsRow">
           <div className="homeIconsCol"></div>
           <div className="homeIconsCol">
@@ -98,6 +112,8 @@ const HomeIcons = () => {
             />{" "}
           </div>
         </div>
+        </Pulse>
+        <Pulse duration={4000} forever={true}>
         <div className="homeIconsRow">
           <div className="homeIconsCol">
             {" "}
@@ -135,7 +151,8 @@ const HomeIcons = () => {
             />{" "}
           </div>
         </div>
-      </div>
+        </Pulse>
+       </div>
       {/* <Icon
         style={iconStyle}
         icon={TechologiesIcons.Angular}
@@ -148,6 +165,7 @@ const HomeIcons = () => {
         style={{ width: "60px", height: "60px" }}
         icon={TechologiesIcons.Firebase}
       /> */}
+    
     </div>
   );
 };
