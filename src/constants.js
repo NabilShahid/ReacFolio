@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     Name: "Gohab",
     Description: "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
-    Color: "#4a4e4d",
+    Color: "var(--color-1)",
     ImageFile: "gohab.PNG",
     ImagesFolder: "Gohab",
     ImageCount:1,
@@ -11,7 +11,7 @@ export const PROJECTS = [
   {
     Name: "RarpidFlow",
     Description: "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
-    Color: "#3da4ab",
+    Color: "var(--color-2)",
     ImageFile: "rapidflow.PNG",
     ImagesFolder: "RapidFlow",
     ImageCount:10,
@@ -20,7 +20,7 @@ export const PROJECTS = [
   {
     Name: "RapidFlow App Studio",
     Description: "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
-    Color: "#58668b",
+    Color: "var(--color-4)",
     ImageFile: "appstudio.PNG",
     ImagesFolder: "RapidFlowAppStudio",
     ImageCount:9,

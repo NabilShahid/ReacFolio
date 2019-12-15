@@ -6,16 +6,17 @@ import Navbar from "../Navbar/navbar";
 import ProjectsPage from "../ProjectsPage/projectspage";
 import ExperiencePage from "../ExperiencePage/experiencepage";
 import UserInfo from "../UserInfo/userinfo";
- 
-import SlideReveal from 'react-reveal/Slide'
+
+import SlideReveal from "react-reveal/Slide";
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
 import { ReactComponent as StackOverflowLogo } from "../../assets/svgs/so-icon.svg";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
 import Flip from "react-reveal/Flip";
 import ScrollSwipe from "scroll-swipe";
 import HomeIcons from "../HomeIcons/homeicons";
+import AboutPage from "../AboutPage/aboutpage";
 // import $ from 'jquery';
 
 // import AngularIcon from "../../../src/assets/images/angular.png";
@@ -98,151 +99,22 @@ class MainScroller extends Component {
                 <Particles />
                 <IntroText />
                 <HomeIcons />
-                {/* <div id="logosImage">
-                  <img src={LogosImage} />
-                </div> */}
-                {/* <img src={AngularIcon} /> */}
               </div>
             </Slide>,
             <Slide style={{ background: "white", ...allSlidesStyle }}>
-              {" "}
+              <AboutPage />
+            </Slide>,
+            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <Fade spy={activeIndex}>
-
-              <ProjectsPage />
+                <ProjectsPage />
               </Fade>
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              {" "}
               <ExperiencePage />
-            </Slide>,
-            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <a href="https://www.google.com" target="_blank">
-                asdf
-              </a>
             </Slide>,
             // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
             <Slide style={{ background: "white", ...allSlidesStyle }}>
-              {" "}
-              {/* <Flip> */}
-              <Flip spy={activeIndex}>
-                <div style={{ height: "100%", overflow: "scroll" }}>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                  <p style={{ color: "black" }}>
-                    Markup that will be revealed on scroll
-                  </p>
-                </div>
-              </Flip>
-              {/* </Flip>{" "} */}
+              Contact
             </Slide>
           ]}
         />

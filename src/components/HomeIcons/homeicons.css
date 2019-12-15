@@ -17,3 +17,9 @@
     height: 29px;
     transform: rotate(137deg) translateX(94px) translateY(-60px) scaleX(3);
 }
+@media (min-width: 320px) and (max-width: 480px) {
+    .homeIcons{
+        display: none;
+    }
+    
+  }
