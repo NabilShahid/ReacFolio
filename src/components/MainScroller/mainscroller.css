@@ -15,11 +15,11 @@
 }
 .navbarFirstPage .selectedNavItem{
   /* color: #03A9F4!important; */
-  border-bottom: 2px solid #003046;
+  border-bottom: 2px solid #819aff;
 }
 .navbarPage .selectedNavItem{
-  color: #003046!important;
-  border-bottom: 2px solid #003046;
+  color: #819aff!important;
+  border-bottom: 2px solid #819aff;
 }
 /* #socialLinks{
   position: absolute;

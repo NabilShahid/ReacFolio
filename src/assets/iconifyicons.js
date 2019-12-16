@@ -10,8 +10,7 @@ import Npm from "@iconify/icons-logos/npm";
 import Nest from "@iconify/icons-logos/nestjs";
 import Redux from "@iconify/icons-logos/redux";
  
-import Web from '@iconify/icons-ls/web';
-// import Mobile from '@iconify/icons-icomoon-free/mobile2';
+
 
 
 export const TechologiesIcons = {
@@ -28,10 +27,7 @@ export const TechologiesIcons = {
   Redux
 };
 
-export const PlatformIcons={
-  Web,
-  // Mobile
-}
+
 // npm install   @iconify/icons-ls
 // import { Icon, InlineIcon } from '@iconify/react';
 // import webIcon from '@iconify/icons-ls/web';

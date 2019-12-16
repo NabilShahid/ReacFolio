@@ -4,3 +4,23 @@
     overflow-y: auto;
     overflow-x: hidden;
   }
+  .profileImage{
+    border-radius: 50%;
+    width: 190px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
+  }
+  .aboutMeHeader{
+    font-size: 25px;
+    color: var(--color-1);
+    margin: 10px 0px;
+  }
+
+  .aboutMeText{
+    font-size: 14px;
+    color: #797979;
+  }
+
+  .aboutMeDiv{
+    padding: 0px 15px;
+  }

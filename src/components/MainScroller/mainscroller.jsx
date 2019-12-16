@@ -10,7 +10,6 @@ import UserInfo from "../UserInfo/userinfo";
 import SlideReveal from "react-reveal/Slide";
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
-import { ReactComponent as StackOverflowLogo } from "../../assets/svgs/so-icon.svg";
 import Fade from "react-reveal/Fade";
 
 import Flip from "react-reveal/Flip";
