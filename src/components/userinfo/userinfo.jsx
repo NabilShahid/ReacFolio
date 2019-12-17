@@ -1,13 +1,18 @@
 import React from "react";
-import CvPic from "../../../src/assets/images/download.png";
 import "./userinfo.css";
+import { ReactComponent as Code } from "../../assets/svgs/programming-code-signs.svg";
 
 const UserInfo = ({ userName }) => {
   return (
     <div id="userInfoDiv">
-      <div style={{ display: "inline-block" }} id="userImage">
-        {/* <img id="userImage" src={CvPic} /> */}
-      </div>
+      <Code
+        style={{
+          width: "30px",
+          height: "30px",
+          marginBottom: "5px",
+          fill: "var(--color-2)"
+        }}
+      />
       <span id="userName">{userName}</span>
     </div>
   );

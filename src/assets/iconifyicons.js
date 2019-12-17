@@ -9,7 +9,10 @@ import Vscode from "@iconify/icons-logos/visual-studio-code";
 import Npm from "@iconify/icons-logos/npm";
 import Nest from "@iconify/icons-logos/nestjs";
 import Redux from "@iconify/icons-logos/redux";
- 
+import Webpack from '@iconify/icons-logos/webpack';
+import Typescript from '@iconify/icons-logos/typescript-icon';
+import Html from '@iconify/icons-logos/html-5';
+
 
 
 
@@ -24,7 +27,10 @@ export const TechologiesIcons = {
   Vscode,
   Npm,
   Nest,
-  Redux
+  Redux,
+  Webpack,
+  Typescript,  
+  Html
 };
 
 

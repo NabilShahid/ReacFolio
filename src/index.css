@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Cairo|Rubik&display=swap");
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @import "./assets//styleVars.css";
+
+
 :root {
   /* Global colors */
   --main-blue: #1c7aca;

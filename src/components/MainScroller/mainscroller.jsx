@@ -7,19 +7,18 @@ import ProjectsPage from "../ProjectsPage/projectspage";
 import ExperiencePage from "../ExperiencePage/experiencepage";
 import UserInfo from "../UserInfo/userinfo";
 
-import SlideReveal from "react-reveal/Slide";
 // import ScrollSection from "../ScrollSection/scrollsection";
-import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
+import { Fullpage, Slide } from "fullpage-react";
 import Fade from "react-reveal/Fade";
 
-import Flip from "react-reveal/Flip";
-import ScrollSwipe from "scroll-swipe";
 import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
+import ScrollAnimation from "react-animate-on-scroll";
+
 // import $ from 'jquery';
 
 // import AngularIcon from "../../../src/assets/images/angular.png";
-const { changeFullpageSlide, changeHorizontalSlide } = Fullpage;
+const { changeFullpageSlide } = Fullpage;
 const fullPageOptions = {
   // for mouse/wheel events
   // represents the level of force required to generate a slide change on non-mobile, 10 is default
@@ -101,19 +100,26 @@ class MainScroller extends Component {
               </div>
             </Slide>,
             <Slide style={{ background: "white", ...allSlidesStyle }}>
-              <AboutPage />
+              <ScrollAnimation duration={0.5} animateIn="fadeInRight">
+                <AboutPage />
+              </ScrollAnimation>
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <Fade spy={activeIndex}>
+              <ScrollAnimation duration={0.5} animateIn="fadeInLeft">
                 <ProjectsPage />
-              </Fade>
+              </ScrollAnimation>
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <ExperiencePage />
+                <ExperiencePage />{" "}
             </Slide>,
             // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
             <Slide style={{ background: "white", ...allSlidesStyle }}>
-              Contact
+              <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
+                <div>
+                  Some Text Some Text Some Text Some Text Some Text Some Text
+                  Some Text Some Text Some Text Some Text Some Text
+                </div>
+              </ScrollAnimation>
             </Slide>
           ]}
         />

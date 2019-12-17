@@ -1,7 +1,9 @@
 import React from "react";
 import { ReactComponent as GitHubLogo } from "../../assets/svgs/github-logo.svg";
 import { ReactComponent as StackOverflowLogo } from "../../assets/svgs/iconfinder_stackoverflow_1220346.svg";
-import { ReactComponent as LinkedInLogo } from "../../assets/svgs/iconfinder_linkedin_287553.svg";
+import { ReactComponent as LinkedInLogo } from "../../assets/svgs/linkedin.svg";
+import { ReactComponent as CvIcon } from "../../assets/svgs/cv.svg";
+
 import IconButton from "../IconButton/iconbutton";
 import "./profilelinks.css";
 const ProfileLinks = () => {
@@ -27,18 +29,17 @@ const ProfileLinks = () => {
           Icon={LinkedInLogo}
           Text="LinkedIn"
           Link="Github"
-          Style={iconStyle}
+          Style={{ height: "24px", width: "24px", marginLeft:"5px"}}
         />
 
         <IconButton
-          Icon={LinkedInLogo}
-          Text="LinkedIn"
+          Icon={CvIcon}
+          Text="Download CV"
           Link="Github"
-          Style={iconStyle}
+          Style={{ height: "28px", width: "24px", marginLeft:"4px"}}
+
         />
-        {/* <GitHubLogo style={iconStyle} />
-      <StackOverflowLogo style={{...iconStyle,marginLeft:"10px"}} />
-      <LinkedInLogo style={{...iconStyle,marginLeft:"15px"}} /> */}
+      
       </div>
     </div>
   );
