@@ -37,11 +37,11 @@ const ProjectInfo = ({ project }) => {
   );
   return (
     <div className="projectsInfoDiv">
+      <div   className="projectInfoName">{project.Name}</div><div className="projectInfoSubtitle">Workflow Automation Platform</div>
+      <div className="projectInfoDescription">{project.Description}</div>
       <div className="gallery">
         <ImageGallery showFullscreenButton={false} showPlayButton={false} size="100px" items={images} />
       </div>
-      <div style={{color:project.Color}} className="projectInfoName">{project.Name}</div><div className="projectInfoSubtitle">Workflow Automation Platform</div>
-      <div className="projectInfoDescription">{project.Description}</div>
     </div>
   );
 };

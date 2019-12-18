@@ -66,7 +66,7 @@ class MainScroller extends Component {
           id="navbarDiv"
           className={activeIndex == 0 ? "navbarFirstPage" : "navbarPage"}
         >
-          <div className="row">
+          <div style={{display:"flex"}}>
             <div className="col-sm-3">
               {/* Nabil Shahid */}
               <UserInfo userName="Nabil Shahid" />

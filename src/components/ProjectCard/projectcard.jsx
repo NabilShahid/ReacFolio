@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./projectcard.css";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons, PlatformIcons } from "../../assets/iconifyicons";
-import { ReactComponent as Web } from "../../assets/svgs/webicon.svg";
+import {PLATFORM_ICONS} from "../../constants.js";
+
 class ProjectCard extends Component {
   state = {};
   render() {
@@ -11,12 +12,14 @@ class ProjectCard extends Component {
       Description,
       Color,
       ImageFile,
-      Technologies
+      Technologies,
+      Platform
     } = this.props.project;
     const { action, project } = this.props;
+    const PlatformIcon=PLATFORM_ICONS[Platform];
     return (
       <div className="projectCard" style={{ borderBottomColor: Color }}>
-        <div className="projectCardAvatar" style={{background:Color}}><Web
+        <div className="projectCardAvatar" style={{background:Color}}><PlatformIcon
                 style={{ width: "34px", height: "34px", fill:"white"}}
                />
             </div>
@@ -31,13 +34,10 @@ class ProjectCard extends Component {
               className="projectLearnMoreDiv"
             >
               Details
-              {/* <InfoIcon
-                style={{ width: "22px", height: "22px", fill: Color }}
-              /> */}
+              
             </div>
           </div>
-           {/* <div className="projectDescription">{Description}</div> */}
-          {/* <div className="projectInfoHeader">Technogies</div> */}
+         
           <div className="projectTechnologies">
             {Technologies.map(t => (
               <Icon

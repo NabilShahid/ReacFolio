@@ -3,17 +3,18 @@
 }
 .gallery{
     max-width: 70vw;
-    margin: 10px 3px;
-    border-bottom: 3px solid #135da2;
+    margin: 9px 3px;
+    border: 1px solid #d2d2d2;
+    padding: 5px;
+    border-radius: 5px;
 }
 .projectInfoName{
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 30px;
+    color: var(--color-1);
 }
 .projectInfoSubtitle{
-    font-size: 15px;
-    font-weight: bold;
-    color: #909090;
+    font-size: 13px;
+     color: dimgray;
     margin-top: -5px;
 }
 .projectInfoDescription{
@@ -26,15 +27,18 @@
     height: 30px;
     fill: #a2a2a2;
 }
-.styles_closeButton__20ID4 {
+/* .styles_closeButton__20ID4 {
     bottom: 2px ;
     right: 2px ;
     top: unset;
     
-}
+} */
 .image-gallery-left-nav, .image-gallery-right-nav{
     font-size: 2.5em;
     padding: 0px 15px;
+}
+.image-gallery-slides{
+    border-radius: 3px;
 }
 .image-gallery-slide-wrapper{
 height: 350px;

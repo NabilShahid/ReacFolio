@@ -21,6 +21,10 @@
   color: #819aff!important;
   border-bottom: 2px solid #819aff;
 }
+.VerticalSlide .animated{
+  height: 100%;
+  overflow-y: auto;
+}
 /* #socialLinks{
   position: absolute;
   color: white;
@@ -33,3 +37,4 @@
    }
 
 } */
+
