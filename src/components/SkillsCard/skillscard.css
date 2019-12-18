@@ -9,19 +9,19 @@
 .skillsSectionHeader{
     font-size: 15px;
     border-bottom: 1px solid #d0d0d0;
-    margin-bottom: 10px;
-    padding-bottom: 3px;
+     padding-bottom: 3px;
     margin-top: 15px;
 }
 .singleSkill{
+    display: inline-block;
     background: rebeccapurple;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     padding: 5px 10px;
     margin-right: 10px;
+    margin-top: 8px;
     border-radius: 20px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 .skillsSectionBody{
-    margin-top: 15px;
-}
+ }

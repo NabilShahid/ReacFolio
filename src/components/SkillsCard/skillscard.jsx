@@ -3,6 +3,12 @@ import { SKILLS } from "../../constants";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
 import "./skillscard.css";
+const iconStyle={
+  width: "19px",
+  height: "19px",
+  marginRight: "5px",
+  marginTop:"-3px"
+};
 const SkillsCard = () => {
   return (
     <div id="skillsCard">
@@ -15,15 +21,12 @@ const SkillsCard = () => {
             {skillarea.Items.map(item => (
               <span className="singleSkill" style={{background:item.Color}}>
                 <span className="singleSkillIcon">
-                  <Icon
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      marginRight: "5px",
-                      marginTop:"-3px"
-                    }}
+                  {item.IconSvg&&<item.Icon style={iconStyle}/>}
+                  {!item.IconSvg&&<Icon
+                    style={iconStyle}
                     icon={TechologiesIcons[item.Icon]}
-                  />
+                  />}
+                  
                 </span>
                 <span className="singleSkillText" >{item.Name}</span>
               </span>

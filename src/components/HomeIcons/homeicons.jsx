@@ -70,7 +70,7 @@ const HomeIcons = () => {
             </div>
             <div className="homeIconsCol">
               {" "}
-              <Icon style={iconStyle} icon={TechologiesIcons.Postgresql} />{" "}
+              <Icon style={iconStyle} icon={TechologiesIcons.Typescript} />{" "}
             </div>
             <div className="homeIconsCol">
               {" "}
@@ -89,8 +89,7 @@ const HomeIcons = () => {
               <Icon style={iconStyle} icon={TechologiesIcons.Javascript} />{" "}
             </div>
             <div className="homeIconsCol">
-              {" "}
-              <Icon style={iconStyle} icon={TechologiesIcons.Typescript} />{" "}
+              <Icon style={iconStyle} icon={TechologiesIcons.Postgresql} />{" "}
             </div>
             <div className="homeIconsCol">
               {" "}
@@ -102,7 +101,7 @@ const HomeIcons = () => {
             </div>
           </div>
         </Flash>
-      </div>      
+      </div>
     </div>
   );
 };

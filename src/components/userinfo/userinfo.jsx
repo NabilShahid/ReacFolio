@@ -10,7 +10,7 @@ const UserInfo = ({ userName }) => {
           width: "30px",
           height: "30px",
           marginBottom: "5px",
-          fill: "var(--color-2)"
+          fill: "white"
         }}
       />
       <span id="userName">{userName}</span>

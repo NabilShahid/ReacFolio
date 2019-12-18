@@ -105,7 +105,7 @@ class MainScroller extends Component {
               </ScrollAnimation>
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <ScrollAnimation duration={0.5} animateIn="fadeInLeft">
+              <ScrollAnimation duration={0.5} animateIn="fadeInRight">
                 <ProjectsPage />
               </ScrollAnimation>
             </Slide>,

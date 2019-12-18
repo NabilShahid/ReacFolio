@@ -35,7 +35,7 @@
   /* -webkit-transform: scaleX(0.8); */
   -webkit-transform: scaleY(2.5) scaleX(1.9);
   transform: scaleY(2.5) scaleX(1.8);
-  color: var(--color-2);
+  color: #674494;
   font-size: 45px;
   line-height: 40px;
   -webkit-animation-name: opacity;

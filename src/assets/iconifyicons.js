@@ -12,7 +12,14 @@ import Redux from "@iconify/icons-logos/redux";
 import Webpack from '@iconify/icons-logos/webpack';
 import Typescript from '@iconify/icons-logos/typescript-icon';
 import Html from '@iconify/icons-logos/html-5';
-
+import Css from '@iconify/icons-logos/css-3'; 
+import Ionic from '@iconify/icons-logos/ionic';
+import Rxjs from '@iconify/icons-logos/reactivex';
+import Babel from '@iconify/icons-logos/babel';
+import Express from '@iconify/icons-logos/express';
+import Googlecloudfunctions from '@iconify/icons-logos/google-cloud-functions';
+import Dotnet from '@iconify/icons-logos/dotnet';
+import Git from '@iconify/icons-logos/git-icon';
 
 
 
@@ -30,7 +37,15 @@ export const TechologiesIcons = {
   Redux,
   Webpack,
   Typescript,  
-  Html
+  Html,
+  Css,
+  Ionic,
+  Rxjs,
+  Babel,
+  Express,
+  Googlecloudfunctions,
+  Dotnet,
+  Git
 };
 
 
