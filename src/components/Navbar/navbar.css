@@ -1,48 +1,128 @@
-.container{
-    padding-top: 13px;
-    padding-bottom: 13px;
-    overflow-x:auto;
-    white-space: nowrap; 
-    font-family: 'Cairo';
+.container {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: "Cairo";
 }
-.container a
-{
-    color: #FFF;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0px 10px;
-    padding: 8px 10px;
+.container a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0px 10px;
+  padding: 8px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+.navBarToggleButton {  
+  display: none;
+}
+.navLink {
+  position: relative;
+  margin: 0px 10px;
+  padding: 12px 5px;
+  cursor: pointer;
+}
+.selectedNavItem {
+  /* color: #03A9F4!important; */
+  border-bottom: 2px solid #819aff;
+}
+.selectedNavItem {
+  color: #819aff !important;
+  border-bottom: 2px solid #819aff;
+}
+div.brackets a:before,
+div.brackets a:after {
+  position: absolute;
+  opacity: 0;
+  font-size: 27px;
+  top: 0px;
+  transition: all 0.3s;
+}
+.navbar {
+  background: linear-gradient(
+    120deg,
+    var(--color-1),
+    var(--color-4),
+    var(--color-5)
+  );
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 0;
+  transition: 0.4s;
+}
+
+.navbarFirstPage {
+  background: unset;
+  box-shadow: unset;
+}
+div.brackets a:before {
+  content: "[";
+  left: -10px;
+  top: 4px;
+  transform: translateX(10px);
+}
+
+div.brackets a:after {
+  content: "]";
+  right: -10px;
+  top: 4px;
+  transform: translateX(-10px);
+}
+
+div.brackets a:hover:before,
+div.brackets a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.navBarExpandButton {
+  display: none;
+}
+
+.expandedNavBar {
+  display: block !important;
+}
+.navbar-nav {
+  justify-content: flex-end;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .navBarExpandButton {
+    display: inline-block;
+  }
+  .container {
+    display: none;
+  }
+  .selectedNavItem {
+    border-bottom: 0px;
+  }
+  div.brackets a:before {
+    display: none;
+  }
+
+  div.brackets a:after {
+    display: none;
+  }
+  .navbar-nav {
+    justify-content: unset;
+  }
+  .navLink {
     position: relative;
-    z-index: 0;
+    padding: 5px 0px;
+  }
+  .navbar-collapse {
+    background: linear-gradient(
+      120deg,
+      var(--color-1),
+      var(--color-4),
+      var(--color-5)
+    );
+  }
+  .navBarToggleButton {
+    margin-right: 10px;
+    margin-top: -3px;
+    display: block;
     cursor: pointer;
-}
-div.brackets a:before, div.brackets a:after
-{
-    position: absolute;
-    opacity: 0;
-    font-size: 27px;
-    top: 0px;
-    transition: all 0.3s;
-}
-
-div.brackets a:before
-{
-    content: '[';
-    left: -10px;
-    top: 5px;
-    transform: translateX(10px);
-}
-
-div.brackets a:after
-{
-    content: ']';
-    right: -10px;
-    top: 5px;
-    transform: translateX(-10px);
-}
-
-div.brackets a:hover:before, div.brackets a:hover:after
-{
-    opacity: 1;
-    transform: translateX(0px);
+  }
 }

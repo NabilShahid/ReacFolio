@@ -5,7 +5,6 @@ import IntroText from "../IntroText/introtext";
 import Navbar from "../Navbar/navbar";
 import ProjectsPage from "../ProjectsPage/projectspage";
 import ExperiencePage from "../ExperiencePage/experiencepage";
-import UserInfo from "../UserInfo/userinfo";
 
 // import ScrollSection from "../ScrollSection/scrollsection";
 import { Fullpage, Slide } from "fullpage-react";
@@ -66,10 +65,8 @@ class MainScroller extends Component {
           id="navbarDiv"
           className={activeIndex == 0 ? "navbarFirstPage" : "navbarPage"}
         >
-          <div style={{display:"flex"}}>
-            <div className="col-sm-3">
-              {/* Nabil Shahid */}
-              <UserInfo userName="Nabil Shahid" />
+             {/* <div className="col-sm-3">
+               <UserInfo userName="Nabil Shahid" />
             </div>
             <div className="col-sm-9" style={{ textAlign: "right" }}>
               <Navbar
@@ -77,9 +74,14 @@ class MainScroller extends Component {
                 activeIndex={activeIndex}
                 outsideSlideChange={this.outsideSlideChange}
               />
-            </div>
-          </div>
-        </div>
+            </div> */}
+            <Navbar
+                changeFullpageSlide={changeFullpageSlide}
+                activeIndex={activeIndex}
+                outsideSlideChange={this.outsideSlideChange}
+              />
+          
+         </div>
         <Fullpage
           ref={this.scrollerRef}
           onSlideChangeStart={this.onSlideChangeStart}

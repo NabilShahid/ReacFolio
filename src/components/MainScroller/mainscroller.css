@@ -5,22 +5,9 @@
   color: white;
   transition: 0.4s;
 }
-.navbarFirstPage {
-  background: unset;
-  box-shadow: unset;
-}
-.navbarPage {
-  background: linear-gradient(120deg, var(--color-1),var(--color-4), var(--color-5));
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-.navbarFirstPage .selectedNavItem{
-  /* color: #03A9F4!important; */
-  border-bottom: 2px solid #819aff;
-}
-.navbarPage .selectedNavItem{
-  color: #819aff!important;
-  border-bottom: 2px solid #819aff;
-}
+
+
+
 .VerticalSlide .animated{
   height: 100%;
   overflow-y: auto;
