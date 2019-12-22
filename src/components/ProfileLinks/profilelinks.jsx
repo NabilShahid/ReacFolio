@@ -24,7 +24,7 @@ const ProfileLinks = () => {
           Style={{ height: "25px", width: "27px", marginTop: "-4px" }}
         />
       </div>
-      <div className="profileIconsRow" style={{ marginTop: "10px" }}>
+      <div className="profileIconsRow">
         <IconButton
           Icon={LinkedInLogo}
           Text="LinkedIn"

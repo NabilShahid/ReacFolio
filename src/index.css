@@ -48,7 +48,7 @@ div {
 ::-webkit-scrollbar-thumb:hover {
   background: #CCCCCC; 
 }
-@media (max-width: 480px) {
+@media (max-width: 992px) {
 
   [class*="col-"] {
       margin-bottom: 10px;
