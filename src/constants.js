@@ -77,32 +77,32 @@ export const SKILLS = [
    
     Title: "Front End",
     Items: [
-      { Name: "Angular", Color: "#575fcf", Icon: "Angular" },
-      { Name: "React", Color: "#596275", Icon: "React" },
-      { Name: "JavaScript", Color: "#0984e3", Icon: "Javascript" },
-      { Name: "TypeScript", Color: "#575fcf", Icon: "Typescript" },
-      { Name: "Redux", Color: "#ff5e57", Icon: "Redux" },
-      { Name: "Webpack", Color: "#0984e3", Icon: "Webpack" },
-      { Name: "Babel", Color: "#596275", Icon: "Babel" },
-      { Name: "Rxjs", Color: "#ff5e57", Icon: "Rxjs" },
-      { Name: "HTML", Color: "#0984e3", Icon: "Html" },
-      { Name: "CSS", Color: "#1289A7", Icon: "Css" }
+      { Name: "Angular", Color: "var(--color-1)", Icon: "Angular" },
+      { Name: "React", Color: "var(--color-1)", Icon: "React" },
+      { Name: "JavaScript", Color: "var(--color-1)", Icon: "Javascript" },
+      { Name: "TypeScript", Color: "var(--color-1)", Icon: "Typescript" },
+      { Name: "Redux", Color: "var(--color-1)", Icon: "Redux" },
+      { Name: "Webpack", Color: "var(--color-1)", Icon: "Webpack" },
+      { Name: "Babel", Color: "var(--color-1)", Icon: "Babel" },
+      { Name: "Rxjs", Color: "var(--color-1)", Icon: "Rxjs" },
+      { Name: "HTML", Color: "var(--color-1)", Icon: "Html" },
+      { Name: "CSS", Color: "var(--color-1)", Icon: "Css" }
     ]
   },
   {
      
     Title: "Back End",
     Items: [
-      { Name: "Node.js", Color: "#575fcf", Icon: "Node" },
-      { Name: "NestJS", Color: "#596275", Icon: "Nest" },
-      { Name: "CSharp", Color: "#8e44ad", Icon: "Csharp" },
-      { Name: ".Net", Color: "#ff5e57", Icon: "Dotnet" },
-      { Name: "JavaScript", Color: "#8e44ad", Icon: "Javascript" },
-      { Name: "TypeScript", Color: "#596275", Icon: "Typescript" },
-      { Name: "Express.js", Color: "#1289A7", Icon: "Express" },
+      { Name: "Node.js", Color: "var(--color-5)", Icon: "Node" },
+      { Name: "NestJS", Color: "var(--color-5)", Icon: "Nest" },
+      { Name: "CSharp", Color: "var(--color-5)", Icon: "Csharp" },
+      { Name: ".Net", Color: "var(--color-5)", Icon: "Dotnet" },
+      { Name: "JavaScript", Color: "var(--color-5)", Icon: "Javascript" },
+      { Name: "TypeScript", Color: "var(--color-5)", Icon: "Typescript" },
+      { Name: "Express.js", Color: "var(--color-5)", Icon: "Express" },
       {
         Name: "Google Cloud Functions",
-        Color: "#596275",
+        Color: "var(--color-5)",
         Icon: "Googlecloudfunctions"
       }
     ]
@@ -110,12 +110,12 @@ export const SKILLS = [
   {
     Title: "Database",
     Items: [
-      { Name: "Postgresql", Color: "#575fcf", Icon: "Postgresql" },
-      { Name: "Firestore", Color: "#596275", Icon: "Firebase" },
-      { Name: "SQL", Color: "#0984e3", Icon: Sql, IconSvg: true },
+      { Name: "Postgresql", Color: "var(--color-2)", Icon: "Postgresql" },
+      { Name: "Firestore", Color: "var(--color-2)", Icon: "Firebase" },
+      { Name: "SQL", Color: "var(--color-2)", Icon: Sql, IconSvg: true },
       {
         Name: "MS SQL Server",
-        Color: "#ff5e57",
+        Color: "var(--color-2)",
         Icon: Sqlserver,
         IconSvg: true
       }
@@ -124,7 +124,7 @@ export const SKILLS = [
   {
     Title: "Version Control",
     Items: [
-      { Name: "Git", Color: " #596275 ", Icon: "Git" }
+      { Name: "Git", Color: " var(--color-4) ", Icon: "Git" }
     ]
   },
   {/*
@@ -132,10 +132,10 @@ export const SKILLS = [
     */
     Title: "Other",
     Items: [
-      { Name: "Debugging", Color: "#596275"  },
-      { Name: "Troubleshooting", Color: "#ff5e57" },
-      { Name: "Database Indexing", Color: "#575fcf" },
-      { Name: "Query Optimization", Color: "#1289A7" }
+      { Name: "Debugging", Color: "var(--color-3)"  },
+      { Name: "Troubleshooting", Color: "var(--color-3)" },
+      { Name: "Database Indexing", Color: "var(--color-3)" },
+      { Name: "Query Optimization", Color: "var(--color-3)" }
     ]
   }
 ];

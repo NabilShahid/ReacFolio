@@ -101,7 +101,7 @@ class MainScroller extends Component {
                 <HomeIcons />
               </div>
             </Slide>,
-            <Slide style={{ background: "white", ...allSlidesStyle }}>
+            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <ScrollAnimation duration={0.5} animateIn="fadeInRight">
                 <AboutPage />
               </ScrollAnimation>
