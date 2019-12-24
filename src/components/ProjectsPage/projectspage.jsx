@@ -29,8 +29,7 @@ class ProjectsPage extends Component {
   }
   render() {
     const { modalOpen, selectedProject } = this.state;
-    console.log("projectsarray",this.projectsArray)
-    return (
+     return (
       <div id="projectsPage">
         <Modal open={modalOpen} onClose={this.setModalVisibility}>
           <ProjectInfo project={selectedProject} />
@@ -39,7 +38,7 @@ class ProjectsPage extends Component {
         {this.projectsArray.map((row,i) => (
           <div key={i} className="row projectsRow">
             {row.map((col,j) => (
-              <div key={j} className="col-sm-4">
+              <div key={j} className="col-sm-4" style={{margin:"30px 0px"}}>
                 <ProjectCard action={this.setModalVisibility} project={col} />
               </div>
             ))}

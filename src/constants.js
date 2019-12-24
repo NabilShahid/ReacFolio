@@ -71,38 +71,38 @@ export const PROJECTS = [
     Technologies: ["Javascript", "Node", "Postgresql"]
   }
 ];
-
+const SkillColor="#a9a9a9";
 export const SKILLS = [
   {
    
     Title: "Front End",
     Items: [
-      { Name: "Angular", Color: "var(--color-1)", Icon: "Angular" },
-      { Name: "React", Color: "var(--color-1)", Icon: "React" },
-      { Name: "JavaScript", Color: "var(--color-1)", Icon: "Javascript" },
-      { Name: "TypeScript", Color: "var(--color-1)", Icon: "Typescript" },
-      { Name: "Redux", Color: "var(--color-1)", Icon: "Redux" },
-      { Name: "Webpack", Color: "var(--color-1)", Icon: "Webpack" },
-      { Name: "Babel", Color: "var(--color-1)", Icon: "Babel" },
-      { Name: "Rxjs", Color: "var(--color-1)", Icon: "Rxjs" },
-      { Name: "HTML", Color: "var(--color-1)", Icon: "Html" },
-      { Name: "CSS", Color: "var(--color-1)", Icon: "Css" }
+      { Name: "Angular", Color:SkillColor, Icon: "Angular" },
+      { Name: "React", Color:SkillColor, Icon: "React" },
+      { Name: "JavaScript", Color:SkillColor, Icon: "Javascript" },
+      { Name: "TypeScript", Color:SkillColor, Icon: "Typescript" },
+      { Name: "Redux", Color:SkillColor, Icon: "Redux" },
+      { Name: "Webpack", Color:SkillColor, Icon: "Webpack" },
+      { Name: "Babel", Color:SkillColor, Icon: "Babel" },
+      { Name: "Rxjs", Color:SkillColor, Icon: "Rxjs" },
+      { Name: "HTML", Color:SkillColor, Icon: "Html" },
+      { Name: "CSS", Color:SkillColor, Icon: "Css" }
     ]
   },
   {
      
     Title: "Back End",
     Items: [
-      { Name: "Node.js", Color: "var(--color-5)", Icon: "Node" },
-      { Name: "NestJS", Color: "var(--color-5)", Icon: "Nest" },
-      { Name: "CSharp", Color: "var(--color-5)", Icon: "Csharp" },
-      { Name: ".Net", Color: "var(--color-5)", Icon: "Dotnet" },
-      { Name: "JavaScript", Color: "var(--color-5)", Icon: "Javascript" },
-      { Name: "TypeScript", Color: "var(--color-5)", Icon: "Typescript" },
-      { Name: "Express.js", Color: "var(--color-5)", Icon: "Express" },
+      { Name: "Node.js", Color:SkillColor, Icon: "Node" },
+      { Name: "NestJS", Color:SkillColor, Icon: "Nest" },
+      { Name: "CSharp", Color:SkillColor, Icon: "Csharp" },
+      { Name: ".Net", Color:SkillColor, Icon: "Dotnet" },
+      { Name: "JavaScript", Color:SkillColor, Icon: "Javascript" },
+      { Name: "TypeScript", Color:SkillColor, Icon: "Typescript" },
+      { Name: "Express.js", Color:SkillColor, Icon: "Express" },
       {
         Name: "Google Cloud Functions",
-        Color: "var(--color-5)",
+        Color:SkillColor,
         Icon: "Googlecloudfunctions"
       }
     ]
@@ -110,12 +110,12 @@ export const SKILLS = [
   {
     Title: "Database",
     Items: [
-      { Name: "Postgresql", Color: "var(--color-2)", Icon: "Postgresql" },
-      { Name: "Firestore", Color: "var(--color-2)", Icon: "Firebase" },
-      { Name: "SQL", Color: "var(--color-2)", Icon: Sql, IconSvg: true },
+      { Name: "Postgresql", Color:SkillColor, Icon: "Postgresql" },
+      { Name: "Firestore", Color:SkillColor, Icon: "Firebase" },
+      { Name: "SQL", Color:SkillColor, Icon: Sql, IconSvg: true },
       {
         Name: "MS SQL Server",
-        Color: "var(--color-2)",
+        Color:SkillColor,
         Icon: Sqlserver,
         IconSvg: true
       }
@@ -124,7 +124,7 @@ export const SKILLS = [
   {
     Title: "Version Control",
     Items: [
-      { Name: "Git", Color: " var(--color-4) ", Icon: "Git" }
+      { Name: "Git", Color: SkillColor, Icon: "Git" }
     ]
   },
   {/*
@@ -132,10 +132,10 @@ export const SKILLS = [
     */
     Title: "Other",
     Items: [
-      { Name: "Debugging", Color: "var(--color-3)"  },
-      { Name: "Troubleshooting", Color: "var(--color-3)" },
-      { Name: "Database Indexing", Color: "var(--color-3)" },
-      { Name: "Query Optimization", Color: "var(--color-3)" }
+      { Name: "Debugging", Color:SkillColor  },
+      { Name: "Troubleshooting", Color:SkillColor },
+      { Name: "Database Indexing", Color:SkillColor },
+      { Name: "Query Optimization", Color:SkillColor }
     ]
   }
 ];

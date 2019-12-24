@@ -1,16 +1,20 @@
 .projectsInfoDiv{
     /* height: 75vh; */
 }
+.styles_modal__gNwvD{
+    border-radius: 5px;
+}
 .gallery{
-    max-width: 70vw;
+    max-width: 85vw;
     margin: 9px 3px;
     border: 1px solid #d2d2d2;
     padding: 5px;
     border-radius: 5px;
 }
 .projectInfoName{
-    font-size: 30px;
+    font-size: 27px;
     color: var(--color-1);
+    margin-top: 7px;
 }
 .projectInfoSubtitle{
     font-size: 13px;
@@ -40,10 +44,40 @@
 .image-gallery-slides{
     border-radius: 3px;
 }
-.image-gallery-slide-wrapper{
+/* .image-gallery-slide-wrapper{
 height: 350px;
-}
+} */
 .styles_closeIcon__1QwbI{
     width: 23px;
     height: 23px;
+}
+.projectLink{
+    height: 20px;
+    width: 20px;
+    fill: var(--color-1);
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+
+.githubRepoIcon{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 4px;
+    margin-right: 5px;  
+}
+
+.projectInfoRepo{
+     color: var(--color-1);
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.projectInfoRepoLink{
+    height: 17px;
+    width: 17px;
+    fill: var(--color-1);
+    margin-bottom: 1px;
+    margin-left: 5px;
+
 }

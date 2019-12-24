@@ -35,7 +35,7 @@
   /* -webkit-transform: scaleX(0.8); */
   -webkit-transform: scaleY(2.5) scaleX(1.9);
   transform: scaleY(2.5) scaleX(1.8);
-  color: #674494;
+  color: #ffffff;
   font-size: 45px;
   line-height: 40px;
   -webkit-animation-name: opacity;
@@ -140,9 +140,10 @@
   margin-left: 6px !important;
 }
 
-@media  (max-width: 992px) {
+@media  (max-width: 480px) {
   .textDiv {
     font-size: 25px;
+    top: 20vh;
   }
   #rotatingSpans:before {
     left: -25px;
