@@ -14,14 +14,16 @@
 }
 .singleSkill{
     display: inline-block;
-    background: rebeccapurple;
+    background: #8f9090 !important;
     color: white;
-    font-size: 13px;
-    padding: 5px 10px;
+    font-size: 12px;
+    padding: 6px 15px 5px 12px;
     margin-right: 10px;
     margin-top: 8px;
     border-radius: 20px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+
 }
-.skillsSectionBody{
+.singleSkillText{
+    padding: 0px 5px;
  }

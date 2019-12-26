@@ -41,7 +41,7 @@ class ProjectCard extends Component {
           <div className="projectTechnologies">
             {Technologies.map(t => (
               <Icon
-                style={{ width: "30px", height: "30px", marginRight: "10px" }}
+                style={{ width: "25px", height: "25px", marginRight: "10px" }}
                 icon={TechologiesIcons[t]}
               />
             ))}

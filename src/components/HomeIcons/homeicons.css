@@ -29,8 +29,28 @@
         bottom: 15px;
     }
     .homeIconsCol{
-        width: 46px;
-        height: 51px;
+        width: 42px;
+        height: 48px;
+        margin: 0px 0px;
+    }
+    .homeIconLarge{
+        width: 30px; 
+        height: 30px; 
+      }
+      
+      
+
+    
+  }
+  @media (min-width: 481px) and (max-width: 767px)  {
+    .homeIcons{
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+    }
+    .homeIconsCol{
+        width: 42px;
+        height: 48px;
         margin: 0px 0px;
     }
     .homeIconLarge{

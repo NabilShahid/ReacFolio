@@ -4,10 +4,10 @@ import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
 import "./skillscard.css";
 const iconStyle={
-  width: "19px",
-  height: "19px",
+  width: "25px",
+  height: "25px",
   marginRight: "5px",
-  marginTop:"-3px"
+  marginTop:"0px"
 };
 const SkillsCard = () => {
   return (
@@ -26,7 +26,7 @@ const SkillsCard = () => {
                     style={iconStyle}
                     icon={TechologiesIcons[item.Icon]}
                   />}
-                  
+                   
                 </span>
                 <span className="singleSkillText" >{item.Name}</span>
               </span>
