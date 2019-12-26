@@ -3,103 +3,211 @@ import "./homeicons.css";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
 import Flash from "react-reveal/Flash";
+import AnimatedIcon from "../AnimatedIcon/animatedicon";
 import { ReactComponent as Sql } from "../../assets/svgs/sql.svg";
 
-const durationsFlash = [5500, 6000, 6500, 7000, 7500];
+const durationsFlash = [6000, 7000, 8000, 9000, 10000, 11000];
 
 const HomeIcons = () => {
   return (
     <div className="homeIcons">
       <div className="homeIconsTable">
-        <Flash duration={durationsFlash[0]} forever={true}>
-          <div className="homeIconsRow">
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Angular} />{" "}
-            </div>
+        <div className="homeIconsRow">
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[0]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Angular}
+            />{" "}
           </div>
-        </Flash>
-        <Flash duration={durationsFlash[1]} forever={true}>
-          <div className="homeIconsRow">
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.React} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Npm} />{" "}
-            </div>
+        </div>
+
+        <div className="homeIconsRow">
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[1]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.React}
+            />{" "}
           </div>
-        </Flash>
-        <Flash duration={durationsFlash[2]} forever={true}>
-          <div className="homeIconsRow">
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Csharp} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Redux} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Webpack} />{" "}
-            </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[3]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Npm}
+            />{" "}
           </div>
-        </Flash>
-        <Flash duration={durationsFlash[3]} forever={true}>
-          <div className="homeIconsRow">
-            <div className="homeIconsCol"></div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Nest} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Node} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Typescript} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Vscode} />{" "}
-            </div>
+        </div>
+
+        <div className="homeIconsRow">
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[1]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Ionic}
+            />{" "}
           </div>
-        </Flash>
-        <Flash duration={durationsFlash[4]} forever={true}>
-          <div className="homeIconsRow">
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Firebase} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Javascript} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Postgresql} />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Sql className="homeIconLarge" />{" "}
-            </div>
-            <div className="homeIconsCol">
-              {" "}
-              <Icon className="homeIconLarge" icon={TechologiesIcons.Html} />{" "}
-            </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[5]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Redux}
+            />{" "}
           </div>
-        </Flash>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[2]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Webpack}
+            />{" "}
+          </div>
+        </div>
+
+        <div className="homeIconsRow">
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[4]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Nest}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[2]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Node}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[1]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Css}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[5]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Vscode}
+            />{" "}
+          </div>
+        </div>
+
+        <div className="homeIconsRow">
+        <div className="homeIconsCol"></div>
+
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[0]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Firebase}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[3]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Javascript}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            <AnimatedIcon
+              animDuration={durationsFlash[4]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Postgresql}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+          <AnimatedIcon
+              animDuration={durationsFlash[1]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Babel}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[1]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Html}
+            />{" "}
+          </div>
+        </div>
+        <div className="homeIconsRow">
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[0]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Rxjs}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[2]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Csharp}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            <AnimatedIcon
+              animDuration={durationsFlash[3]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Typescript}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}
+            {/* <Sql styleClass="homeIconLarge" />{" "} */}
+            <AnimatedIcon
+              animDuration={durationsFlash[1]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Googlecloudfunctions}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}
+            <AnimatedIcon
+              animDuration={durationsFlash[5]}
+              styleClass="homeIconLarge"
+              iconType={TechologiesIcons.Git}
+            />{" "}
+          </div>
+          <div className="homeIconsCol">
+            {" "}           
+             <Flash forever={true} duration={durationsFlash[2]}>
+              <Sql className="homeIconLarge" />
+            </Flash>
+          </div>
+        </div>
       </div>
     </div>
   );
