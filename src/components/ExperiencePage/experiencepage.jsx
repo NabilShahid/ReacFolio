@@ -4,6 +4,10 @@ import {
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
+import { ReactComponent as Work } from "../../assets/svgs/workexperience.svg";
+import { ReactComponent as Start } from "../../assets/svgs/power.svg";
+
 import "./experiencepage.css";
 class ExperiencePage extends Component {
   state = {};
@@ -13,16 +17,25 @@ class ExperiencePage extends Component {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "var(--main-blue)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  var(--main-blue)" }}
-            date="2011 - present"
-            iconStyle={{ background: "var(--main-blue)", color: "#fff" }}
-            // icon={<WorkIcon />}
+            contentStyle={{ background: "var(--color-1)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  var(--color-2)" }}
+            date="2019 - Present"
+            iconStyle={{
+              background: "var(--color-5)",
+              color: "white",
+              fill: "white"
+            }}
+            icon={<Work />}
           >
             <h3 className="vertical-timeline-element-title">
-              Creative Director
+              FullStack Developer
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+            <h4 className="vertical-timeline-element-subtitle">
+              AuxilioTech 
+            </h4>
+            <div className="experiencePageLocation">
+                Islamabad, Pakistan
+            </div>
             <p>
               Creative Direction, User Experience, Visual Design, Project
               Management, Team Leading
@@ -30,15 +43,18 @@ class ExperiencePage extends Component {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
-            iconStyle={{ background: "var(--main-blue)", color: "#fff" }}
-            // icon={<WorkIcon />}
+            date="2015 - 2019"
+            contentStyle={{ borderTop: "3px solid var(--color-5)" }}
+            iconStyle={{ background: "#8f9090", color: "white", fill: "white" }}
+            icon={<Work />}
           >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
-            </h4>
+            <h3 className="vertical-timeline-element-title">
+              FullStack Developer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">AbbVie Inc.</h4>
+            <div className="experiencePageLocation">
+                Islamabad, Pakistan
+            </div>
             <p>
               Creative Direction, User Experience, Visual Design, SEO, Online
               Marketing
@@ -46,83 +62,29 @@ class ExperiencePage extends Component {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2008 - 2010"
-            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
-
-            iconStyle={{ background: "var(--main-blue)", color: "#fff" }}
-            // icon={<WorkIcon />}
+            date="2015"
+            contentStyle={{ borderTop: "3px solid var(--color-5)" }}
+            iconStyle={{ background: "#8f9090", color: "#fff", fill: "white" }}
+            icon={<Graduation />}
           >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h3 className="vertical-timeline-element-title">
+              Computer Scientist
+            </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Los Angeles, CA
+              National University of Computer and Emerging Sciences Islamabad
+              (FAST)
             </h4>
             <p>User Experience, Visual Design</p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2006 - 2008"
-            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
 
-            iconStyle={{ background: "var(--main-blue)", color: "#fff" }}
-            // icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
-            </h4>
-            <p>User Experience, Visual Design</p>
-          </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="April 2013"
-            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
-
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            // icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Content Marketing for Web, Mobile and Social Media
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Online Course
-            </h4>
-            <p>Strategy, Social Media</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="November 2012"
-            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
-
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            // icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Agile Development Scrum Master
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Certification
-            </h4>
-            <p>Creative Direction, User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2002 - 2006"
-            contentStyle={{borderTop:"3px solid var(--main-blue)"}}
-
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            // icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Interactive Digital Media Visual Imaging
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Bachelor Degree
-            </h4>
-            <p>Creative Direction, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-            // icon={<StarIcon />}
+            date="2011"
+            iconStyle={{
+              background: "var(--color-5)",
+              color: "#fff",
+              fill: "white"
+            }}
+            icon={<Start />}
           />
         </VerticalTimeline>
       </div>
