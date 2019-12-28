@@ -69,6 +69,17 @@ export const PROJECTS = [
     ImagesFolder: "Ndis",
     ImageCount: 5,
     Technologies: ["Javascript", "Node", "Postgresql"]
+  },
+  {
+    Name: "Portfolio",
+    Description:
+      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+    Color: "var(--color-1)",
+    ImageFile: "portfolio.PNG",
+    Platform: "Web",
+    ImagesFolder: "Portfolio",
+    ImageCount: 1,
+    Technologies: ["Javascript", "Node", "Postgresql"]
   }
 ];
 const SkillColor="#a9a9a9";
