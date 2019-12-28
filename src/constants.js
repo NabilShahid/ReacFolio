@@ -34,10 +34,13 @@ export const PROJECTS = [
     ImagesFolder: "RapidFlow",
     ImageCount: 9,
     Technologies: [
-      "Javascript",
       "Angular",
+      "Typescript",
       "Csharp",
-      { Name: "Sql", Icon: Sql }
+      "Dotnet",
+
+      { Name: "Sql", Icon: Sql },
+      { Name: "Mssql", Icon: Sqlserver }
     ]
   },
   {
@@ -49,29 +52,15 @@ export const PROJECTS = [
     Platform: "Web",
     ImagesFolder: "RapidFlowAppStudio",
     ImageCount: 9,
-    Technologies: ["Javascript", "Node", "Postgresql"]
-  },
-  {
-    Name: "Cointec",
-    Description:
-      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
-    Color: "var(--color-5)",
-    ImageFile: "cointec.PNG",
-    Platform: "Web",
-    ImagesFolder: "Cointec",
-    ImageCount: 3,
-    Technologies: ["Javascript", "Node", "Postgresql"]
-  },
-  {
-    Name: "Eventrone",
-    Description:
-      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
-    Color: "var(--color-2)",
-    ImageFile: "eventrone.PNG",
-    Platform: "Web",
-    ImagesFolder: "Eventrone",
-    ImageCount: 5,
-    Technologies: ["Javascript", "Node", "Postgresql"]
+    Technologies: [
+      "Angular",
+      "Typescript",
+      "Nest",
+      "Node",
+
+      { Name: "Sql", Icon: Sql },
+      "Postgresql"
+    ]
   },
   {
     Name: "Ndis",
@@ -82,7 +71,7 @@ export const PROJECTS = [
     Platform: "Desktop",
     ImagesFolder: "Ndis",
     ImageCount: 5,
-    Technologies: ["Javascript", "Node", "Postgresql"]
+    Technologies: ["Csharp", "Dotnet", { Name: "Sql", Icon: Sql }, { Name: "Mssql", Icon: Sqlserver }]
   },
   {
     Name: "Portfolio",
@@ -93,6 +82,28 @@ export const PROJECTS = [
     Platform: "Web",
     ImagesFolder: "Portfolio",
     ImageCount: 1,
+    Technologies: ["React","Javascript","Firebase"]
+  },
+  {
+    Name: "Cointec",
+    Description:
+      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+    Color: "var(--color-5)",
+    ImageFile: "cointec.PNG",
+    Platform: "Web",
+    ImagesFolder: "Cointec",
+    ImageCount: 3,
+    Technologies: ["React", "Javascript", "Node"]
+  },
+  {
+    Name: "Eventrone",
+    Description:
+      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+    Color: "var(--color-2)",
+    ImageFile: "eventrone.PNG",
+    Platform: "Web",
+    ImagesFolder: "Eventrone",
+    ImageCount: 5,
     Technologies: ["Javascript", "Node", "Postgresql"]
   }
 ];

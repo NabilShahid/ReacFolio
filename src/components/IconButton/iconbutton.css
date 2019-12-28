@@ -18,11 +18,11 @@
     transition: 0.3;
 }
 .iconButtonText {
-  font-size: 14px;
+  font-size: 13px;
   margin-left: 10px;
 }
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .iconButtonText{
     font-size: 13px;
   }
-}
+} */

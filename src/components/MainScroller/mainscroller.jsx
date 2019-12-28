@@ -50,8 +50,7 @@ class MainScroller extends Component {
     super(props);
     this.scrollerRef = React.createRef();
   }
-  previousActiveIndex=0;
-  componentDidMount() {
+   componentDidMount() {
     setTimeout(() => {
       this.scrollerRef.current.onVerticalScroll = undefined;
       this.scrollerRef.current.ss.scrollPreventDefault = false;
@@ -91,11 +90,11 @@ class MainScroller extends Component {
                 <HomeIcons />
               </div>
             </Slide>,
-            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+            <Slide  style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <AboutPage />
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <ScrollAnimation  animateIn={this.previousActiveIndex<activeIndex?"fadeInUp":"fadeInDown"}>
+              <ScrollAnimation duration={0.5} animateIn="zoomIn">
                 <ProjectsPage />
               </ScrollAnimation>
             </Slide>,
@@ -116,12 +115,11 @@ class MainScroller extends Component {
       </div>
     );
   }
-  onSlideChangeStart = (a, b, c, { activeSlide }) => {
-     this.setState({ activeIndex: activeSlide });
+  onSlideChangeStart = (a, b, {lastActive}, { activeSlide }) => {
+      this.setState({ activeIndex: activeSlide });
   };
   outsideSlideChange = index => {
-    this.previousActiveIndex=this.state.activeIndex;
-    this.setState({ activeIndex: index });
+     this.setState({ activeIndex: index });
   };
 }
 
