@@ -50,6 +50,7 @@ class MainScroller extends Component {
     super(props);
     this.scrollerRef = React.createRef();
   }
+  previousActiveIndex=0;
   componentDidMount() {
     setTimeout(() => {
       this.scrollerRef.current.onVerticalScroll = undefined;
@@ -65,23 +66,12 @@ class MainScroller extends Component {
           id="navbarDiv"
           className={activeIndex == 0 ? "navbarFirstPage" : "navbarPage"}
         >
-             {/* <div className="col-sm-3">
-               <UserInfo userName="Nabil Shahid" />
-            </div>
-            <div className="col-sm-9" style={{ textAlign: "right" }}>
-              <Navbar
-                changeFullpageSlide={changeFullpageSlide}
-                activeIndex={activeIndex}
-                outsideSlideChange={this.outsideSlideChange}
-              />
-            </div> */}
-            <Navbar
-                changeFullpageSlide={changeFullpageSlide}
-                activeIndex={activeIndex}
-                outsideSlideChange={this.outsideSlideChange}
-              />
-          
-         </div>
+          <Navbar
+            changeFullpageSlide={changeFullpageSlide}
+            activeIndex={activeIndex}
+            outsideSlideChange={this.outsideSlideChange}
+          />
+        </div>
         <Fullpage
           ref={this.scrollerRef}
           onSlideChangeStart={this.onSlideChangeStart}
@@ -102,17 +92,15 @@ class MainScroller extends Component {
               </div>
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <ScrollAnimation duration={0.5} animateIn="fadeInRight">
-                <AboutPage />
-              </ScrollAnimation>
+              <AboutPage />
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <ScrollAnimation duration={0.5} animateIn="fadeInRight">
+              <ScrollAnimation  animateIn={this.previousActiveIndex<activeIndex?"fadeInUp":"fadeInDown"}>
                 <ProjectsPage />
               </ScrollAnimation>
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-                <ExperiencePage />{" "}
+              <ExperiencePage />{" "}
             </Slide>,
             // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
             <Slide style={{ background: "white", ...allSlidesStyle }}>
@@ -129,9 +117,10 @@ class MainScroller extends Component {
     );
   }
   onSlideChangeStart = (a, b, c, { activeSlide }) => {
-    this.setState({ activeIndex: activeSlide });
+     this.setState({ activeIndex: activeSlide });
   };
   outsideSlideChange = index => {
+    this.previousActiveIndex=this.state.activeIndex;
     this.setState({ activeIndex: index });
   };
 }

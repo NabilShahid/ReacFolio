@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import "./projectcard.css";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons, PlatformIcons } from "../../assets/iconifyicons";
-import {PLATFORM_ICONS} from "../../constants.js";
+import { PLATFORM_ICONS,ICON_TOOLTIPS } from "../../constants.js";
+import ReactTooltip from 'react-tooltip'
+import ScrollAnimation from "react-animate-on-scroll";
 
 class ProjectCard extends Component {
   state = {};
+  technologyIconStyle = { width: "25px", height: "25px", marginRight: "10px" };
   render() {
     const {
       Name,
@@ -16,13 +19,14 @@ class ProjectCard extends Component {
       Platform
     } = this.props.project;
     const { action, project } = this.props;
-    const PlatformIcon=PLATFORM_ICONS[Platform];
+    const PlatformIcon = PLATFORM_ICONS[Platform];
     return (
       <div className="projectCard" style={{ borderBottomColor: Color }}>
-        <div className="projectCardAvatar" style={{background:Color}}><PlatformIcon
-                style={{ width: "34px", height: "34px", fill:"white"}}
-               />
-            </div>
+        <div className="projectCardAvatar" style={{ background: Color }}>
+          <PlatformIcon
+            style={{ width: "34px", height: "34px", fill: "white" }}
+          />
+        </div>
         <div className="projectCardContentDiv">
           <div className="projectName">
             <div className="projectNameText">{Name}</div>
@@ -34,27 +38,34 @@ class ProjectCard extends Component {
               className="projectLearnMoreDiv"
             >
               Details
-              
             </div>
           </div>
-         
+          <ReactTooltip/>
+
+
           <div className="projectTechnologies">
             {Technologies.map(t => (
-              <Icon
-                style={{ width: "25px", height: "25px", marginRight: "10px" }}
-                icon={TechologiesIcons[t]}
-              />
+              <span className="projectCardIcons" >
+                {typeof t == "string" ? (
+                  <Icon
+                    style={this.technologyIconStyle}
+                    icon={TechologiesIcons[t]}
+                    data-tip={ICON_TOOLTIPS[t]}
+                  />
+                ) : (
+                  <t.Icon data-tip={ICON_TOOLTIPS[t.Name]} style={this.technologyIconStyle} />
+                )}
+              </span>
             ))}
           </div>
-           <img
+          <img
             className="projectCardImg"
             alt="Projects"
             src={require(`../../assets/images/ProjectsTitleImages/${ImageFile}`)}
           />{" "}
         </div>
-       
       </div>
-    );
+     );
   }
 }
 

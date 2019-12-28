@@ -13,6 +13,7 @@ setTimeout(() => {
   }
 
   function changeWord() {
+    if(words.length==0) return;
     var cw = wordArray[currentWord];
     var nw =
       currentWord == words.length - 1
@@ -69,12 +70,12 @@ const IntroText = () => {
       <div id="rotatingSpans" className="rotateTextP">
         <span className="word">FullStack Developer</span>
         <span className="word">Front End Developer</span>
-        <span className="word">Backend Engineer</span>
+        <span className="word">Backend Developer</span>
         <span className="word">JavaScript Developer</span>
-        <span className="word">Database Programmer</span>
+        <span className="word">Database Administrator</span>
       </div>
-      <div style={{marginTop:"70px"}}>
-       <ProfileLinks/>
+      <div style={{ marginTop: "70px" }}>
+        <ProfileLinks />
       </div>
     </div>
 

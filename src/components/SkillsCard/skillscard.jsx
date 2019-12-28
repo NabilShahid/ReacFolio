@@ -2,12 +2,14 @@ import React from "react";
 import { SKILLS } from "../../constants";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
+import ScrollAnimation from "react-animate-on-scroll";
+
 import "./skillscard.css";
-const iconStyle={
+const iconStyle = {
   width: "25px",
   height: "25px",
   marginRight: "5px",
-  marginTop:"0px"
+  marginTop: "0px"
 };
 const SkillsCard = () => {
   return (
@@ -15,24 +17,30 @@ const SkillsCard = () => {
       <div className="skillsHeader">Top Skills</div>
 
       {SKILLS.map(skillarea => (
-        <div className="skillsSection">
-          <div className="skillsSectionHeader">{skillarea.Title}</div>
-          <div className="skillsSectionBody">
-            {skillarea.Items.map(item => (
-              <span className="singleSkill" style={{background:item.Color}}>
-                <span className="singleSkillIcon">
-                  {item.IconSvg&&<item.Icon style={iconStyle}/>}
-                  {!item.IconSvg&&<Icon
-                    style={iconStyle}
-                    icon={TechologiesIcons[item.Icon]}
-                  />}
-                   
+        <ScrollAnimation duration={0.5} animateIn="fadeInRight">
+          <div className="skillsSection">
+            <div className="skillsSectionHeader">{skillarea.Title}</div>
+            <div className="skillsSectionBody">
+              {skillarea.Items.map(item => (
+                <span
+                  className="singleSkill"
+                  style={{ background: item.Color }}
+                >
+                  <span className="singleSkillIcon">
+                    {item.IconSvg && <item.Icon style={iconStyle} />}
+                    {!item.IconSvg && (
+                      <Icon
+                        style={iconStyle}
+                        icon={TechologiesIcons[item.Icon]}
+                      />
+                    )}
+                  </span>
+                  <span className="singleSkillText">{item.Name}</span>
                 </span>
-                <span className="singleSkillText" >{item.Name}</span>
-              </span>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        </ScrollAnimation>
       ))}
     </div>
   );

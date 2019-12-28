@@ -5,7 +5,6 @@ import { PROJECTS } from "../../constants";
 import "./projectspage.css";
 import Modal from "react-responsive-modal";
 import ProjectInfo from "../ProjectInfo/projectinfo";
-import LightSpeed from "react-reveal/LightSpeed";
 
 class ProjectsPage extends Component {
   state = { modalOpen: false, selectedProject: {} };
