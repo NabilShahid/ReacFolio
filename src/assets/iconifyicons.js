@@ -20,6 +20,9 @@ import Express from '@iconify/icons-logos/express';
 import Googlecloudfunctions from '@iconify/icons-logos/google-cloud-functions';
 import Dotnet from '@iconify/icons-logos/dotnet';
 import Git from '@iconify/icons-logos/git-icon';
+import Jquery from '@iconify/icons-logos/jquery';
+import Python from '@iconify/icons-logos/python';
+import Django from '@iconify/icons-logos/django';
 
 
 
@@ -45,10 +48,8 @@ export const TechologiesIcons = {
   Express,
   Googlecloudfunctions,
   Dotnet,
-  Git
-};
-
-
-// npm install   @iconify/icons-ls
-// import { Icon, InlineIcon } from '@iconify/react';
-// import webIcon from '@iconify/icons-ls/web';
+  Git,
+  Jquery,
+  Python,
+  Django
+}; 

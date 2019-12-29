@@ -13,7 +13,13 @@ export const PROJECTS = [
     ImageFile: "gohab.PNG",
     Platform: "Web",
     ImagesFolder: "Gohab",
-    ImageCount: 7,
+    ImageCount: 7,   
+    HasRepo:true,
+    HasUrl:true,
+    RepoLink:"https://github.com/NabilShahid/GoHab",
+    UrlLink:"https://gohab-prod.firebaseapp.com/main/home",
+    NoUrlReason:"",
+    NoRepoReason:"",
     Technologies: [
       "React",
       "Redux",
@@ -33,6 +39,12 @@ export const PROJECTS = [
     Platform: "Web",
     ImagesFolder: "RapidFlow",
     ImageCount: 9,
+    HasRepo:false, 
+    HasUrl:false,
+    RepoLink:"",
+    UrlLink:"",
+    NoUrlReason:"This was delea",
+    NoRepoReason:"34234324324234", 
     Technologies: [
       "Angular",
       "Typescript",
@@ -52,6 +64,12 @@ export const PROJECTS = [
     Platform: "Web",
     ImagesFolder: "RapidFlowAppStudio",
     ImageCount: 9,
+    HasRepo:false,
+    HasUrl:false,
+    RepoLink:"",
+    UrlLink:"",
+    NoUrlReason:"fasdf",
+    NoRepoReason:"f sdf asdf adsf sdf ",
     Technologies: [
       "Angular",
       "Typescript",
@@ -71,6 +89,12 @@ export const PROJECTS = [
     Platform: "Desktop",
     ImagesFolder: "Ndis",
     ImageCount: 5,
+    HasRepo:false,
+    HasUrl:false,
+    RepoLink:"",
+    UrlLink:"",
+    NoUrlReason:" sdf sdf a",
+    NoRepoReason:" fsdfasdf sdf sa",
     Technologies: ["Csharp", "Dotnet", { Name: "Sql", Icon: Sql }, { Name: "Mssql", Icon: Sqlserver }]
   },
   {
@@ -82,6 +106,12 @@ export const PROJECTS = [
     Platform: "Web",
     ImagesFolder: "Portfolio",
     ImageCount: 1,
+    HasRepo:true,
+    HasUrl:false,
+    RepoLink:"https://github.com/NabilShahid/ReacFolio",
+    UrlLink:"",
+    NoUrlReason:" dsf asfasdf sd fsdf",
+    NoRepoReason:"",
     Technologies: ["React","Javascript","Firebase"]
   },
   {
@@ -93,6 +123,12 @@ export const PROJECTS = [
     Platform: "Web",
     ImagesFolder: "Cointec",
     ImageCount: 3,
+    HasRepo:false,
+    HasUrl:true,
+    RepoLink:"",
+    UrlLink:"http://staging.cointec.co.uk/",
+    NoUrlReason:"",
+    NoRepoReason:"dsfds fdsf asdf ds",
     Technologies: ["React", "Javascript", "Node"]
   },
   {
@@ -104,7 +140,13 @@ export const PROJECTS = [
     Platform: "Web",
     ImagesFolder: "Eventrone",
     ImageCount: 5,
-    Technologies: ["Javascript", "Node", "Postgresql"]
+    HasRepo:false,
+    HasUrl:true,
+    RepoLink:"",
+    UrlLink:"https://www.eventrone.com/",
+    NoUrlReason:"",
+    NoRepoReason:"fsdfdsf sdf asdf s",
+    Technologies: ["Javascript", "Jquery", "Python","Django"]
   }
 ];
 const SkillColor = "#a9a9a9";
@@ -198,5 +240,7 @@ export const ICON_TOOLTIPS = {
   Dotnet: ".NET",
   Git: "Git",
   Sql: "SQL",
-  Antdesign: "Ant Design"
+  Antdesign: "Ant Design",
+  Jquery:"JQuery",
+  Python:"Python"
 };
