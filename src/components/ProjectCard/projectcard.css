@@ -77,9 +77,9 @@
   margin-top: 1px;
   /* display: flex; */
   z-index: 1;
-  top: -30px;
+  margin-top: -29px;
   border-radius: 3px;
-  left: 26px;
+  margin-left: 11px;
   padding: 7px 13px;
 }
 

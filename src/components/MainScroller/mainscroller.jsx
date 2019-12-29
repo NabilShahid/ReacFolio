@@ -13,8 +13,7 @@ import Fade from "react-reveal/Fade";
 import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
 import ScrollAnimation from "react-animate-on-scroll";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 // import $ from 'jquery';
 
 // import AngularIcon from "../../../src/assets/images/angular.png";
@@ -50,13 +49,13 @@ class MainScroller extends Component {
   constructor(props) {
     super(props);
     this.scrollerRef = React.createRef();
-    AOS.init();
   }
-   componentDidMount() {
+  componentDidMount() {
     setTimeout(() => {
       this.scrollerRef.current.onVerticalScroll = undefined;
       this.scrollerRef.current.ss.scrollPreventDefault = false;
       this.scrollerRef.current.ss.touchPreventDefault = false;
+      window.scrollTo({top:0})
     });
   }
   render() {
@@ -92,36 +91,30 @@ class MainScroller extends Component {
                 <HomeIcons />
               </div>
             </Slide>,
-            <Slide  style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <AboutPage activeIndex={activeIndex} pageIndex={1}/>
+            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+              <AboutPage activeIndex={activeIndex} pageIndex={1} />
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <ScrollAnimation duration={0.5} animateIn="zoomIn">
-                <ProjectsPage />
-              </ScrollAnimation>
+              <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <ExperiencePage />{" "}
             </Slide>,
             // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
             <Slide style={{ background: "white", ...allSlidesStyle }}>
-              <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
-                <div data-aos="fade-in" data-aos-duration="4000">
-                  Some Text Some Text Some Text Some Text Some Text Some Text
-                  Some Text Some Text Some Text Some Text Some Text
-                </div>
-              </ScrollAnimation>
+              Some Text Some Text Some Text Some Text Some Text Some Text Some
+              Text Some Text Some Text Some Text Some Text
             </Slide>
           ]}
         />
       </div>
     );
   }
-  onSlideChangeStart = (a, b, {lastActive}, { activeSlide }) => {
-      this.setState({ activeIndex: activeSlide });
+  onSlideChangeStart = (a, b, { lastActive }, { activeSlide }) => {
+    this.setState({ activeIndex: activeSlide });
   };
   outsideSlideChange = index => {
-     this.setState({ activeIndex: index });
+    this.setState({ activeIndex: index });
   };
 }
 

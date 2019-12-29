@@ -18,7 +18,7 @@ const SkillsCard = ({activeIndex,pageIndex}) => {
       <div className="skillsHeader">Top Skills</div>
 
       {SKILLS.map(skillarea => (
-        <FadeReveal right duration={500} when={activeIndex==pageIndex}>
+        <FadeReveal  duration={700} spy={activeIndex} right when={activeIndex==pageIndex}>
           <div className="skillsSection">
             <div className="skillsSectionHeader">{skillarea.Title}</div>
             <div className="skillsSectionBody">

@@ -1,6 +1,6 @@
 #aboutPage {
     height: 100%;
-    padding:30px 10px;
+    padding-top:25px;
     overflow-y: auto;
     overflow-x: hidden;
   }
