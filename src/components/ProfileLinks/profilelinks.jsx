@@ -6,6 +6,9 @@ import { ReactComponent as CvIcon } from "../../assets/svgs/cv.svg";
 
 import IconButton from "../IconButton/iconbutton";
 import "./profilelinks.css";
+const openProfileLink = link => {
+  window.open(link, "_blank");
+};
 const ProfileLinks = () => {
   let iconStyle = { width: "30px", height: "30px" };
   return (
@@ -16,12 +19,22 @@ const ProfileLinks = () => {
           Text="Github"
           Link="Github"
           Style={iconStyle}
+          onClick={() =>
+            openProfileLink(
+              "https://github.com/NabilShahid?tab=overview&from=2019-12-01&to=2019-12-29"
+            )
+          }
         />
         <IconButton
           Icon={StackOverflowLogo}
           Text="StackOverflow"
           Link="https://stackoverflow.com/users/10406529/nabil-shahid"
           Style={{ height: "25px", width: "27px", marginTop: "-4px" }}
+          onClick={() =>
+            openProfileLink(
+              "https://stackoverflow.com/users/10406529/nabil-shahid"
+            )
+          }
         />
       </div>
       <div className="profileIconsRow">
@@ -29,17 +42,21 @@ const ProfileLinks = () => {
           Icon={LinkedInLogo}
           Text="LinkedIn"
           Link="Github"
-          Style={{ height: "24px", width: "24px", marginLeft:"5px"}}
+          Style={{ height: "24px", width: "24px", marginLeft: "5px" }}
+          onClick={() =>
+            openProfileLink("https://www.linkedin.com/in/nabil-shahid-a41a6952")
+          }
         />
 
         <IconButton
           Icon={CvIcon}
           Text="Download CV"
           Link="Github"
-          Style={{ height: "28px", width: "24px", marginLeft:"4px"}}
-
+          Style={{ height: "28px", width: "24px", marginLeft: "4px" }}
+          onClick={() =>
+            openProfileLink("assets/files/Nabil%20Shahid%20CV.pdf")
+          }
         />
-      
       </div>
     </div>
   );
