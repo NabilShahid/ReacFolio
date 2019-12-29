@@ -1,12 +1,13 @@
 import React from "react";
 import SkillsCard from "../SkillsCard/skillscard";
 import MyImage from "../../assets/images/CVPIC.jpg";
-import ScrollAnimation from "react-animate-on-scroll";
 
 import "./aboutpage.css";
-import FadeReveal from "react-reveal/Fade";
-
+import FadeReveal from "react-reveal/Zoom";
+let currentAnimSpy=0;
 const AboutPage = ({ activeIndex, pageIndex }) => {
+  if (activeIndex == pageIndex)
+  currentAnimSpy++;
   return (
     <div id="aboutPage">
       <div className="row">
@@ -14,12 +15,7 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
           className="col-md-5"
           style={{ textAlign: "center", borderRight: " 1px solid #d0d0d0" }}
         >
-          <FadeReveal
-            duration={700}
-            left
-            spy={activeIndex}
-            when={activeIndex == pageIndex}
-          >
+          <FadeReveal duration={500} spy={currentAnimSpy}>
             <div className="aboutMeDiv">
               <img src={MyImage} alt="profile" className="profileImage" />
 
