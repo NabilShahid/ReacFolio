@@ -14,6 +14,11 @@ class ExperiencePage extends Component {
   render() {
     return (
       <div id="experiencePage">
+        <div className="pageHeader">
+        <span className="pageHeaderText">
+            Experience
+        </span>
+      </div>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

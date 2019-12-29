@@ -34,6 +34,11 @@ class ProjectsPage extends Component {
     if (activeIndex == pageIndex) this.currentAnimSpy++;
     return (
       <div id="projectsPage">
+        <div className="pageHeader">
+        <span className="pageHeaderText">
+            Projects
+        </span>
+      </div>
         <Modal open={modalOpen} onClose={this.setModalVisibility}>
           <ProjectInfo project={selectedProject} />
         </Modal>

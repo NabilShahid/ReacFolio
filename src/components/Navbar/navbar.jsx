@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import UserInfo from "../UserInfo/userinfo";
 import { ReactComponent as Menu } from "../../assets/svgs/menu.svg";
-import Flash from "react-reveal/Zoom";
+import Flash from "react-reveal/Fade";
 
 import "./navbar.css";
 class Navbar extends Component {
@@ -32,7 +32,7 @@ class Navbar extends Component {
           >
             <Menu style={{ height: "20px", width: "20px", fill: "white" }} />
           </div>
-          <Flash exit={true} duration={300}>
+          <Flash top exit={true} duration={300}>
           <div
             className={
               "collapse navbar-collapse " + (expandableMenuShown ? "show" : "")

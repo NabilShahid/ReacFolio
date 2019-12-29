@@ -10,6 +10,11 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
   currentAnimSpy++;
   return (
     <div id="aboutPage">
+      <div className="pageHeader">
+        <span className="pageHeaderText">
+            About
+        </span>
+      </div>
       <div className="row">
         <div
           className="col-md-5"

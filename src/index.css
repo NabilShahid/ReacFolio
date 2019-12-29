@@ -48,6 +48,17 @@ div {
 ::-webkit-scrollbar-thumb:hover {
   background: #CCCCCC; 
 }
+.pageHeader{
+  font-size: 27px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--color-1);
+}
+.pageHeaderText{
+  border-bottom: 2px solid #bfbfbf;
+  padding: 0px 14px;
+  padding-bottom: 5px;
+}
 @media (max-width: 992px) {
 
   [class*="col-"] {

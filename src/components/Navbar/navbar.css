@@ -112,12 +112,13 @@ div.brackets a:hover:after {
     padding: 5px 0px;
   }
   .navbar-collapse {
-    background: linear-gradient(
+    /* background: linear-gradient(
       120deg,
       var(--color-1),
       var(--color-4),
       var(--color-5)
-    );
+    ); */
+    background: #2b2b2b;
   }
   .navBarToggleButton {
     margin-right: 10px;
