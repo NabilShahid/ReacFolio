@@ -4,7 +4,9 @@ import MyImage from "../../assets/images/CVPIC.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import "./aboutpage.css";
-const AboutPage = () => {
+import FadeReveal from "react-reveal/Fade";
+
+const AboutPage = ({activeIndex,pageIndex}) => {
   return (
     <div id="aboutPage">
       <div className="row">
@@ -14,15 +16,15 @@ const AboutPage = () => {
         >
            
           <div className="aboutMeDiv">
-          <ScrollAnimation duration={0.5} animateIn="fadeInLeft">
+          <FadeReveal left duration={500} when={activeIndex==pageIndex}>
              
             <img src={MyImage} alt="profile" className="profileImage" />
-             </ScrollAnimation>
-             <ScrollAnimation duration={0.5} animateIn="fadeInLeft">
+             </FadeReveal>
+             <FadeReveal left duration={500} when={activeIndex==pageIndex}>
              
             <div className="aboutMeHeader">About Me</div>
-           </ScrollAnimation>
-           <ScrollAnimation duration={0.5} animateIn="fadeInLeft">
+           </FadeReveal>
+           <FadeReveal left duration={500} when={activeIndex==pageIndex}>
              
             <div className="aboutMeText">
               My nabil is Nabil Shahid. I am a fullStack Developer. My nabil is
@@ -30,11 +32,11 @@ const AboutPage = () => {
               Shahid. I am a fullStack Developer. My nabil is Nabil Shahid. I am
               a fullStack Developer.
             </div>
-           </ScrollAnimation>
+           </FadeReveal>
           </div>
         </div>
         <div className="col-md-7">
-          <SkillsCard />
+          <SkillsCard activeIndex={activeIndex} pageIndex={pageIndex}/>
         </div>
       </div>
     </div>

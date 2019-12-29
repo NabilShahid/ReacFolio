@@ -3,6 +3,7 @@ import { SKILLS } from "../../constants";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
 import ScrollAnimation from "react-animate-on-scroll";
+import FadeReveal from "react-reveal/Fade";
 
 import "./skillscard.css";
 const iconStyle = {
@@ -11,13 +12,13 @@ const iconStyle = {
   marginRight: "5px",
   marginTop: "0px"
 };
-const SkillsCard = () => {
+const SkillsCard = ({activeIndex,pageIndex}) => {
   return (
     <div id="skillsCard">
       <div className="skillsHeader">Top Skills</div>
 
       {SKILLS.map(skillarea => (
-        <ScrollAnimation animateIn="fadeInRight">
+        <FadeReveal right duration={500} when={activeIndex==pageIndex}>
           <div className="skillsSection">
             <div className="skillsSectionHeader">{skillarea.Title}</div>
             <div className="skillsSectionBody">
@@ -40,7 +41,7 @@ const SkillsCard = () => {
               ))}
             </div>
           </div>
-        </ScrollAnimation>
+        </FadeReveal>
       ))}
     </div>
   );

@@ -93,7 +93,7 @@ class MainScroller extends Component {
               </div>
             </Slide>,
             <Slide  style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <AboutPage />
+              <AboutPage activeIndex={activeIndex} pageIndex={1}/>
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <ScrollAnimation duration={0.5} animateIn="zoomIn">
