@@ -13,7 +13,8 @@ import Fade from "react-reveal/Fade";
 import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 // import $ from 'jquery';
 
 // import AngularIcon from "../../../src/assets/images/angular.png";
@@ -49,6 +50,7 @@ class MainScroller extends Component {
   constructor(props) {
     super(props);
     this.scrollerRef = React.createRef();
+    AOS.init();
   }
    componentDidMount() {
     setTimeout(() => {
@@ -104,7 +106,7 @@ class MainScroller extends Component {
             // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
             <Slide style={{ background: "white", ...allSlidesStyle }}>
               <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
-                <div>
+                <div data-aos="fade-in" data-aos-duration="4000">
                   Some Text Some Text Some Text Some Text Some Text Some Text
                   Some Text Some Text Some Text Some Text Some Text
                 </div>

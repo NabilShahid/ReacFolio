@@ -17,7 +17,7 @@ const SkillsCard = () => {
       <div className="skillsHeader">Top Skills</div>
 
       {SKILLS.map(skillarea => (
-        <ScrollAnimation duration={0.5} animateIn="fadeInRight">
+        <ScrollAnimation animateIn="fadeInRight">
           <div className="skillsSection">
             <div className="skillsSectionHeader">{skillarea.Title}</div>
             <div className="skillsSectionBody">

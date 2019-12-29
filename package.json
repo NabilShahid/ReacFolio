@@ -8,6 +8,7 @@
     "@iconify/icons-ls": "^1.0.1",
     "@iconify/react": "^1.1.1",
     "animate.css": "^3.7.2",
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.3.1",
     "fullpage-react": "^3.1.0",
     "jquery": "^3.4.1",
