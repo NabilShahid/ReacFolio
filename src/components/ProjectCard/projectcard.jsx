@@ -18,7 +18,7 @@ class ProjectCard extends Component {
       Technologies,
       Platform
     } = this.props.project;
-    const { action, project, activeIndex, pageIndex } = this.props;
+    const { action, project } = this.props;
     const PlatformIcon = PLATFORM_ICONS[Platform];
     return (
       <div className="projectCard" style={{ borderBottomColor: Color }}>

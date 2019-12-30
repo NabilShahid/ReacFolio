@@ -41,8 +41,8 @@ class ProjectsPage extends Component {
           <ProjectInfo project={selectedProject} />
         </Modal>
 
-        <FadeReveal duration={700} spy={this.currentAnimSpy}>
-          {this.projectsArray.map((row, i) => (
+        {this.projectsArray.map((row, i) => (
+          <FadeReveal duration={700} spy={this.currentAnimSpy}>
             <div key={i} className="row projectsRow">
               {row.map((col, j) => (
                 <div
@@ -59,8 +59,8 @@ class ProjectsPage extends Component {
                 </div>
               ))}
             </div>
-          ))}
-        </FadeReveal>
+          </FadeReveal>
+        ))}
       </div>
     );
   }

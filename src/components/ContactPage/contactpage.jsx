@@ -31,7 +31,7 @@ const Contact = ({ activeIndex, pageIndex }) => {
         </div>
       </FadeReveal>
 
-      <FadeReveal delay={200} duration={500} spy={currentAnimSpy}>
+      <FadeReveal delay={300} duration={500} spy={currentAnimSpy}>
       <div className="contactFormContainer">
 
         <ContactForm />

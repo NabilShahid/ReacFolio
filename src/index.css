@@ -49,13 +49,13 @@ div {
   background: #CCCCCC; 
 }
 .pageHeader{
-  font-size: 27px;
+  font-size: 22px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: var(--color-1);
 }
 .pageHeaderText{
-  border-bottom: 2px solid #bfbfbf;
+  border-bottom: 1px solid #bbbbbb;
   padding: 0px 14px;
   padding-bottom: 5px;
 }
