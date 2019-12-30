@@ -27,7 +27,6 @@ class ProjectCard extends Component {
             style={{ width: "34px", height: "34px", fill: "white" }}
           />
         </div>
-        {/* <FadeReveal right duration={500} when={activeIndex == pageIndex}> */}
           <div className="projectCardContentDiv">
             <div className="projectName">
               <div className="projectNameText">{Name}</div>
@@ -66,7 +65,6 @@ class ProjectCard extends Component {
               src={require(`../../assets/images/ProjectsTitleImages/${ImageFile}`)}
             />{" "}
           </div>
-        {/* </FadeReveal> */}
       </div>
     );
   }

@@ -1,0 +1,31 @@
+.contactForm{
+     width: 100%;
+     max-width: 500px;
+}
+.contactInputField{
+    border: 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+
+}
+.contactFormLabel{
+    font-size: 15px;
+    color: var(--color-5);
+    margin-bottom: 5px;
+
+}
+.contactFormField{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.sendMessageButton{
+    margin-left: auto;
+    background: var(--color-5);
+    color: white;
+    padding: 5px 40px;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+}

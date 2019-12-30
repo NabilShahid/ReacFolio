@@ -5,18 +5,11 @@ import IntroText from "../IntroText/introtext";
 import Navbar from "../Navbar/navbar";
 import ProjectsPage from "../ProjectsPage/projectspage";
 import ExperiencePage from "../ExperiencePage/experiencepage";
-
-// import ScrollSection from "../ScrollSection/scrollsection";
+import ContactPage from "../ContactPage/contactpage";
 import { Fullpage, Slide } from "fullpage-react";
-import Fade from "react-reveal/Fade";
-
 import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
-import ScrollAnimation from "react-animate-on-scroll";
-import "aos/dist/aos.css";
-// import $ from 'jquery';
 
-// import AngularIcon from "../../../src/assets/images/angular.png";
 const { changeFullpageSlide } = Fullpage;
 const fullPageOptions = {
   // for mouse/wheel events
@@ -46,6 +39,7 @@ class MainScroller extends Component {
   state = {
     activeIndex: 0
   };
+  Contact;
   constructor(props) {
     super(props);
     this.scrollerRef = React.createRef();
@@ -55,7 +49,7 @@ class MainScroller extends Component {
       this.scrollerRef.current.onVerticalScroll = undefined;
       this.scrollerRef.current.ss.scrollPreventDefault = false;
       this.scrollerRef.current.ss.touchPreventDefault = false;
-      window.scrollTo({top:0})
+      window.scrollTo({ top: 0 });
     });
   }
   render() {
@@ -100,10 +94,8 @@ class MainScroller extends Component {
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <ExperiencePage />{" "}
             </Slide>,
-            // <HorizontalSlider {...horizontalSliderProps}></HorizontalSlider>,
-            <Slide style={{ background: "white", ...allSlidesStyle }}>
-              Some Text Some Text Some Text Some Text Some Text Some Text Some
-              Text Some Text Some Text Some Text Some Text
+            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+              <ContactPage  activeIndex={activeIndex} pageIndex={4} />
             </Slide>
           ]}
         />

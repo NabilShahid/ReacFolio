@@ -1,0 +1,19 @@
+#contactPage {
+  padding-top: 25px;
+}
+.contactText {
+  margin-left: 10px;
+}
+.contactType {
+  margin-bottom: 25px;
+}
+.contactTypes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactFormContainer{
+    display: flex;
+    justify-content: center;
+}
