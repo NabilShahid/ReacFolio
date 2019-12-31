@@ -59,6 +59,11 @@ div {
   padding: 0px 14px;
   padding-bottom: 5px;
 }
+.buttonHover:hover {
+  background: #04C2C9;
+  box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+  transform: scale(0.9);
+}
 @media (max-width: 992px) {
 
   [class*="col-"] {

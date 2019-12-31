@@ -12,7 +12,7 @@
 }
 .contactFormLabel{
     font-size: 15px;
-    color: var(--color-5);
+    /* color: var(--color-1); */
     margin-bottom: 5px;
 
 }
@@ -22,7 +22,8 @@
 }
 .sendMessageButton{
     margin-left: auto;
-    background: var(--color-5);
+    cursor: pointer;
+    background: var(--color-1);
     color: white;
     padding: 5px 40px;
     border-radius: 20px;

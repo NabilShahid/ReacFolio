@@ -20,6 +20,9 @@ const Contact = ({ activeIndex, pageIndex }) => {
       </div>
       <FadeReveal duration={500} spy={currentAnimSpy}>
         <div className="contactTypes">
+          <div className="contactType" style={{fontSize:"15px", textAlign:"center"}}>
+            Interested in working together and get amazing things done ?<br/> Feel free to contact me.
+          </div>
           <div className="contactType">
             <EmailIcon style={contactIconsStyle} />
             <span className="contactText">nabil110176@gmail.com</span>
@@ -31,12 +34,10 @@ const Contact = ({ activeIndex, pageIndex }) => {
         </div>
       </FadeReveal>
 
-      <FadeReveal delay={300} duration={500} spy={currentAnimSpy}>
       <div className="contactFormContainer">
 
-        <ContactForm />
+        <ContactForm activeIndex={activeIndex} pageIndex={pageIndex} currentAnimSpy={currentAnimSpy} />
       </div>
-        </FadeReveal>
     </div>
   );
 };

@@ -26,11 +26,11 @@
 }
 .selectedNavItem {
   /* color: #03A9F4!important; */
-  border-bottom: 2px solid #819aff;
+  border-bottom: 2px solid #ababab;
 }
 .selectedNavItem {
-  color: #819aff !important;
-  border-bottom: 2px solid #819aff;
+  color: #ababab !important;
+  border-bottom: 2px solid #ababab;
 }
 div.brackets a:before,
 div.brackets a:after {
