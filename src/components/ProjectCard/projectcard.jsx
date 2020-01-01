@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./projectcard.css";
 import { Icon, InlineIcon } from "@iconify/react";
-import { TechologiesIcons, PlatformIcons } from "../../assets/iconifyicons";
-import { PLATFORM_ICONS, ICON_TOOLTIPS } from "../../constants.js";
+import { TechologiesIcons } from "../../assets/iconifyicons";
+import { PLATFORM_ICONS, ICON_LABELS } from "../../constants.js";
 import ReactTooltip from "react-tooltip";
 import FadeReveal from "react-reveal/Fade";
 
@@ -48,11 +48,11 @@ class ProjectCard extends Component {
                     <Icon
                       style={this.technologyIconStyle}
                       icon={TechologiesIcons[t]}
-                      data-tip={ICON_TOOLTIPS[t]}
+                      data-tip={ICON_LABELS[t]}
                     />
                   ) : (
                     <t.Icon
-                      data-tip={ICON_TOOLTIPS[t.Name]}
+                      data-tip={ICON_LABELS[t.Name]}
                       style={this.technologyIconStyle}
                     />
                   )}

@@ -27,8 +27,7 @@ const SkillsCard = ({activeIndex,pageIndex}) => {
             <div className="skillsSectionBody">
               {skillarea.Items.map(item => (
                 <span
-                  className="singleSkill"
-                  style={{ background: item.Color }}
+                  className="singleSkill"                  
                 >
                   <span className="singleSkillIcon">
                     {item.IconSvg && <item.Icon style={iconStyle} />}

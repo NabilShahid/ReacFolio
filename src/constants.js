@@ -168,36 +168,35 @@ export const PROJECTS = [
     Technologies: ["Javascript", "Jquery", "Python", "Django"]
   }
 ];
-const SkillColor = "#a9a9a9";
 export const SKILLS = [
   {
     Title: "Front End",
     Items: [
-      { Name: "Angular", Color: SkillColor, Icon: "Angular" },
-      { Name: "React", Color: SkillColor, Icon: "React" },
-      { Name: "JavaScript", Color: SkillColor, Icon: "Javascript" },
-      { Name: "TypeScript", Color: SkillColor, Icon: "Typescript" },
-      { Name: "Redux", Color: SkillColor, Icon: "Redux" },
-      { Name: "Webpack", Color: SkillColor, Icon: "Webpack" },
-      { Name: "Babel", Color: SkillColor, Icon: "Babel" },
-      { Name: "Rxjs", Color: SkillColor, Icon: "Rxjs" },
-      { Name: "HTML", Color: SkillColor, Icon: "Html" },
-      { Name: "CSS", Color: SkillColor, Icon: "Css" }
+      { Name: "Angular", Icon: "Angular" },
+      { Name: "React", Icon: "React" },
+      { Name: "JavaScript", Icon: "Javascript" },
+      { Name: "TypeScript", Icon: "Typescript" },
+      { Name: "Redux", Icon: "Redux" },
+      { Name: "Webpack", Icon: "Webpack" },
+      { Name: "Babel", Icon: "Babel" },
+      { Name: "Rxjs", Icon: "Rxjs" },
+      { Name: "HTML", Icon: "Html" },
+      { Name: "CSS", Icon: "Css" }
     ]
   },
   {
     Title: "Back End",
     Items: [
-      { Name: "Node.js", Color: SkillColor, Icon: "Node" },
-      { Name: "NestJS", Color: SkillColor, Icon: "Nest" },
-      { Name: "CSharp", Color: SkillColor, Icon: "Csharp" },
-      { Name: ".Net", Color: SkillColor, Icon: "Dotnet" },
-      { Name: "JavaScript", Color: SkillColor, Icon: "Javascript" },
-      { Name: "TypeScript", Color: SkillColor, Icon: "Typescript" },
-      { Name: "Express.js", Color: SkillColor, Icon: "Express" },
+      { Name: "Node.js", Icon: "Node" },
+      { Name: "NestJS", Icon: "Nest" },
+      { Name: "CSharp", Icon: "Csharp" },
+      { Name: ".Net", Icon: "Dotnet" },
+      { Name: "JavaScript", Icon: "Javascript" },
+      { Name: "TypeScript", Icon: "Typescript" },
+      { Name: "Express.js", Icon: "Express" },
       {
         Name: "Google Cloud Functions",
-        Color: SkillColor,
+
         Icon: "Googlecloudfunctions"
       }
     ]
@@ -205,12 +204,12 @@ export const SKILLS = [
   {
     Title: "Database",
     Items: [
-      { Name: "Postgresql", Color: SkillColor, Icon: "Postgresql" },
-      { Name: "Firestore", Color: SkillColor, Icon: "Firebase" },
-      { Name: "SQL", Color: SkillColor, Icon: Sql, IconSvg: true },
+      { Name: "Postgresql", Icon: "Postgresql" },
+      { Name: "Firestore", Icon: "Firebase" },
+      { Name: "SQL", Icon: Sql, IconSvg: true },
       {
         Name: "MS SQL Server",
-        Color: SkillColor,
+
         Icon: Sqlserver,
         IconSvg: true
       }
@@ -218,7 +217,7 @@ export const SKILLS = [
   },
   {
     Title: "Version Control",
-    Items: [{ Name: "Git", Color: SkillColor, Icon: "Git" }]
+    Items: [{ Name: "Git", Icon: "Git" }]
   },
   {
     /*
@@ -226,23 +225,23 @@ export const SKILLS = [
     */
     Title: "Other",
     Items: [
-      { Name: "Debugging", Color: SkillColor },
-      { Name: "Troubleshooting", Color: SkillColor },
-      { Name: "Database Indexing", Color: SkillColor },
-      { Name: "Query Optimization", Color: SkillColor }
+      { Name: "Debugging" },
+      { Name: "Troubleshooting" },
+      { Name: "Database Indexing" },
+      { Name: "Query Optimization" }
     ]
   }
 ];
 export const PLATFORM_ICONS = { Web, Desktop };
 
-export const ICON_TOOLTIPS = {
+export const ICON_LABELS = {
   Postgresql: "PostgreSQL",
   React: "React",
   Angular: "Angular",
   Firebase: "Firebase",
   Javascript: "JavaScript",
   Node: "Node",
-  Csharp: "C#",
+  Csharp: "CSharp",
   Vscode: "VS Code",
   Npm: "NPM",
   Nest: "NestJS",
@@ -261,5 +260,6 @@ export const ICON_TOOLTIPS = {
   Sql: "SQL",
   Antdesign: "Ant Design",
   Jquery: "JQuery",
-  Python: "Python"
+  Python: "Python",
+  Mssql:"MS SQL Server"
 };

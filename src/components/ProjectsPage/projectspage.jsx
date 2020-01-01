@@ -23,7 +23,8 @@ class ProjectsPage extends Component {
   };
   setModalVisibility = selectedProject => {
     const { modalOpen } = this.state;
-    this.setState({ modalOpen: !modalOpen, selectedProject });
+    if (modalOpen) this.setState({ modalOpen: !modalOpen });
+    else this.setState({ modalOpen: !modalOpen, selectedProject });
   };
   componentWillMount() {
     this.setProjectsArray();
@@ -42,9 +43,9 @@ class ProjectsPage extends Component {
         </Modal>
 
         {this.projectsArray.map((row, i) => (
-          <FadeReveal duration={700} spy={this.currentAnimSpy}>
-            <div key={i} className="row projectsRow">
-              {row.map((col, j) => (
+          <div key={i} className="row projectsRow">
+            {row.map((col, j) => (
+              <FadeReveal duration={700} spy={this.currentAnimSpy}>
                 <div
                   key={j}
                   className="col-sm-4"
@@ -57,9 +58,9 @@ class ProjectsPage extends Component {
                     project={col}
                   />
                 </div>
-              ))}
-            </div>
-          </FadeReveal>
+              </FadeReveal>
+            ))}
+          </div>
         ))}
       </div>
     );
