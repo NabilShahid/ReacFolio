@@ -36,11 +36,12 @@ const ProjectInfo = ({ project }) => {
         onClick={() => {project.HasUrl?openUrl(project.UrlLink):showToastMessage(project.NoUrlReason)}}
         className="projectInfoName"
       >
+         
         {project.Name}
         <LinkIcon className="projectLink" />
       </div>
-      <div className="projectInfoSubtitle">Workflow Automation Platform</div>
-      <div className="projectInfoDescription">{project.Description}</div>
+      <div className="projectInfoSubtitle">{project.Subtitle+" ("+project.Target+")"}</div>
+      <div className="projectInfoDescription" dangerouslySetInnerHTML={{__html:project.Description}} ></div>
       <div onClick={() => {project.HasRepo?openUrl(project.RepoLink):showToastMessage(project.NoRepoReason)}} className="projectInfoRepo">
         <GitHubLogo className="githubRepoIcon" />
         Github Repository

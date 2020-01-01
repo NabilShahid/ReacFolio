@@ -18,15 +18,22 @@
     cursor: pointer;
 }
 .projectInfoSubtitle{
-    font-size: 13px;
-     color: dimgray;
+    font-size: 14px;
     margin-top: -5px;
+    padding-bottom: 4px;
+    margin-right: 5px;
+    border-bottom: 1px solid #e4e4e4;
 }
+
+
 .projectInfoDescription{
     font-size: 14px;
-    margin-top: 14px;
-    color: dimgrey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px 16px;
 }
+
+
 .styles_closeIcon__1QwbI {
     width: 30px;
     height: 30px;
