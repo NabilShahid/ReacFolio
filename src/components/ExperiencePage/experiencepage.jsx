@@ -35,7 +35,7 @@ class ExperiencePage extends Component {
             icon={<Work />}
           >
             <h3 className="vertical-timeline-element-title">
-              FullStack Developer
+              Full Stack Developer
             </h3>
             <h4 className="vertical-timeline-element-subtitle">AuxilioTech</h4>
             <div className="experiencePageLocation">Islamabad, Pakistan</div>
@@ -52,7 +52,7 @@ class ExperiencePage extends Component {
             icon={<Work />}
           >
             <h3 className="vertical-timeline-element-title">
-              FullStack Developer
+              Full Stack Developer
             </h3>
             <h4
               onClick={() => openUrl("http://www.abbvie.com")}

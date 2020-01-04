@@ -68,7 +68,7 @@ const IntroText = () => {
     <div className="textDiv">
       <p className="rotateTextP">Hi, I am a </p>
       <div id="rotatingSpans" className="rotateTextP">
-        <span className="word">FullStack Developer</span>
+        <span className="word">Full Stack Developer</span>
         <span className="word">Front End Developer</span>
         <span className="word">Backend Developer</span>
         <span className="word">JavaScript Developer</span>
@@ -101,7 +101,7 @@ const IntroText = () => {
     // <div className="textDiv">
     //   <p className="rotateTextP">Hi, I am a </p>
     //   <p style={{marginLeft:"10px"}} className="rotateTextP">
-    //     <span className="word">FullStack Developer</span>
+    //     <span className="word">Full Stack Developer</span>
     //     <span className="word">Front End Developer</span>
     //     <span className="word">Backend Engineer</span>
     //     <span className="word">JavaScript Developer</span>
