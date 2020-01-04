@@ -45,20 +45,20 @@ class ProjectsPage extends Component {
         {this.projectsArray.map((row, i) => (
           <div key={i} className="row projectsRow">
             {row.map((col, j) => (
-              <FadeReveal duration={700} spy={this.currentAnimSpy}>
-                <div
+              <div
                   key={j}
                   className="col-sm-4"
                   style={{ margin: "30px 0px" }}
                 >
+                        <FadeReveal duration={700} spy={this.currentAnimSpy}>
                   <ProjectCard
                     activeIndex={activeIndex}
                     pageIndex={pageIndex}
                     action={this.setModalVisibility}
                     project={col}
                   />
-                </div>
               </FadeReveal>
+                </div>
             ))}
           </div>
         ))}

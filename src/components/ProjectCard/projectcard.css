@@ -1,9 +1,14 @@
+.projectCardContainer{
+  display: flex;
+  justify-content: center;
+}
 .projectCard {
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.11);
   border-radius: 5px;
   border-bottom-width: 4px;
   border-bottom-style: solid;
   max-width: 420px;
+  /* max-width: 200px; */
   background: white;
 }
 
@@ -57,9 +62,9 @@
 }
 
 .projectNameText {
-  color: #4b4f4e;
+  /* color: #4b4f4e; */
   font-size: 17px;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 4px 2px;
 }
 

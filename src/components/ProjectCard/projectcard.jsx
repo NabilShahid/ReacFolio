@@ -21,12 +21,13 @@ class ProjectCard extends Component {
     const { action, project } = this.props;
     const PlatformIcon = PLATFORM_ICONS[Platform];
     return (
-      <div className="projectCard" style={{ borderBottomColor: Color }}>
-        <div className="projectCardAvatar" style={{ background: Color }}>
-          <PlatformIcon
-            style={{ width: "34px", height: "34px", fill: "white" }}
-          />
-        </div>
+      <div className="projectCardContainer">
+        <div className="projectCard" style={{ borderBottomColor: Color }}>
+          <div className="projectCardAvatar" style={{ background: Color }}>
+            <PlatformIcon
+              style={{ width: "34px", height: "34px", fill: "white" }}
+            />
+          </div>
           <div className="projectCardContentDiv">
             <div className="projectName">
               <div className="projectNameText">{Name}</div>
@@ -65,6 +66,7 @@ class ProjectCard extends Component {
               src={require(`../../assets/images/ProjectsTitleImages/${ImageFile}`)}
             />{" "}
           </div>
+        </div>
       </div>
     );
   }

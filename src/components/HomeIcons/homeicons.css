@@ -1,65 +1,56 @@
-.homeIcons{
+.homeIcons {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.homeIconsRow {
+  display: flex;
+  /* flex-direction: row; */
+}
+.homeIconsCol {
+  width: 75px;
+  height: 90px;
+  margin: 0px 0px;
+}
+.homeIconsBorder {
+  background: #014e673b;
+  height: 29px;
+  transform: rotate(137deg) translateX(94px) translateY(-60px) scaleX(3);
+}
+.homeIconLarge {
+  width: 45px;
+  height: 45px;
+}
+
+@media (max-width: 480px) {
+  .homeIcons {
     position: absolute;
     right: 10px;
-    bottom: 10px;
-}
-.homeIconsRow{
-    display: flex;
-    /* flex-direction: row; */
-}
-.homeIconsCol{
-    width: 75px;
-    height: 90px;
+    bottom: 25px;
+  }
+  .homeIconsCol {
+    width: 34px;
+    height: 37px;
     margin: 0px 0px;
-}
-.homeIconsBorder{
-    background: #014e673b;
-    height: 29px;
-    transform: rotate(137deg) translateX(94px) translateY(-60px) scaleX(3);
-}
-.homeIconLarge{
-    width: 45px; 
-    height: 45px; 
   }
-  
-@media  (max-width: 480px) {
-    .homeIcons{
-        position: absolute;
-        right: 10px;
-        bottom: 15px;
-    }
-    .homeIconsCol{
-        width: 34px;
-        height: 37px;
-        margin: 0px 0px;
-    }
-    .homeIconLarge{
-        width: 22px;
-        height: 22px;
-      }
-      
-      
-
-    
+  .homeIconLarge {
+    width: 22px;
+    height: 22px;
   }
-  @media (min-width: 481px) and (max-width: 767px)  {
-    .homeIcons{
-        position: absolute;
-        right: 10px;
-        bottom: 15px;
-    }
-    .homeIconsCol{
-        width: 33px;
-        height: 33px;
-        margin: 0px 0px;
-    }
-    .homeIconLarge{
-        width: 21px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .homeIcons {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+  }
+  .homeIconsCol {
+    width: 33px;
+    height: 33px;
+    margin: 0px 0px;
+  }
+  .homeIconLarge {
+    width: 21px;
     height: 21px;
-
-      }
-      
-      
-
-    
   }
+}

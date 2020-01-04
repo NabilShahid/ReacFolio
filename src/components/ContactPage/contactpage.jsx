@@ -8,7 +8,7 @@ import "./contactpage.css";
 const contactIconsStyle = {
   height: "24px",
   width: "24px",
-  fill: "#8f9090"
+  fill: "#585858"
 };
 let currentAnimSpy = 0;
 const Contact = ({ activeIndex, pageIndex }) => {
