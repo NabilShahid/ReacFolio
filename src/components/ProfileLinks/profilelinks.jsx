@@ -17,18 +17,16 @@ const ProfileLinks = () => {
         <IconButton
           Icon={GitHubLogo}
           Text="Github"
-          Link="Github"
           Style={iconStyle}
           onClick={() =>
             openProfileLink(
-              "https://github.com/NabilShahid?tab=overview&from=2019-12-01&to=2019-12-29"
+              "https://github.com/NabilShahid"
             )
           }
         />
         <IconButton
           Icon={StackOverflowLogo}
           Text="StackOverflow"
-          Link="https://stackoverflow.com/users/10406529/nabil-shahid"
           Style={{ height: "25px", width: "27px", marginTop: "-4px" }}
           onClick={() =>
             openProfileLink(
@@ -41,7 +39,6 @@ const ProfileLinks = () => {
         <IconButton
           Icon={LinkedInLogo}
           Text="LinkedIn"
-          Link="Github"
           Style={{ height: "24px", width: "24px", marginLeft: "5px" }}
           onClick={() =>
             openProfileLink("https://www.linkedin.com/in/nabil-shahid-a41a6952")

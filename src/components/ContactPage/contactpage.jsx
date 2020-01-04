@@ -6,8 +6,8 @@ import FadeReveal from "react-reveal/Zoom";
 
 import "./contactpage.css";
 const contactIconsStyle = {
-  height: "25px",
-  width: "25px",
+  height: "24px",
+  width: "24px",
   fill: "#8f9090"
 };
 let currentAnimSpy = 0;

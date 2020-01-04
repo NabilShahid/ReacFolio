@@ -9,9 +9,9 @@ let currentAnimSpy = 0;
 const aboutIconsStyle = {
   height: "25px",
   width: "25px",
-  marginRight:"5px",
-  marginTop:"-2px",
-  fill: "#8f9090",
+  marginRight: "5px",
+  marginTop: "-2px",
+  fill: "#8f9090"
 };
 const AboutPage = ({ activeIndex, pageIndex }) => {
   if (activeIndex == pageIndex) currentAnimSpy++;
@@ -31,15 +31,22 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
 
               <div className="aboutMeHeader">About Me</div>
               <div className="row aboutMeInfoItemContainer">
-                <div className="abouteMeInfoItem col-md-6 aboutMeInfoItemsSeperator" >
-                  <Graduation style={{...aboutIconsStyle}} /> BS Computer Science
+                <div className="abouteMeInfoItem col-md-6 aboutMeInfoItemsSeperator">
+                  <Graduation style={{ ...aboutIconsStyle }} /> BS Computer
+                  Science
                 </div>
-              {/* </div>
-              <div className="aboutMeInfoItemContainer"> */}
-                <div className="abouteMeInfoItem col-md-6" >
-                  <Work style={{...aboutIconsStyle,height:"21px",width:"21px"}} /> 3.5+ Years Expirience
+
+                <div className="abouteMeInfoItem col-md-6">
+                  <Work
+                    style={{
+                      ...aboutIconsStyle,
+                      height: "21px",
+                      width: "21px"
+                    }}
+                  />{" "}
+                  3.5+ Years Experience
                 </div>
-              </div>
+                </div>
               <div className="aboutMeText">
                 My nabil is Nabil Shahid. I am a fullStack Developer. My nabil
                 is Nabil Shahid. I am a fullStack Developer. My nabil is Nabil
