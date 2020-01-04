@@ -1,10 +1,20 @@
 #experiencePage {
   height: 100%;
   overflow-y: auto;
-  padding-top:15px;
+  padding-top: 15px;
 }
 
-.experiencePageLocation{
+.experiencePageLocation {
   margin-top: 5px;
   font-size: 14px;
+}
+
+.homeLink {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+}
+.vertical-timeline-element-date {
+  color: #585b5e;
 }

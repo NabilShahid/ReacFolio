@@ -7,24 +7,26 @@ import "react-vertical-timeline-component/style.min.css";
 import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
 import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
 import { ReactComponent as Start } from "../../assets/svgs/power.svg";
+import { ReactComponent as LinkIcon } from "../../assets/svgs/external-link-symbol.svg";
 
 import "./experiencepage.css";
+const openUrl = link => {
+  window.open(link, "_blank");
+};
 class ExperiencePage extends Component {
   state = {};
   render() {
     return (
       <div id="experiencePage">
         <div className="pageHeader">
-        <span className="pageHeaderText">
-            Experience
-        </span>
-      </div>
+          <span className="pageHeaderText">Experience</span>
+        </div>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "var(--color-1)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  var(--color-2)" }}
-            date="2019 - Present"
+            date="Aug 2019 - Present"
             iconStyle={{
               background: "var(--color-5)",
               color: "white",
@@ -35,20 +37,16 @@ class ExperiencePage extends Component {
             <h3 className="vertical-timeline-element-title">
               FullStack Developer
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              AuxilioTech 
-            </h4>
-            <div className="experiencePageLocation">
-                Islamabad, Pakistan
-            </div>
+            <h4 className="vertical-timeline-element-subtitle">AuxilioTech</h4>
+            <div className="experiencePageLocation">Islamabad, Pakistan</div>
             <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
+              Working as lead developer on the company's flagship software
+              product.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2015 - 2019"
+            date="Mar 2016 - Aug 2019"
             contentStyle={{ borderTop: "3px solid var(--color-5)" }}
             iconStyle={{ background: "#8f9090", color: "white", fill: "white" }}
             icon={<Work />}
@@ -56,30 +54,41 @@ class ExperiencePage extends Component {
             <h3 className="vertical-timeline-element-title">
               FullStack Developer
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">AbbVie Inc.</h4>
-            <div className="experiencePageLocation">
-                Islamabad, Pakistan
-            </div>
+            <h4
+              onClick={() => openUrl("http://www.abbvie.com")}
+              style={{cursor:"pointer"}}
+              className="vertical-timeline-element-subtitle"
+            >
+              AbbVie Inc.
+              <LinkIcon className="homeLink" />
+            </h4>
+            <div className="experiencePageLocation">Islamabad, Pakistan</div>
             <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online
-              Marketing
+              Worked on various projects related to business workflows
+              automation.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2015"
+            date="Aug 2011 - July 2015"
             contentStyle={{ borderTop: "3px solid var(--color-5)" }}
             iconStyle={{ background: "#8f9090", color: "#fff", fill: "white" }}
             icon={<Graduation />}
           >
             <h3 className="vertical-timeline-element-title">
-              Computer Scientist
+              Bachelor of Science (Computer Science)
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              National University of Computer and Emerging Sciences Islamabad
-              (FAST)
+            <h4
+              onClick={() => openUrl("http://nu.edu.pk")}
+              style={{cursor:"pointer"}}
+              className="verticaertical-timeline-element-subtitle"
+            >
+              National University of Computer and Emerging Sciences (FAST)
+              <LinkIcon className="homeLink" />
             </h4>
-            <p>User Experience, Visual Design</p>
+            <div className="experiencePageLocation">Islamabad, Pakistan</div>
+
+            {/* <p>Graduated as Bachelor of Science </p> */}
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
