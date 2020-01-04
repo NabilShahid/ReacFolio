@@ -15,7 +15,32 @@
   align-items: center;
   justify-content: center;
 }
-.contactFormContainer{
-    display: flex;
-    justify-content: center;
+.contactFormContainer {
+  display: flex;
+  justify-content: center;
+}
+.colorsAnimText {
+  color: #fff;
+  font-size: 15px;
+  /* font-family: "ubuntu"; */
+  /* text-transform: uppercase; */
+  /* font-weight: 700; */
+  /* font-family: "Josefin Sans", sans-serif; */
+  background: linear-gradient(to right, var(--color-1),var(--color-4),var(--color-5));
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4.5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }

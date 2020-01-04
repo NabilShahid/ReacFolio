@@ -52,12 +52,16 @@ div {
   font-size: 22px;
   text-align: center;
   margin-bottom: 40px;
-  color: var(--color-1);
+ 
+  
 }
 .pageHeaderText{
   border-bottom: 1px solid #bbbbbb;
   padding: 0px 14px;
   padding-bottom: 5px;
+  background: linear-gradient(to right, var(--color-1) 0%, var(--color-5) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .buttonHover:hover {
   background: #04C2C9;

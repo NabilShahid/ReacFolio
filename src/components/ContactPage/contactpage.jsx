@@ -20,7 +20,7 @@ const Contact = ({ activeIndex, pageIndex }) => {
       </div>
       <FadeReveal duration={500} spy={currentAnimSpy}>
         <div className="contactTypes">
-          <div className="contactType" style={{fontSize:"15px", textAlign:"center"}}>
+          <div className="contactType colorsAnimText" style={{fontSize:"15px", textAlign:"center"}}>
             Interested in working together and get amazing things done ?<br/> Feel free to contact me.
           </div>
           <div className="contactType">
