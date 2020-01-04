@@ -3,7 +3,7 @@ import ImageGallery from "react-image-gallery";
 import "./projectinfo.css";
 import { ReactComponent as LinkIcon } from "../../assets/svgs/external-link-symbol.svg";
 import { ReactComponent as GitHubLogo } from "../../assets/svgs/github-logo.svg";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import { Icon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
 import { ICON_LABELS } from "../../constants.js";
@@ -32,7 +32,7 @@ const openUrl = link => {
   window.open(link, "_blank");
 };
 const showToastMessage = message => {
-  toast.error(message);
+  toast(message);
 };
 const ProjectInfo = ({ project }) => {
   const images = getImagesArrayForGallery(
@@ -43,15 +43,18 @@ const ProjectInfo = ({ project }) => {
   return (
     <div className="projectsInfoDiv">
       <div
-        onClick={() => {
+        
+        className="projectInfoName"
+      >
+        <span style={{cursor:"pointer"}} onClick={() => {
           project.HasUrl
             ? openUrl(project.UrlLink)
             : showToastMessage(project.NoUrlReason);
-        }}
-        className="projectInfoName"
-      >
+        }}> 
+
         {project.Name}
         <LinkIcon className="projectLink" />
+        </span>
       </div>
       <div className="projectInfoSubtitle">
         {project.Subtitle + " (" + project.Target + ")"}
@@ -95,18 +98,7 @@ const ProjectInfo = ({ project }) => {
           size="100px"
           items={images}
         />
-      </div>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={true}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnVisibilityChange
-        draggable
-        pauseOnHover
-      />
+      </div>    
     </div>
   );
 };

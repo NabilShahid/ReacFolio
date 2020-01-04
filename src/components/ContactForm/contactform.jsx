@@ -13,7 +13,7 @@ class ContactForm extends Component {
     toast.info(message);
   };
   showToastErrorMessage = message => {
-    toast.error(message);
+    toast(message);
   };
 
   sendEmail = () => {
@@ -98,20 +98,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </FadeReveal>
-        </div>
-        <ToastContainer
-          style={{ backgroundColor: "green !important" }}
-          position="top-center"
-          autoClose={5000}
-          hideProgressBar={true}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          transition={Slide}
-          pauseOnVisibilityChange
-          draggable
-          pauseOnHover
-        />
+        </div>  
       </form>
     );
   }

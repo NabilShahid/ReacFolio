@@ -5,7 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
-import { ReactComponent as Work } from "../../assets/svgs/workexperience.svg";
+import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
 import { ReactComponent as Start } from "../../assets/svgs/power.svg";
 
 import "./experiencepage.css";

@@ -59,7 +59,7 @@ div {
   border-bottom: 1px solid #bbbbbb;
   padding: 0px 14px;
   padding-bottom: 5px;
-  background: linear-gradient(to right, var(--color-1) 0%, var(--color-5) 100%);
+  background: linear-gradient(to bottom, var(--color-1) 0%, var(--color-5) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -67,6 +67,14 @@ div {
   background: #04C2C9;
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(0.9);
+}
+.Toastify__toast--default {
+    background: var(--color-5) !important;
+    color: white !important;
+}
+.Toastify__close-button--default {
+  color: white !important;
+  /* opacity: 0.3; */
 }
 @media (max-width: 992px) {
 

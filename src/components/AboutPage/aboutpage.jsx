@@ -2,7 +2,7 @@ import React from "react";
 import SkillsCard from "../SkillsCard/skillscard";
 import MyImage from "../../assets/images/CVPIC.jpg";
 import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
-import { ReactComponent as Work } from "../../assets/svgs/workexperience.svg";
+import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
 import "./aboutpage.css";
 import FadeReveal from "react-reveal/Zoom";
 let currentAnimSpy = 0;
@@ -11,7 +11,7 @@ const aboutIconsStyle = {
   width: "25px",
   marginRight: "5px",
   marginTop: "-2px",
-  fill: "#8f9090"
+  fill: "#585858"
 };
 const AboutPage = ({ activeIndex, pageIndex }) => {
   if (activeIndex == pageIndex) currentAnimSpy++;
@@ -40,8 +40,8 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
                   <Work
                     style={{
                       ...aboutIconsStyle,
-                      height: "21px",
-                      width: "21px"
+                      height: "23px",
+                      width: "23px"
                     }}
                   />{" "}
                   3.5+ Years Experience

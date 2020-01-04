@@ -15,8 +15,7 @@
 .projectInfoName{
     font-size: 27px;
     color: var(--color-1);
-    margin-top: 7px;
-    cursor: pointer;
+    margin-top: 7px; 
 }
 .projectInfoSubtitle{
     font-size: 14px;

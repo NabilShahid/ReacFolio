@@ -9,6 +9,7 @@ import ContactPage from "../ContactPage/contactpage";
 import { Fullpage, Slide } from "fullpage-react";
 import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
+import { ToastContainer } from "react-toastify";
 
 const { changeFullpageSlide } = Fullpage;
 const fullPageOptions = {
@@ -39,17 +40,16 @@ class MainScroller extends Component {
   state = {
     activeIndex: 0
   };
-  Contact;
+  maxSlideIndex = 4;
   constructor(props) {
     super(props);
     this.scrollerRef = React.createRef();
   }
   componentDidMount() {
     setTimeout(() => {
-      this.scrollerRef.current.onVerticalScroll = undefined;
-      this.scrollerRef.current.ss.scrollPreventDefault = false;
-      this.scrollerRef.current.ss.touchPreventDefault = false;
+      changeFullpageSlide(0);
       window.scrollTo({ top: 0 });
+      this.enableVerticalScrolling();
     });
   }
   render() {
@@ -95,19 +95,40 @@ class MainScroller extends Component {
               <ExperiencePage />{" "}
             </Slide>,
             <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
-              <ContactPage  activeIndex={activeIndex} pageIndex={4} />
+              <ContactPage activeIndex={activeIndex} pageIndex={4} />
             </Slide>
           ]}
+        />
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={true}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnVisibilityChange
+          draggable
+          pauseOnHover
         />
       </div>
     );
   }
   onSlideChangeStart = (a, b, { lastActive }, { activeSlide }) => {
-    this.setState({ activeIndex: activeSlide });
+    if (
+      activeSlide !== this.state.activeIndex &&
+      activeSlide >= 0 &&
+      activeSlide <= this.maxSlideIndex
+    )
+      this.setState({ activeIndex: activeSlide });
   };
   outsideSlideChange = index => {
-    this.setState({ activeIndex: index });
+    if (index !== this.state.activeIndex) this.setState({ activeIndex: index });
   };
+  enableVerticalScrolling() {
+    this.scrollerRef.current.onVerticalScroll = undefined;
+    this.scrollerRef.current.ss.scrollPreventDefault = false;
+    this.scrollerRef.current.ss.touchPreventDefault = false;
+  }
 }
 
 export default MainScroller;
