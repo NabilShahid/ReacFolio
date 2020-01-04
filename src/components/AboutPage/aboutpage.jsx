@@ -10,7 +10,7 @@ const aboutIconsStyle = {
   height: "25px",
   width: "25px",
   marginRight: "5px",
-  marginTop: "-2px",
+  marginTop: "-5px",
   fill: "#585858"
 };
 const AboutPage = ({ activeIndex, pageIndex }) => {
@@ -46,12 +46,19 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
                   />{" "}
                   3.5+ Years Experience
                 </div>
-                </div>
+              </div>
               <div className="aboutMeText">
-                My nabil is Nabil Shahid. I am a fullStack Developer. My nabil
-                is Nabil Shahid. I am a fullStack Developer. My nabil is Nabil
-                Shahid. I am a fullStack Developer. My nabil is Nabil Shahid. I
-                am a fullStack Developer.
+                Hey it’s Nabil Shahid. I am a quality focused Full Stack
+                Developer with a record of delivering high quality, robust and
+                reliable software. Having propensity to write reusable,
+                understandable and optimal code while keeping in mind best
+                practices and standards. Profound insight and knowledge of front
+                end and backend development technologies, frameworks, libraries,
+                databases, architecture styles, patterns, and algorithms. I
+                consider myself really good at Angular, React, JavaScript,
+                SQL and Relational databases as I have worked on these
+                technologies extensively and try to learn more about
+                them every day.
               </div>
             </div>
           </FadeReveal>
