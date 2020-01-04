@@ -70,7 +70,7 @@ const IntroText = () => {
       <div id="rotatingSpans" className="rotateTextP">
         <span className="word">Full Stack Developer</span>
         <span className="word">Front End Developer</span>
-        <span className="word">Backend Developer</span>
+        <span className="word">Back End Developer</span>
         <span className="word">JavaScript Developer</span>
         <span className="word">Database Administrator</span>
       </div>

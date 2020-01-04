@@ -53,7 +53,7 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
                 reliable software. Having propensity to write reusable,
                 understandable and optimal code while keeping in mind best
                 practices and standards. Profound insight and knowledge of front
-                end and backend development technologies, frameworks, libraries,
+                end and back end development technologies, frameworks, libraries,
                 databases, architecture styles, patterns, and algorithms. I
                 consider myself really good at Angular, React, JavaScript,
                 SQL and Relational databases as I have worked on these
