@@ -31,8 +31,7 @@ class ProjectCard extends Component {
           <div className="projectCardContentDiv">
             <div className="projectName">
               <div className="projectNameText">{Name}</div>
-              <div
-                style={{ color: Color }}
+              <div                
                 onClick={() => {
                   action(project);
                 }}

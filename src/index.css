@@ -2,13 +2,11 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @import "./assets//styleVars.css";
 
-
 :root {
   /* Global colors */
   --main-blue: #1c7aca;
   --main-green: #1ad4b1;
-  --main-gradient:linear-gradient(to left,#277abf,#0c5397)
-
+  --main-gradient: linear-gradient(to left, #277abf, #0c5397);
 }
 
 html {
@@ -24,7 +22,7 @@ div {
   font-family: "Rubik", serif;
 }
 
-.styles_modal__gNwvD{
+.styles_modal__gNwvD {
   padding: 0px 8px 8px 8px;
 }
 
@@ -36,50 +34,50 @@ div {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #FFFFFF; 
+  background: #ffffff;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #CCCCCC; 
+  background: #cccccc;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #CCCCCC; 
+  background: #cccccc;
 }
-.pageHeader{
+.pageHeader {
   font-size: 22px;
   text-align: center;
   margin-bottom: 40px;
- 
-  
 }
-.pageHeaderText{
+.pageHeaderText {
   border-bottom: 1px solid #bbbbbb;
   padding: 0px 14px;
   padding-bottom: 5px;
-  background: linear-gradient(to bottom, var(--color-1) 0%, var(--color-5) 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--color-1) 0%,
+    var(--color-5) 100%
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .buttonHover:hover {
-  background: #04C2C9;
+  background: #04c2c9;
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(0.9);
 }
 .Toastify__toast--default {
-    background: var(--color-5) !important;
-    color: white !important;
+  background: var(--color-5) !important;
+  color: white !important;
 }
 .Toastify__close-button--default {
-  color: white !important;
-  /* opacity: 0.3; */
+  color: #bbbbbb !important;
+  opacity: 1 !important;
 }
 @media (max-width: 992px) {
-
   [class*="col-"] {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
-
 }

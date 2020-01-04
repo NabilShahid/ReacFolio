@@ -3,12 +3,19 @@ import { ReactComponent as Desktop } from "./assets/svgs/computericon.svg";
 import { ReactComponent as Sqlserver } from "./assets/svgs/mssql.svg";
 import { ReactComponent as Sql } from "./assets/svgs/sql.svg";
 import { ReactComponent as AntDesign } from "./assets/svgs/antdesign.svg";
-
+const PROJECT_TARGETS = {
+  Personal: "Personal Project",
+  AbbVie: "Created for AbbVie Inc.",
+  FreelanceClient: "Freelance Project for Client",
+  FreelanceStartup: "Freelance Project for a Startup"
+};
+const PROPRIETARY_SOFTWARE_TEXT =
+  "No repository link as it is company's proprietary software";
 export const PROJECTS = [
   {
     Name: "Gohab",
     Description:
-      "Elegantly designed, intuitive and engaging web application focusing on personal development by allowing users to manage and track personal goals, habits and tasks effectually.<br/> Offers extensive features including assigning importance to each item, tracking habits, calendar views, notifications, reports and charts of viewing progress and much more.",
+      "Elegantly desinged, intutive and engaging web application focusing on personal development by allowing users to manage and track personal goals, habits and tasks effectually.Offers extensive features including tracking habits, calendar views, notifications, reports and charts of viewing progress and much more.",
     Color: "var(--color-1)",
     Subtitle: "Goals, tasks and habits management system",
     ImageFile: "gohab.PNG",
@@ -21,7 +28,7 @@ export const PROJECTS = [
     UrlLink: "https://gohab-prod.firebaseapp.com/main/home",
     NoUrlReason: "",
     NoRepoReason: "",
-    Target: "Personal Project",
+    Target: PROJECT_TARGETS.Personal,
     Technologies: [
       "React",
       "Redux",
@@ -33,11 +40,11 @@ export const PROJECTS = [
     ]
   },
   {
-    Name: "RarpidFlow",
+    Name: "RapidFlow",
     Description:
-      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+      "A custom developed web based platform that automates complex business workflows. Became a principal platform within the organization for automating all kind of workflows and is used by 35000+ of employees, replacing all previous solutions and implementations of workflow automation.",
     Color: "var(--color-3)",
-    Subtitle: "test",
+    Subtitle: "Workflow Automation Platform",
     ImageFile: "rapidflow.PNG",
     Platform: "Web",
     ImagesFolder: "RapidFlow",
@@ -46,9 +53,10 @@ export const PROJECTS = [
     HasUrl: false,
     RepoLink: "",
     UrlLink: "",
-    NoUrlReason: "This was delea",
-    NoRepoReason: "34234324324234",
-    Target: "Personal Project",
+    NoUrlReason:
+      "This application can only be accessed through company's VPN and is for company's internal users only.",
+    NoRepoReason: PROPRIETARY_SOFTWARE_TEXT,
+    Target: PROJECT_TARGETS.AbbVie,
     Technologies: [
       "Angular",
       "Typescript",
@@ -62,9 +70,9 @@ export const PROJECTS = [
   {
     Name: "RapidFlow App Studio",
     Description:
-      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+      "A web based Integrated development environment(IDE) for developing business processes for RapidFlow Platform used by hundreds of developers within the organization, providing advanced features like syntax highlighting, version control, IntelliSense and many others, making the development of business processes seamless for the developers.",
     Color: "var(--color-4)",
-    Subtitle: "test",
+    Subtitle: "Workflow Development Framework",
     ImageFile: "appstudio.PNG",
     Platform: "Web",
     ImagesFolder: "RapidFlowAppStudio",
@@ -73,9 +81,10 @@ export const PROJECTS = [
     HasUrl: false,
     RepoLink: "",
     UrlLink: "",
-    NoUrlReason: "fasdf",
-    NoRepoReason: "f sdf asdf adsf sdf ",
-    Target: "Personal Project",
+    NoUrlReason:
+      "This application can only be accessed through company's VPN and is for company's internal users only.",
+    NoRepoReason: PROPRIETARY_SOFTWARE_TEXT,
+    Target: PROJECT_TARGETS.AbbVie,
     Technologies: [
       "Angular",
       "Typescript",
@@ -89,9 +98,9 @@ export const PROJECTS = [
   {
     Name: "Ndis",
     Description:
-      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+      "A windows form application for tracking distributions, sales and purchases. Offers extensive features and reporting facilities for better tracking and analyzation of transactions. Being used extensively as the primary system for distribution management within client’s organization.",
     Color: "var(--color-1)",
-    Subtitle: "test",
+    Subtitle: "Distrubution Management System",
     ImageFile: "ndis.PNG",
     Platform: "Desktop",
     ImagesFolder: "Ndis",
@@ -100,9 +109,9 @@ export const PROJECTS = [
     HasUrl: false,
     RepoLink: "",
     UrlLink: "",
-    NoUrlReason: " sdf sdf a",
-    NoRepoReason: " fsdfasdf sdf sa",
-    Target: "Personal Project",
+    NoUrlReason: "No Link as it is a Windows desktop application",
+    NoRepoReason: PROPRIETARY_SOFTWARE_TEXT,
+    Target: PROJECT_TARGETS.FreelanceClient,
     Technologies: [
       "Csharp",
       "Dotnet",
@@ -112,10 +121,9 @@ export const PROJECTS = [
   },
   {
     Name: "Portfolio",
-    Description:
-      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+    Description: "",
     Color: "var(--color-1)",
-    Subtitle: "test",
+    Subtitle: "",
     ImageFile: "portfolio.PNG",
     Platform: "Web",
     ImagesFolder: "Portfolio",
@@ -124,36 +132,36 @@ export const PROJECTS = [
     HasUrl: false,
     RepoLink: "https://github.com/NabilShahid/ReacFolio",
     UrlLink: "",
-    NoUrlReason: " dsf asfasdf sd fsdf",
+    NoUrlReason: "You are on the same website !",
     NoRepoReason: "",
-    Target: "Personal Project",
+    Target: PROJECT_TARGETS.Personal,
     Technologies: ["React", "Javascript", "Firebase"]
   },
   {
     Name: "Cointec",
     Description:
-      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+      "A Web Application for facilitating cryptocurrency investments. Offers extensive features like Wallet management, learning resources, payments and reporting.",
     Color: "var(--color-5)",
-    Subtitle: "test",
+    Subtitle: "Crypto Asset Investing",
     ImageFile: "cointec.PNG",
     Platform: "Web",
     ImagesFolder: "Cointec",
-    ImageCount: 3,
+    ImageCount: 5,
     HasRepo: false,
     HasUrl: true,
     RepoLink: "",
     UrlLink: "http://staging.cointec.co.uk/",
     NoUrlReason: "",
-    NoRepoReason: "dsfds fdsf asdf ds",
-    Target: "Personal Project",
+    NoRepoReason: PROPRIETARY_SOFTWARE_TEXT,
+    Target: PROJECT_TARGETS.FreelanceStartup+", Currently in Development",
     Technologies: ["React", "Javascript", "Node"]
   },
   {
     Name: "Eventrone",
     Description:
-      "Simple Image Resizer. Drag-n-Drop. Click. Done. Resize batches.",
+      "A Web Application for customers and vendors for managing wedding services i.e. venue, catering, décor, photographer, car rentals etc.  Offers features like comparing different services, reviews and rankings of services, booking manager and quote manager.",
     Color: "var(--color-2)",
-    Subtitle: "test",
+    Subtitle: "Online Wedding Services",
     ImageFile: "eventrone.PNG",
     Platform: "Web",
     ImagesFolder: "Eventrone",
@@ -163,8 +171,8 @@ export const PROJECTS = [
     RepoLink: "",
     UrlLink: "https://www.eventrone.com/",
     NoUrlReason: "",
-    NoRepoReason: "fsdfdsf sdf asdf s",
-    Target: "Personal Project",
+    NoRepoReason: PROPRIETARY_SOFTWARE_TEXT,
+    Target: PROJECT_TARGETS.FreelanceStartup,
     Technologies: ["Javascript", "Jquery", "Python", "Django"]
   }
 ];
@@ -227,7 +235,9 @@ export const SKILLS = [
     Items: [
       { Name: "Debugging" },
       { Name: "Troubleshooting" },
-      { Name: "Database Indexing" },
+      { Name: "Functional Programming" },
+      { Name: "Object Oriented Programming" },
+      { Name: "Database Indexing and Tuning" },
       { Name: "Query Optimization" }
     ]
   }
@@ -261,5 +271,6 @@ export const ICON_LABELS = {
   Antdesign: "Ant Design",
   Jquery: "JQuery",
   Python: "Python",
-  Mssql:"MS SQL Server"
+  Mssql: "MS SQL Server",
+  Django:"Django"
 };
