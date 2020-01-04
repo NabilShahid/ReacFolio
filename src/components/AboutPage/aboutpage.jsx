@@ -1,19 +1,24 @@
 import React from "react";
 import SkillsCard from "../SkillsCard/skillscard";
 import MyImage from "../../assets/images/CVPIC.jpg";
-
+import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
+import { ReactComponent as Work } from "../../assets/svgs/workexperience.svg";
 import "./aboutpage.css";
 import FadeReveal from "react-reveal/Zoom";
-let currentAnimSpy=0;
+let currentAnimSpy = 0;
+const aboutIconsStyle = {
+  height: "25px",
+  width: "25px",
+  marginRight:"5px",
+  marginTop:"-2px",
+  fill: "#8f9090",
+};
 const AboutPage = ({ activeIndex, pageIndex }) => {
-  if (activeIndex == pageIndex)
-  currentAnimSpy++;
+  if (activeIndex == pageIndex) currentAnimSpy++;
   return (
     <div id="aboutPage">
       <div className="pageHeader">
-        <span className="pageHeaderText">
-            About
-        </span>
+        <span className="pageHeaderText">About</span>
       </div>
       <div className="row">
         <div
@@ -25,7 +30,16 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
               <img src={MyImage} alt="profile" className="profileImage" />
 
               <div className="aboutMeHeader">About Me</div>
-
+              <div className="row aboutMeInfoItemContainer">
+                <div className="abouteMeInfoItem col-md-6 aboutMeInfoItemsSeperator" >
+                  <Graduation style={{...aboutIconsStyle}} /> BS Computer Science
+                </div>
+              {/* </div>
+              <div className="aboutMeInfoItemContainer"> */}
+                <div className="abouteMeInfoItem col-md-6" >
+                  <Work style={{...aboutIconsStyle,height:"21px",width:"21px"}} /> 3.5+ Years Expirience
+                </div>
+              </div>
               <div className="aboutMeText">
                 My nabil is Nabil Shahid. I am a fullStack Developer. My nabil
                 is Nabil Shahid. I am a fullStack Developer. My nabil is Nabil

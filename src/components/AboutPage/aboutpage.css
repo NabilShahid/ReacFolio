@@ -1,26 +1,52 @@
 #aboutPage {
-    height: 100%;
-    padding-top:15px;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  .profileImage{
-    border-radius: 50%;
-    width: 190px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  padding-top: 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.profileImage {
+  border-radius: 50%;
+  width: 190px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+.aboutMeHeader {
+  font-size: 25px;
+  color: var(--color-1);
+  margin: 10px 0px;
+}
 
-  }
-  .aboutMeHeader{
-    font-size: 25px;
-    color: var(--color-1);
-    margin: 10px 0px;
-  }
+.aboutMeText {
+  font-size: 14px;
+  /* color: #797979; */
+}
 
-  .aboutMeText{
-    font-size: 14px;
-    color: #797979;
-  }
+.aboutMeDiv {
+  padding: 0px 15px;
+}
 
-  .aboutMeDiv{
-    padding: 0px 15px;
+.aboutMeInfoItemContainer {
+  margin-bottom: 12px;
+  font-size: 15px;
+  /* color: #797979; */
+}
+
+.aboutMeInfoItemsSeperator {
+  /* padding-bottom: 7px; */
+}
+
+@media (min-width: 768px) {
+  .aboutMeInfoItemsSeperator {
+    border-right: 1px solid #bbbbbb;
+
+    /* padding-bottom: 7px; */
   }
+  /* .abouteMeInfoItem:first{
+    text-align: right;
+  } */
+  .abouteMeInfoItem:nth-child(1){
+    text-align: center;
+  }
+  .abouteMeInfoItem:nth-child(2){
+    text-align: center;
+  }
+}
