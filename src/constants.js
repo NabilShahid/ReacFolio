@@ -25,7 +25,7 @@ export const PROJECTS = [
     HasRepo: true,
     HasUrl: true,
     RepoLink: "https://github.com/NabilShahid/GoHab",
-    UrlLink: "https://gohab-prod.firebaseapp.com/main/home",
+    UrlLink: "https://www.gohab.online",
     NoUrlReason: "",
     NoRepoReason: "",
     Target: PROJECT_TARGETS.Personal,
@@ -153,7 +153,7 @@ export const PROJECTS = [
     UrlLink: "http://staging.cointec.co.uk/",
     NoUrlReason: "",
     NoRepoReason: PROPRIETARY_SOFTWARE_TEXT,
-    Target: PROJECT_TARGETS.FreelanceStartup+", Currently in Development",
+    Target: PROJECT_TARGETS.FreelanceStartup + ", Currently in Development",
     Technologies: ["React", "Javascript", "Node"]
   },
   {
@@ -183,6 +183,7 @@ export const SKILLS = [
       { Name: "Angular", Icon: "Angular" },
       { Name: "React", Icon: "React" },
       { Name: "JavaScript", Icon: "Javascript" },
+      { Name: "ECMAScript 6", Icon: "Es6" },
       { Name: "TypeScript", Icon: "Typescript" },
       { Name: "Redux", Icon: "Redux" },
       { Name: "Webpack", Icon: "Webpack" },
@@ -200,6 +201,8 @@ export const SKILLS = [
       { Name: "CSharp", Icon: "Csharp" },
       { Name: ".Net", Icon: "Dotnet" },
       { Name: "JavaScript", Icon: "Javascript" },
+      { Name: "ECMAScript 6", Icon: "Es6" },
+
       { Name: "TypeScript", Icon: "Typescript" },
       { Name: "Express.js", Icon: "Express" },
       {
@@ -272,5 +275,6 @@ export const ICON_LABELS = {
   Jquery: "JQuery",
   Python: "Python",
   Mssql: "MS SQL Server",
-  Django:"Django"
+  Django: "Django",
+  Es6: "ECMAScript 6"
 };

@@ -23,6 +23,7 @@ import Git from '@iconify/icons-logos/git-icon';
 import Jquery from '@iconify/icons-logos/jquery';
 import Python from '@iconify/icons-logos/python';
 import Django from '@iconify/icons-logos/django';
+import Es6 from '@iconify/icons-logos/es6';
 
 
 
@@ -51,5 +52,6 @@ export const TechologiesIcons = {
   Git,
   Jquery,
   Python,
-  Django
+  Django,
+  Es6
 }; 
