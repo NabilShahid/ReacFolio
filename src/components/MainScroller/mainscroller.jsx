@@ -58,7 +58,7 @@ class MainScroller extends Component {
   render() {
     const { activeIndex } = this.state;
     return (
-      <div style={{height:"110vh",overflowY:"scroll",position:"relative"}}>
+      <div style={{height:"100vh",overflowY:"scroll",position:"relative"}}>
         <div
           id="navbarDiv"
           className={activeIndex == 0 ? "navbarFirstPage" : "navbarPage"}
