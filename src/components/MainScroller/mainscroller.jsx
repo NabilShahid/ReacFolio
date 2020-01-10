@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./mainscroller.css";
 import Particles from "../Particles/particles";
 import IntroText from "../IntroText/introtext";
+import SinglePage from "../SinglePage/singlepage";
 import Navbar from "../Navbar/navbar";
 import ProjectsPage from "../ProjectsPage/projectspage";
 import ExperiencePage from "../ExperiencePage/experiencepage";
@@ -11,7 +12,8 @@ import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
 import { ToastContainer } from "react-toastify";
 
-const { changeFullpageSlide } = Fullpage;
+// const { changeFullpageSlide } = Fullpage;
+const changeFullpageSlide=(i)=>{}
 const fullPageOptions = {
   // for mouse/wheel events
   // represents the level of force required to generate a slide change on non-mobile, 10 is default
@@ -49,13 +51,14 @@ class MainScroller extends Component {
     setTimeout(() => {
       changeFullpageSlide(0);
       window.scrollTo({ top: 0 });
-      this.enableVerticalScrolling();
+      // this.enableVerticalScrolling();
     });
   }
+  SinglePage
   render() {
     const { activeIndex } = this.state;
     return (
-      <div>
+      <div style={{height:"110vh",overflowY:"scroll",position:"relative"}}>
         <div
           id="navbarDiv"
           className={activeIndex == 0 ? "navbarFirstPage" : "navbarPage"}
@@ -66,38 +69,27 @@ class MainScroller extends Component {
             outsideSlideChange={this.outsideSlideChange}
           />
         </div>
-        <Fullpage
-          ref={this.scrollerRef}
-          onSlideChangeStart={this.onSlideChangeStart}
-          {...fullPageOptions}
-          slides={[
-            <Slide>
+       
+            <SinglePage>
               {" "}
-              <div
-                style={{
-                  position: "absolute",
-                  height: "100vh",
-                  width: "100vw"
-                }}
-              >
+              
                 <Particles />
                 <IntroText />
                 <HomeIcons />
-              </div>
-            </Slide>,
-            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+             </SinglePage>
+            <SinglePage style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <AboutPage activeIndex={activeIndex} pageIndex={1} />
-            </Slide>,
-            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+            </SinglePage>
+            <SinglePage style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
-            </Slide>,
-            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+            </SinglePage>
+            <SinglePage style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <ExperiencePage />{" "}
-            </Slide>,
-            <Slide style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+            </SinglePage>
+            <SinglePage style={{ background: "#d8d8d8", ...allSlidesStyle }}>
               <ContactPage activeIndex={activeIndex} pageIndex={4} />
-            </Slide>
-          ]}
+            </SinglePage>
+          
         />
         <ToastContainer
           position="top-center"
