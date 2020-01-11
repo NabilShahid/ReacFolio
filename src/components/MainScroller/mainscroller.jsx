@@ -80,7 +80,7 @@ class MainScroller extends Component {
       <div
         ref={this.containerReference}
         id="containerElement"
-        style={{ height: "100vh", overflowY: "scroll", position: "relative" }}
+        style={{ height: "100vh", overflowY: "scroll",overflowX:"hidden", position: "relative" }}
       >
         <div id="navbarDiv">
           <Navbar
