@@ -18,7 +18,7 @@ const SkillsCard = ({activeIndex,pageIndex}) => {
   currentAnimSpy++;
   return (
     <div id="skillsCard">
-      <FadeReveal  duration={500} spy={currentAnimSpy} >
+      <FadeReveal  duration={500} >
       <div className="skillsHeader">Top Skills</div>
 
       {SKILLS.map(skillarea => (

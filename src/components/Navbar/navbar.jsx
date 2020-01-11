@@ -7,12 +7,26 @@ import Flash from "react-reveal/Fade";
 import "./navbar.css";
 class Navbar extends Component {
   state = {
-    options: ["Home", "About", "Projects", "Experience", "Contact"],
+    options:[
+      {
+      refName:"homePage",
+      label:"Home"
+    },
+      {
+      refName:"aboutPage",
+      label:"About"
+    },
+      {
+      refName:"projectsPage",
+      label:"Projects"
+    },
+  ],
+    options1: ["Home", "About", "Projects", "Experience", "Contact"],
     expandableMenuShown: false
   };
   render() {
     const { options, expandableMenuShown } = this.state;
-    const { changeFullpageSlide, outsideSlideChange, activeIndex } = this.props;
+    const { activeIndex,scrollToRef } = this.props;
     return (
       <div className="brackets">
         <nav
@@ -40,18 +54,21 @@ class Navbar extends Component {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav">
-              {options.map((op, i) => (
+              {options.map((op, index) => (
                 <a
                   className={
-                    "navLink " + (activeIndex == i ? "selectedNavItem" : "")
+                    "navLink " + (activeIndex == index ? "selectedNavItem" : "")
                   }
                   onClick={() => {
-                    changeFullpageSlide(i);
-                    outsideSlideChange(i);
+                    // changeFullpageSlide(i);
+                    // outsideSlideChange(i);
+                    console.log(this.props.references,op.refName,index);
                     this.setState({ expandableMenuShown: false });
+
+                    scrollToRef(op.refName,index)
                   }}
                 >
-                  {op}
+                  {op.label}
                 </a>
               ))}
             </div>

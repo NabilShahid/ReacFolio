@@ -25,7 +25,7 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
           className="col-md-5"
           style={{ textAlign: "center", borderRight: " 1px solid #d0d0d0" }}
         >
-          <FadeReveal duration={500} spy={currentAnimSpy}>
+          <FadeReveal duration={500}>
             <div className="aboutMeDiv">
               <img src={MyImage} alt="profile" className="profileImage" />
 
