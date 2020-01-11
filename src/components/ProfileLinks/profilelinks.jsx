@@ -17,7 +17,7 @@ const ProfileLinks = () => {
         <IconButton
           Icon={GitHubLogo}
           Text="Github"
-          Style={iconStyle}
+          Style={{...iconStyle,margin:"0px -2px"}}
           onClick={() =>
             openProfileLink(
               "https://github.com/NabilShahid"
@@ -27,19 +27,17 @@ const ProfileLinks = () => {
         <IconButton
           Icon={StackOverflowLogo}
           Text="StackOverflow"
-          Style={{ height: "25px", width: "27px", marginTop: "-4px" }}
+          Style={{ height: "25px", width: "27px", marginTop: "-4px",marginLeft:"-2px" }}
           onClick={() =>
             openProfileLink(
               "https://stackoverflow.com/users/10406529/nabil-shahid"
             )
           }
         />
-      </div>
-      <div className="profileIconsRow">
         <IconButton
           Icon={LinkedInLogo}
           Text="LinkedIn"
-          Style={{ height: "24px", width: "24px", marginLeft: "5px" }}
+          Style={{ height: "24px", width: "24px",  }}
           onClick={() =>
             openProfileLink("https://www.linkedin.com/in/nabil-shahid-a41a6952")
           }
@@ -49,12 +47,13 @@ const ProfileLinks = () => {
           Icon={CvIcon}
           Text="Download CV"
           Link="Github"
-          Style={{ height: "28px", width: "24px", marginLeft: "4px" }}
+          Style={{ height: "28px", width: "24px", }}
           onClick={() =>
             openProfileLink("assets/files/Nabil%20Shahid%20CV.pdf")
           }
         />
       </div>
+      
     </div>
   );
 };

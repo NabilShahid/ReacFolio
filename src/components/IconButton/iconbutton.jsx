@@ -4,7 +4,7 @@ const IconButton = ({ Icon, Style, Link, Text, onClick }) => {
   return (
     <div className="iconButton buttonHover" onClick={()=>onClick()}>
       <Icon style={Style} />
-      <span className="iconButtonText">{Text}</span>
+      {/* <span className="iconButtonText">{Text}</span> */}
     </div>
   );
 };

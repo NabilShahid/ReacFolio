@@ -24,13 +24,10 @@
   padding: 12px 5px;
   cursor: pointer;
 }
-.selectedNavItem {
-  /* color: #03A9F4!important; */
-  border-bottom: 2px solid #ababab;
-}
+
 .selectedNavItem {
   color: #ababab !important;
-  border-bottom: 2px solid #ababab;
+  /* border-bottom: 2px solid #ababab; */
 }
 div.brackets a:before,
 div.brackets a:after {
@@ -63,7 +60,7 @@ div.brackets a:after {
 .navbarFirstPage {
   background: unset;
   box-shadow: unset;
-  transition: 0.6s;
+  transition: 0.2s;
   opacity: 0;
  }
 div.brackets a:before {

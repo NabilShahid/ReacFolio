@@ -3,6 +3,7 @@ import { ReactComponent as EmailIcon } from "../../assets/svgs/email.svg";
 import { ReactComponent as PhoneIcon } from "../../assets/svgs/telephone.svg";
 import ContactForm from "../ContactForm/contactform";
 import FadeReveal from "react-reveal/Zoom";
+import ProfileLinks from "../ProfileLinks/profilelinks"
 
 import "./contactpage.css";
 const contactIconsStyle = {
@@ -28,6 +29,9 @@ const contactIconsStyle = {
           <div className="contactType">
             <PhoneIcon style={contactIconsStyle} />
             <span className="contactText">+923477363136</span>
+          </div>
+          <div className="contactType">
+            <ProfileLinks/>
           </div>
         </div>
       </FadeReveal>

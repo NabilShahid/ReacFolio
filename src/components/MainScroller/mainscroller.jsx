@@ -11,8 +11,8 @@ import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
 import { ToastContainer } from "react-toastify";
 import { throttle } from "underscore";
-import { animateScroll as scroll,Events } from "react-scroll";
-
+import { animateScroll as scroll, Events } from "react-scroll";
+ 
 // const { changeFullpageSlide } = Fullpage;
 const changeFullpageSlide = i => {};
 
@@ -26,8 +26,8 @@ class MainScroller extends Component {
     homePage: null,
     aboutPage: null,
     projectsPage: null,
-    experiencePage:null,
-    contactPage:null
+    experiencePage: null,
+    contactPage: null
   };
   state = {
     activeIndex: 0
@@ -41,20 +41,19 @@ class MainScroller extends Component {
   activeIndexCopy;
   scrollToRef = (targetRef, activeIndex) => {
     this.autoScroll = true;
-    scroll.scrollTo(this.refrences[targetRef].current.offsetTop, {
-      duration: 1500,
+     scroll.scrollTo(this.refrences[targetRef].current.offsetTop, {
+      duration: (1300),
       delay: 200,
       smooth: "easeInOutCubic",
       containerId: "containerElement",
       offset: 150
     });
-    this.activeIndexCopy=activeIndex;
+    this.activeIndexCopy = activeIndex;
     // this.containerReference.current.scrollTo({
     //   top: this.refrences[targetRef].current.offsetTop,
     //   left: 0,
     //   behavior: "smooth"
     // });
-    
   };
   scrollFn = () => {
     if (!this.autoScroll) {
@@ -64,12 +63,13 @@ class MainScroller extends Component {
   };
   throttledScrollToFn = throttle(this.scrollFn, 100);
   componentDidMount() {
+  
     this.containerReference.current.addEventListener(
       "scroll",
       this.throttledScrollToFn
     );
-    Events.scrollEvent.register('end', (to, element)=> {
-      this.setState({ activeIndex:this.activeIndexCopy });
+    Events.scrollEvent.register("end", (to, element) => {
+      this.setState({ activeIndex: this.activeIndexCopy });
       this.autoScroll = false;
     });
     // setInterval(this.scrollFn,500)
@@ -82,10 +82,7 @@ class MainScroller extends Component {
         id="containerElement"
         style={{ height: "100vh", overflowY: "scroll", position: "relative" }}
       >
-        <div
-          id="navbarDiv"
-          
-        >
+        <div id="navbarDiv">
           <Navbar
             changeFullpageSlide={changeFullpageSlide}
             activeIndex={activeIndex}
@@ -99,25 +96,35 @@ class MainScroller extends Component {
           <IntroText />
           <HomeIcons />
         </SinglePage>
+        <div className="dividerDiv"></div>
         <SinglePage
           currRef={this.refrences.aboutPage}
           style={{ background: "#d8d8d8", ...allSlidesStyle }}
         >
           <AboutPage activeIndex={activeIndex} pageIndex={1} />
         </SinglePage>
+        <div className="dividerDiv"></div>
         <SinglePage
           currRef={this.refrences.projectsPage}
           style={{ background: "#d8d8d8", ...allSlidesStyle }}
         >
           <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
         </SinglePage>
-        <SinglePage currRef={this.refrences.experiencePage} style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+        <div className="dividerDiv"></div>
+        <SinglePage
+          currRef={this.refrences.experiencePage}
+          style={{ background: "#d8d8d8", ...allSlidesStyle }}
+        >
           <ExperiencePage />{" "}
         </SinglePage>
-        <SinglePage currRef={this.refrences.contactPage} style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+        <div className="dividerDiv"></div>
+        <SinglePage
+          currRef={this.refrences.contactPage}
+          style={{ background: "#d8d8d8", ...allSlidesStyle }}
+        >
           <ContactPage activeIndex={activeIndex} pageIndex={4} />
         </SinglePage>
-        />
+         
         <ToastContainer
           position="top-center"
           autoClose={5000}
@@ -151,7 +158,7 @@ class MainScroller extends Component {
   };
 
   checkWhichPageIndexInViewport() {
-    console.log("scrollevent")
+    console.log("scrollevent");
     let index = Object.keys(this.refrences).findIndex(ref =>
       isInViewport(this.refrences[ref].current)
     );

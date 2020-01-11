@@ -1,8 +1,8 @@
 .profileIconsRow{
     display: flex;
 }
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .profileIconsRow{
         display: block;
     }
-}
+} */
