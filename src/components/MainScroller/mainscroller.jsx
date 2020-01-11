@@ -10,6 +10,8 @@ import ContactPage from "../ContactPage/contactpage";
 import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
 import { ToastContainer } from "react-toastify";
+import { throttle } from "underscore";
+import { animateScroll as scroll,Events } from "react-scroll";
 
 // const { changeFullpageSlide } = Fullpage;
 const changeFullpageSlide = i => {};
@@ -23,36 +25,66 @@ class MainScroller extends Component {
   refrences = {
     homePage: null,
     aboutPage: null,
-    projectsPage: null
-  }
+    projectsPage: null,
+    experiencePage:null,
+    contactPage:null
+  };
   state = {
-    activeIndex: 0,
-    
+    activeIndex: 0
   };
   constructor(props) {
     super(props);
     this.createReferences();
-    console.log(this.refrences)
+    console.log(this.refrences);
   }
-  scrollToRef=(targetRef,activeIndex)=> {
-    console.log(this)
-    this.containerReference.current.scrollTo({
-      top: this.refrences[targetRef].current.offsetTop,
-      left: 0,
-      behavior: "smooth"
+  autoScroll = false;
+  activeIndexCopy;
+  scrollToRef = (targetRef, activeIndex) => {
+    this.autoScroll = true;
+    scroll.scrollTo(this.refrences[targetRef].current.offsetTop, {
+      duration: 1500,
+      delay: 200,
+      smooth: "easeInOutCubic",
+      containerId: "containerElement",
+      offset: 150
     });
-    this.setState({activeIndex})
+    this.activeIndexCopy=activeIndex;
+    // this.containerReference.current.scrollTo({
+    //   top: this.refrences[targetRef].current.offsetTop,
+    //   left: 0,
+    //   behavior: "smooth"
+    // });
+    
+  };
+  scrollFn = () => {
+    if (!this.autoScroll) {
+      const index = this.checkWhichPageIndexInViewport();
+      if (index != -1) this.setState({ activeIndex: index });
+    }
+  };
+  throttledScrollToFn = throttle(this.scrollFn, 100);
+  componentDidMount() {
+    this.containerReference.current.addEventListener(
+      "scroll",
+      this.throttledScrollToFn
+    );
+    Events.scrollEvent.register('end', (to, element)=> {
+      this.setState({ activeIndex:this.activeIndexCopy });
+      this.autoScroll = false;
+    });
+    // setInterval(this.scrollFn,500)
   }
   render() {
     const { activeIndex } = this.state;
     return (
       <div
         ref={this.containerReference}
+        id="containerElement"
         style={{ height: "100vh", overflowY: "scroll", position: "relative" }}
       >
         <div
           id="navbarDiv"
-          className={activeIndex == 0 ? "navbarFirstPage" : "navbarPage"}
+          
         >
           <Navbar
             changeFullpageSlide={changeFullpageSlide}
@@ -61,7 +93,7 @@ class MainScroller extends Component {
             scrollToRef={this.scrollToRef}
           />
         </div>
-        <SinglePage currRef={this.refrences.homePage}>
+        <SinglePage isFirstPage={true} currRef={this.refrences.homePage}>
           {" "}
           <Particles />
           <IntroText />
@@ -79,10 +111,10 @@ class MainScroller extends Component {
         >
           <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
         </SinglePage>
-        <SinglePage style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+        <SinglePage currRef={this.refrences.experiencePage} style={{ background: "#d8d8d8", ...allSlidesStyle }}>
           <ExperiencePage />{" "}
         </SinglePage>
-        <SinglePage style={{ background: "#d8d8d8", ...allSlidesStyle }}>
+        <SinglePage currRef={this.refrences.contactPage} style={{ background: "#d8d8d8", ...allSlidesStyle }}>
           <ContactPage activeIndex={activeIndex} pageIndex={4} />
         </SinglePage>
         />
@@ -117,6 +149,23 @@ class MainScroller extends Component {
       this.refrences[ref] = React.createRef();
     });
   };
+
+  checkWhichPageIndexInViewport() {
+    console.log("scrollevent")
+    let index = Object.keys(this.refrences).findIndex(ref =>
+      isInViewport(this.refrences[ref].current)
+    );
+    return index != this.state.activeIndex ? index : -1;
+  }
+}
+
+function isInViewport(element, offset = 100) {
+  if (!element) return false;
+  const elemRect = element.getBoundingClientRect();
+  return (
+    (elemRect.top >= offset && elemRect.top <= offset) ||
+    elemRect.bottom >= offset
+  );
 }
 
 export default MainScroller;

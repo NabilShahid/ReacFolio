@@ -5,8 +5,7 @@ import { ReactComponent as Graduation } from "../../assets/svgs/college-graduati
 import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
 import "./aboutpage.css";
 import FadeReveal from "react-reveal/Zoom";
-let currentAnimSpy = 0;
-const aboutIconsStyle = {
+ const aboutIconsStyle = {
   height: "25px",
   width: "25px",
   marginRight: "5px",
@@ -14,7 +13,7 @@ const aboutIconsStyle = {
   fill: "#585858"
 };
 const AboutPage = ({ activeIndex, pageIndex }) => {
-  if (activeIndex == pageIndex) currentAnimSpy++;
+  
   return (
     <div id="aboutPage">
       <div className="pageHeader">

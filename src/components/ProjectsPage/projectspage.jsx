@@ -10,8 +10,7 @@ import FadeReveal from "react-reveal/Fade";
 class ProjectsPage extends Component {
   state = { modalOpen: false, selectedProject: {} };
   projectsArray = [];
-  currentAnimSpy = 0;
-  setProjectsArray = () => {
+   setProjectsArray = () => {
     let projectsCounter = 0;
     for (let i = 0; i < Math.ceil(PROJECTS.length / 3); i++) {
       this.projectsArray[i] = [];
@@ -32,8 +31,7 @@ class ProjectsPage extends Component {
   render() {
     const { modalOpen, selectedProject } = this.state;
     const { activeIndex, pageIndex } = this.props;
-    if (activeIndex == pageIndex) this.currentAnimSpy++;
-    return (
+     return (
       <div id="projectsPage">
         <div className="pageHeader">
           <span className="pageHeaderText">Projects</span>
@@ -50,7 +48,7 @@ class ProjectsPage extends Component {
                   className="col-sm-4"
                   style={{ margin: "30px 0px" }}
                 >
-                        <FadeReveal duration={700} spy={this.currentAnimSpy}>
+                        <FadeReveal duration={700}>
                   <ProjectCard
                     activeIndex={activeIndex}
                     pageIndex={pageIndex}

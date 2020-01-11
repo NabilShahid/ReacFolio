@@ -10,15 +10,13 @@ const contactIconsStyle = {
   width: "24px",
   fill: "#585858"
 };
-let currentAnimSpy = 0;
-const Contact = ({ activeIndex, pageIndex }) => {
-  if (activeIndex == pageIndex) currentAnimSpy++;
-  return (
+ const Contact = ({ activeIndex, pageIndex }) => {
+   return (
     <div id="contactPage">
       <div className="pageHeader">
         <span className="pageHeaderText">Contact</span>
       </div>
-      <FadeReveal duration={500} spy={currentAnimSpy}>
+      <FadeReveal duration={500}>
         <div className="contactTypes">
           <div className="contactType colorsAnimText" style={{fontSize:"15px", textAlign:"center"}}>
             Interested in working together and get amazing things done ?<br/> Feel free to contact me.
@@ -36,7 +34,7 @@ const Contact = ({ activeIndex, pageIndex }) => {
 
       <div className="contactFormContainer">
 
-        <ContactForm activeIndex={activeIndex} pageIndex={pageIndex} currentAnimSpy={currentAnimSpy} />
+        <ContactForm activeIndex={activeIndex} pageIndex={pageIndex} />
       </div>
     </div>
   );
