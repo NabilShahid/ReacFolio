@@ -5,7 +5,7 @@ import { PROJECTS } from "../../constants";
 import "./projectspage.css";
 import Modal from "react-responsive-modal";
 import ProjectInfo from "../ProjectInfo/projectinfo";
-import FadeReveal from "react-reveal/Fade";
+import FadeReveal from "react-reveal/Zoom";
 
 class ProjectsPage extends Component {
   state = { modalOpen: false, selectedProject: {} };
@@ -43,7 +43,7 @@ class ProjectsPage extends Component {
           <div key={i} className="row projectsRow">
             {row.map((col, j) => (
               <div key={j} className="col-sm-4" style={{ margin: "30px 0px" }}>
-                <FadeReveal duration={700} bottom>
+                <FadeReveal duration={700}>
                   <ProjectCard action={this.setModalVisibility} project={col} />
                 </FadeReveal>
               </div>

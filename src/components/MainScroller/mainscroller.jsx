@@ -157,8 +157,7 @@ class MainScroller extends Component {
   };
 
   checkWhichPageIndexInViewport() {
-    console.log("scrollevent");
-    let index = Object.keys(this.refrences).findIndex(ref =>
+     let index = Object.keys(this.refrences).findIndex(ref =>
       isInViewport(this.refrences[ref].current)
     );
     return index != this.state.activeIndex ? index : -1;

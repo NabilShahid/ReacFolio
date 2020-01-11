@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ToastContainer, toast, Slide } from "react-toastify";
-import FadeReveal from "react-reveal/Fade";
+import FadeReveal from "react-reveal/Zoom";
 
 import "./contactform.css";
 class ContactForm extends Component {
@@ -43,7 +43,7 @@ class ContactForm extends Component {
     return (
       <form onSubmit={this.sendEmail} className="contactForm">
         <div className="contactFormDiv">
-          <FadeReveal bottom delay={200} duration={500}>
+          <FadeReveal  delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Name</div>
               <div className="contactFormControl">
@@ -57,7 +57,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </FadeReveal>
-          <FadeReveal bottom delay={200} duration={500}>
+          <FadeReveal  delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Email</div>
               <div className="contactFormControl">
@@ -71,7 +71,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </FadeReveal>
-          <FadeReveal bottom delay={200} duration={500}>
+          <FadeReveal  delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Message</div>
               <div className="contactFormControl">

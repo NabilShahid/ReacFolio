@@ -2,7 +2,7 @@ import React from "react";
 import { SKILLS } from "../../constants";
 import { Icon, InlineIcon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
-import FadeReveal from "react-reveal/Fade";
+import FadeReveal from "react-reveal/Zoom";
 
 import "./skillscard.css";
 const iconStyle = {
@@ -14,7 +14,7 @@ const iconStyle = {
 const SkillsCard = () => {
   return (
     <div id="skillsCard">
-      <FadeReveal duration={700} right>
+      <FadeReveal duration={700}>
         <div className="skillsHeader">Top Skills</div>
 
         {SKILLS.map(skillarea => (

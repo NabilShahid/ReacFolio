@@ -4,7 +4,7 @@ import MyImage from "../../assets/images/CVPIC.jpg";
 import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
 import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
 import "./aboutpage.css";
-import FadeReveal from "react-reveal/Fade";
+import FadeReveal from "react-reveal/Zoom";
  const aboutIconsStyle = {
   height: "25px",
   width: "25px",
@@ -26,7 +26,7 @@ const AboutPage = () => {
         >
             <div className="aboutMeDiv">
               <img src={MyImage} alt="profile" className="profileImage" />
-              <FadeReveal left duration={700}>
+              <FadeReveal duration={700}>
 
               <div className="aboutMeHeader">About Me</div>
               <div className="row aboutMeInfoItemContainer">
@@ -47,7 +47,7 @@ const AboutPage = () => {
                 </div>
               </div>
               </FadeReveal>
-              <FadeReveal left duration={700} delay={200}>
+              <FadeReveal duration={700} delay={200}>
               <div className="aboutMeText">
                 Hey it’s Nabil Shahid. I am a quality focused Full Stack
                 Developer with a record of delivering high quality, robust and
