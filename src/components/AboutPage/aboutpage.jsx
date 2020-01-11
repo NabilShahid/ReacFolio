@@ -4,15 +4,15 @@ import MyImage from "../../assets/images/CVPIC.jpg";
 import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
 import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
 import "./aboutpage.css";
-import FadeReveal from "react-reveal/Zoom";
+import FadeReveal from "react-reveal/Fade";
  const aboutIconsStyle = {
   height: "25px",
   width: "25px",
   marginRight: "5px",
   marginTop: "-5px",
-  fill: "#585858"
+  fill: "#737373"
 };
-const AboutPage = ({ activeIndex, pageIndex }) => {
+const AboutPage = () => {
   
   return (
     <div id="aboutPage">
@@ -24,9 +24,9 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
           className="col-md-5"
           style={{ textAlign: "center", borderRight: " 1px solid #d0d0d0" }}
         >
-          <FadeReveal duration={500}>
             <div className="aboutMeDiv">
               <img src={MyImage} alt="profile" className="profileImage" />
+              <FadeReveal left duration={700}>
 
               <div className="aboutMeHeader">About Me</div>
               <div className="row aboutMeInfoItemContainer">
@@ -46,6 +46,8 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
                   3.5+ Years Experience
                 </div>
               </div>
+              </FadeReveal>
+              <FadeReveal left duration={700} delay={200}>
               <div className="aboutMeText">
                 Hey it’s Nabil Shahid. I am a quality focused Full Stack
                 Developer with a record of delivering high quality, robust and
@@ -59,11 +61,11 @@ const AboutPage = ({ activeIndex, pageIndex }) => {
                 technologies extensively and try to learn more about
                 them every day.
               </div>
-            </div>
           </FadeReveal>
+            </div>
         </div>
         <div className="col-md-7">
-          <SkillsCard activeIndex={activeIndex} pageIndex={pageIndex} />
+          <SkillsCard />
         </div>
       </div>
     </div>

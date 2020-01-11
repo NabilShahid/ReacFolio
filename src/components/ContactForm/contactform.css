@@ -1,32 +1,31 @@
-.contactForm{
-     width: 100%;
-     max-width: 500px;
+.contactForm {
+  width: 100%;
+  max-width: 500px;
 }
-.contactInputField{
-    border: 0;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 3px;
-    width: 100%;
-    padding: 5px;
+.contactInputField {
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px;
+  background: #f7f7f7;
+  border: 1px solid #dcdcdc;
+}
+.contactFormLabel {
+  font-size: 21px;
+  margin-bottom: 5px;
+  color: #1b3a57;
 
 }
-.contactFormLabel{
-    font-size: 15px;
-    /* color: var(--color-1); */
-    margin-bottom: 5px;
-
+.contactFormField {
+  margin-bottom: 15px;
+  width: 100%;
 }
-.contactFormField{
-    margin-bottom: 15px;
-    width: 100%;
-}
-.sendMessageButton{
-    margin-left: auto;
-    cursor: pointer;
-    background: var(--color-1);
-    color: white;
-    padding: 5px 40px;
-    border-radius: 20px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-    font-size: 15px;
+.sendMessageButton {
+  margin-left: auto;
+  cursor: pointer;
+  background: var(--color-1);
+  color: white;
+  padding: 5px 40px;
+  border-radius: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
 }

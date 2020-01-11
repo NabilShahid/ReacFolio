@@ -26,7 +26,7 @@
 }
 
 .selectedNavItem {
-  color: #ababab !important;
+  color: #75b2ff !important;
   /* border-bottom: 2px solid #ababab; */
 }
 div.brackets a:before,
@@ -85,6 +85,9 @@ div.brackets a:hover:after {
 
 .navBarExpandButton {
   display: none;
+}
+.navbar-nav {
+   width: 99% !important;
 }
 
 .expandedNavBar {

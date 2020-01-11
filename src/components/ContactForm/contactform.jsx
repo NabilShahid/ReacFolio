@@ -43,7 +43,7 @@ class ContactForm extends Component {
     return (
       <form onSubmit={this.sendEmail} className="contactForm">
         <div className="contactFormDiv">
-          <FadeReveal right delay={200} duration={500}>
+          <FadeReveal bottom delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Name</div>
               <div className="contactFormControl">
@@ -57,7 +57,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </FadeReveal>
-          <FadeReveal right delay={200} duration={500}>
+          <FadeReveal bottom delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Email</div>
               <div className="contactFormControl">
@@ -71,7 +71,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </FadeReveal>
-          <FadeReveal right delay={200} duration={500}>
+          <FadeReveal bottom delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Message</div>
               <div className="contactFormControl">

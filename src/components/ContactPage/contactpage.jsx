@@ -11,7 +11,7 @@ const contactIconsStyle = {
   width: "24px",
   fill: "#585858"
 };
- const Contact = ({ activeIndex, pageIndex }) => {
+ const Contact = () => {
    return (
     <div id="contactPage">
       <div className="pageHeader">
@@ -38,7 +38,7 @@ const contactIconsStyle = {
 
       <div className="contactFormContainer">
 
-        <ContactForm activeIndex={activeIndex} pageIndex={pageIndex} />
+        <ContactForm />
       </div>
     </div>
   );

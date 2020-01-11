@@ -5,6 +5,8 @@ import { TechologiesIcons } from "../../assets/iconifyicons";
 import { PLATFORM_ICONS, ICON_LABELS } from "../../constants.js";
 import ReactTooltip from "react-tooltip";
 import FadeReveal from "react-reveal/Fade";
+import { ReactComponent as InfoIcon } from "../../assets/svgs/info.svg";
+
 
 class ProjectCard extends Component {
   state = {};
@@ -37,6 +39,7 @@ class ProjectCard extends Component {
                 }}
                 className="projectLearnMoreDiv"
               >
+                 
                 Details
               </div>
             </div>

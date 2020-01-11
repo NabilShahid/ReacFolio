@@ -4,7 +4,7 @@
 }
 .skillsHeader{
     font-size: 24px;
-    color: var(--color-1);
+    color: #1b3a57;
 }
 .skillsSectionHeader{
     font-size: 15px;
@@ -14,14 +14,15 @@
 }
 .singleSkill{
     display: inline-block;
-    background: #8f9090 !important;
-    color: white;
+    background: #e6e6e6 !important;
+    color: #888888;
     font-size: 12px;
     padding: 6px 15px 5px 12px;
     margin-right: 10px;
     margin-top: 8px;
     border-radius: 20px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 .singleSkill:hover{

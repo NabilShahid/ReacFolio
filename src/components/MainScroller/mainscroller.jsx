@@ -96,7 +96,6 @@ class MainScroller extends Component {
           <IntroText />
           <HomeIcons />
         </SinglePage>
-        <div className="dividerDiv"></div>
         <SinglePage
           currRef={this.refrences.aboutPage}
           style={{ background: "#d8d8d8", ...allSlidesStyle }}

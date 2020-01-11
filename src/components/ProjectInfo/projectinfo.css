@@ -1,5 +1,6 @@
 .projectsInfoDiv{
     /* height: 75vh; */
+    color: #1b3a57;
     padding: 5px 10px;
 }
 .styles_modal__gNwvD{
@@ -76,8 +77,7 @@ height: 350px;
 }
 
 .projectInfoRepo{
-     color: #1b3a57;
-    font-size: 14px;
+     font-size: 14px;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -95,8 +95,8 @@ height: 350px;
 }
 .projectInfoTechnology{
     display: inline-block;
-    background: #8f9090 !important;
-    color: white;
+    background: #e6e6e6 !important;
+    color: #888888;
     font-size: 12px;
     padding: 5px 8px 4px 7px;
     margin-right: 10px;
