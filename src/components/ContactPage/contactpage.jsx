@@ -19,7 +19,7 @@ const contactIconsStyle = {
       </div>
       <FadeReveal duration={500}>
         <div className="contactTypes">
-          <div className="contactType colorsAnimText" style={{fontSize:"15px", textAlign:"center"}}>
+          <div className="pageSubtitleText" style={{marginBottom:"20px",textAlign:"center"}}>
             Interested in working together and get amazing things done ?<br/> Feel free to contact me.
           </div>
           <div className="contactType">

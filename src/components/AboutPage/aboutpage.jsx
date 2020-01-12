@@ -1,6 +1,6 @@
 import React from "react";
 import SkillsCard from "../SkillsCard/skillscard";
-import MyImage from "../../assets/images/CVPIC.jpg";
+import MyImage from "../../assets/images/CVPICNBG.png";
 import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
 import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
 import "./aboutpage.css";
@@ -28,7 +28,7 @@ const AboutPage = () => {
               <img src={MyImage} alt="profile" className="profileImage" />
               <FadeReveal duration={700}>
 
-              <div className="aboutMeHeader">About Me</div>
+              {/* <div className="aboutMeHeader">About Me</div> */}
               <div className="row aboutMeInfoItemContainer">
                 <div className="abouteMeInfoItem col-md-6 aboutMeInfoItemsSeperator">
                   <Graduation style={{ ...aboutIconsStyle }} /> BS Computer

@@ -18,7 +18,7 @@ class Navbar extends Component {
       },
       {
         refName: "projectsPage",
-        label: "Projects"
+        label: "Work"
       },
       {
         refName: "experiencePage",

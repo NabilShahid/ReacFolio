@@ -5,7 +5,7 @@ import { PROJECTS } from "../../constants";
 import "./projectspage.css";
 import Modal from "react-responsive-modal";
 import ProjectInfo from "../ProjectInfo/projectinfo";
-import FadeReveal from "react-reveal/Zoom";
+import FadeReveal from "react-reveal/Fade";
 
 class ProjectsPage extends Component {
   state = { modalOpen: false, selectedProject: {} };
@@ -33,7 +33,10 @@ class ProjectsPage extends Component {
     return (
       <div id="projectsPage">
         <div className="pageHeader">
-          <span className="pageHeaderText">Projects</span>
+          <span className="pageHeaderText">Work</span>
+          <div className="pageSubtitleText">
+           Following are some of the recent projects that I have worked on. Click on the project tile to learn more about it.
+          </div>
         </div>
         <Modal open={modalOpen} onClose={this.setModalVisibility}>
           <ProjectInfo project={selectedProject} />

@@ -1,6 +1,7 @@
 import React from "react";
 import "./introtext.css";
 import ProfileLinks from "../ProfileLinks/profilelinks";
+import { ReactComponent as DownArrow } from "../../assets/svgs/down-arrow.svg";
 
 setTimeout(() => {
   var words = document.getElementsByClassName("word");
@@ -13,7 +14,7 @@ setTimeout(() => {
   }
 
   function changeWord() {
-    if(words.length==0) return;
+    if (words.length == 0) return;
     var cw = wordArray[currentWord];
     var nw =
       currentWord == words.length - 1
@@ -63,7 +64,7 @@ setTimeout(() => {
   changeWord();
   setInterval(changeWord, 4000);
 }, 1000);
-const IntroText = () => {
+const IntroText = ({scrollToWork}) => {
   return (
     <div className="textDiv">
       <p className="rotateTextP">Hi, I am a </p>
@@ -76,6 +77,14 @@ const IntroText = () => {
       </div>
       <div style={{ marginTop: "70px" }}>
         <ProfileLinks />
+      </div>
+      <div style={{ marginTop: "15px" }}>
+        <div onClick={scrollToWork} className="viewWorkButton buttonHover">
+          <DownArrow
+            className="viewWorkIcon"
+          />
+          View My Work
+        </div>
       </div>
     </div>
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cairo|Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cairo|Rubik|Roboto+Slab&display=swap");
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @import "./assets//styleVars.css";
 
@@ -31,9 +31,15 @@ div {
 .pageHeader {
   color: #1b3a57;
   /* font-family: "Google Sans",sans-serif; */
-  font-size: 32px;
+  font-size: 35px;
+  font-family: "Roboto Slab";
   padding-bottom:30px;
   text-align: center;
+}
+.pageSubtitleText{
+  font-size: 17px;
+    /* font-family: "Roboto Slab"; */
+    color: #4e4e4e;
 }
 .pageHeaderText {
   /* border-bottom: 1px solid #bbbbbb;
@@ -51,6 +57,9 @@ div {
   background: #04c2c9;
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(0.9);
+  cursor: pointer;
+  transition: 0.3s;
+
 }
 .Toastify__toast--default {
   background: var(--color-5) !important;

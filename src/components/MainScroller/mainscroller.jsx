@@ -93,33 +93,33 @@ class MainScroller extends Component {
         <SinglePage isFirstPage={true} currRef={this.refrences.homePage}>
           {" "}
           <Particles />
-          <IntroText />
+          <IntroText scrollToWork={()=>this.scrollToRef("projectsPage")}/>
           <HomeIcons />
         </SinglePage>
         <SinglePage
           currRef={this.refrences.aboutPage}
-          style={{ background: "#d8d8d8", ...allSlidesStyle }}
+           
         >
           <AboutPage activeIndex={activeIndex} pageIndex={1} />
         </SinglePage>
         <div className="dividerDiv"></div>
         <SinglePage
           currRef={this.refrences.projectsPage}
-          style={{ background: "#d8d8d8", ...allSlidesStyle }}
+          
         >
           <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
         </SinglePage>
         <div className="dividerDiv"></div>
         <SinglePage
           currRef={this.refrences.experiencePage}
-          style={{ background: "#d8d8d8", ...allSlidesStyle }}
+          
         >
           <ExperiencePage />{" "}
         </SinglePage>
         <div className="dividerDiv"></div>
         <SinglePage
           currRef={this.refrences.contactPage}
-          style={{ background: "#d8d8d8", ...allSlidesStyle }}
+          
         >
           <ContactPage activeIndex={activeIndex} pageIndex={4} />
         </SinglePage>

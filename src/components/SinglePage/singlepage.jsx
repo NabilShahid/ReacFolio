@@ -1,5 +1,6 @@
 import React from "react";
-const SinglePage = ({ children, currRef, isFirstPage }) => {
+const SinglePage = ({ children, currRef, isFirstPage,id }) => {
+  
   return (
     <div
       ref={currRef}

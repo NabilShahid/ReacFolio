@@ -15,8 +15,8 @@
   height: 40px;
   padding: 0 40px;
 }
-#rotatingSpans{
-  font-family: 'Cairo';
+#rotatingSpans {
+  font-family: "Cairo";
 }
 #rotatingSpans:before {
   content: "[";
@@ -98,7 +98,7 @@
   font-size: 40px;
   color: white;
   font-weight: 500;
-  font-family: 'Cairo';
+  font-family: "Cairo";
 }
 
 .rotateTextP {
@@ -136,14 +136,28 @@
   transition: 0.4s;
 }
 
-.iconButtonLink:not(:first-child){
+.iconButtonLink:not(:first-child) {
   margin-left: 6px !important;
 }
+.viewWorkButton {
+  font-size: 19px;
+  background: #00000021;
+  padding: 9px 15px;
+  border-radius: 30px;
+  width: 185px;
+  transition: 0.3s;
+}
+.viewWorkIcon{
+  width: 20px;
+  fill: white;
+  height: 20px;
+  margin: 0 11px 3px 0;
+}
 
-@media  (max-width: 480px) {
+@media (max-width: 480px) {
   .textDiv {
     font-size: 25px;
-    top: 20vh;
+    top: 22vh;
   }
   #rotatingSpans:before {
     left: -25px;
@@ -157,10 +171,17 @@
     font-size: 27px;
     top: 12px;
   }
-  .letter {    
+  .letter {
     /* change these two for font size effect */
     transform: translateZ(10px);
     transform-origin: 50% 50% 10px;
   }
-  
+  .viewWorkButton {
+    font-size: 16px;
+    width: 170px;
+  }
+  .viewWorkIcon {
+    width: 17px;   
+    height: 17px;
+}
 }

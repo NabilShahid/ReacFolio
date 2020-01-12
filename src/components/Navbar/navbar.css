@@ -47,8 +47,8 @@ div.brackets a:after {
   width: 100%;
   top: 0;
   background: linear-gradient(
-    120deg,
-    var(--color-1),
+    115deg,
+    var(--color-1) 35%,
     var(--color-4),
     var(--color-5)
   );
@@ -62,7 +62,7 @@ div.brackets a:after {
   box-shadow: unset;
   transition: 0.2s;
   opacity: 0;
- }
+}
 div.brackets a:before {
   content: "[";
   left: -10px;
@@ -87,7 +87,7 @@ div.brackets a:hover:after {
   display: none;
 }
 .navbar-nav {
-   width: 99% !important;
+  width: 99% !important;
 }
 
 .expandedNavBar {
