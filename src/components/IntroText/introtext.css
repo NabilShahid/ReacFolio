@@ -159,6 +159,12 @@
     font-size: 25px;
     top: 22vh;
   }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .textDiv {
+       top: 24vh;
+    }
+
+  }
   #rotatingSpans:before {
     left: -25px;
   }
