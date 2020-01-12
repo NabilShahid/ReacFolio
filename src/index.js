@@ -7,7 +7,7 @@ import "animate.css/animate.min.css";
 import MainScroller from './components/MainScroller/mainscroller'
 import {reacordUserVisit} from "./services/api";
 ReactDOM.render(<MainScroller />, document.getElementById('root'));
-// reacordUserVisit();
+reacordUserVisit();
 
 
 // If you want your app to work offline and load faster, you can change

@@ -12,15 +12,7 @@ import AboutPage from "../AboutPage/aboutpage";
 import { ToastContainer } from "react-toastify";
 import { throttle } from "underscore";
 import { animateScroll as scroll, Events } from "react-scroll";
- 
-// const { changeFullpageSlide } = Fullpage;
-const changeFullpageSlide = i => {};
 
-const allSlidesStyle = {
-  padding: "60px 10px 5px 10px"
-};
-
-// fullPageOptions.slides = sections;
 class MainScroller extends Component {
   refrences = {
     homePage: null,
@@ -35,14 +27,13 @@ class MainScroller extends Component {
   constructor(props) {
     super(props);
     this.createReferences();
-    console.log(this.refrences);
   }
   autoScroll = false;
   activeIndexCopy;
   scrollToRef = (targetRef, activeIndex) => {
     this.autoScroll = true;
-     scroll.scrollTo(this.refrences[targetRef].current.offsetTop, {
-      duration: (1300),
+    scroll.scrollTo(this.refrences[targetRef].current.offsetTop, {
+      duration: 1300,
       delay: 200,
       smooth: "easeInOutCubic",
       containerId: "containerElement",
@@ -63,7 +54,6 @@ class MainScroller extends Component {
   };
   throttledScrollToFn = throttle(this.scrollFn, 100);
   componentDidMount() {
-  
     this.containerReference.current.addEventListener(
       "scroll",
       this.throttledScrollToFn
@@ -80,50 +70,44 @@ class MainScroller extends Component {
       <div
         ref={this.containerReference}
         id="containerElement"
-        style={{ height: "100vh", overflowY: "scroll",overflowX:"hidden", position: "relative" }}
+        style={{
+          height: "100vh",
+          overflowY: "scroll",
+          overflowX: "hidden",
+          position: "relative"
+        }}
       >
         <div id="navbarDiv">
           <Navbar
-            changeFullpageSlide={changeFullpageSlide}
             activeIndex={activeIndex}
-            outsideSlideChange={this.outsideSlideChange}
             scrollToRef={this.scrollToRef}
+            scrollToHome={() =>
+              activeIndex != 0 && this.scrollToRef("homePage")
+            }
           />
         </div>
         <SinglePage isFirstPage={true} currRef={this.refrences.homePage}>
           {" "}
           <Particles />
-          <IntroText scrollToWork={()=>this.scrollToRef("projectsPage")}/>
+          <IntroText scrollToWork={() => this.scrollToRef("projectsPage")} />
           <HomeIcons />
         </SinglePage>
-        <SinglePage
-          currRef={this.refrences.aboutPage}
-           
-        >
+        <SinglePage currRef={this.refrences.aboutPage}>
           <AboutPage activeIndex={activeIndex} pageIndex={1} />
         </SinglePage>
         <div className="dividerDiv"></div>
-        <SinglePage
-          currRef={this.refrences.projectsPage}
-          
-        >
+        <SinglePage currRef={this.refrences.projectsPage}>
           <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
         </SinglePage>
         <div className="dividerDiv"></div>
-        <SinglePage
-          currRef={this.refrences.experiencePage}
-          
-        >
+        <SinglePage currRef={this.refrences.experiencePage}>
           <ExperiencePage />{" "}
         </SinglePage>
         <div className="dividerDiv"></div>
-        <SinglePage
-          currRef={this.refrences.contactPage}
-          
-        >
+        <SinglePage currRef={this.refrences.contactPage}>
           <ContactPage activeIndex={activeIndex} pageIndex={4} />
         </SinglePage>
-         
+
         <ToastContainer
           position="top-center"
           autoClose={5000}
@@ -138,17 +122,7 @@ class MainScroller extends Component {
       </div>
     );
   }
-  onSlideChangeStart = (a, b, { lastActive }, { activeSlide }) => {
-    if (
-      activeSlide !== this.state.activeIndex &&
-      activeSlide >= 0 &&
-      activeSlide <= this.maxSlideIndex
-    )
-      this.setState({ activeIndex: activeSlide });
-  };
-  outsideSlideChange = index => {
-    if (index !== this.state.activeIndex) this.setState({ activeIndex: index });
-  };
+
   createReferences = () => {
     this.containerReference = React.createRef();
     Object.keys(this.refrences).forEach(ref => {
@@ -157,7 +131,7 @@ class MainScroller extends Component {
   };
 
   checkWhichPageIndexInViewport() {
-     let index = Object.keys(this.refrences).findIndex(ref =>
+    let index = Object.keys(this.refrences).findIndex(ref =>
       isInViewport(this.refrences[ref].current)
     );
     return index != this.state.activeIndex ? index : -1;

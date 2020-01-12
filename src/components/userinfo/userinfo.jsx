@@ -2,9 +2,9 @@ import React from "react";
 import "./userinfo.css";
 import { ReactComponent as Code } from "../../assets/svgs/programming-code-signs.svg";
 
-const UserInfo = ({ userName }) => {
+const UserInfo = ({ userName,scrollToHome }) => {
   return (
-    <div id="userInfoDiv">
+    <div id="userInfoDiv" onClick={scrollToHome}>
       <Code
         style={{
           width: "30px",

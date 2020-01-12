@@ -47,12 +47,12 @@ class ProjectCard extends Component {
                     <Icon
                       style={this.technologyIconStyle}
                       icon={TechologiesIcons[t]}
-                      data-tip={ICON_LABELS[t]}
+                      // data-tip={ICON_LABELS[t]}
                     />
                   ) : (
                     <t.Icon
-                      data-tip={ICON_LABELS[t.Name]}
-                      style={this.technologyIconStyle}
+                    style={this.technologyIconStyle}
+                    // data-tip={ICON_LABELS[t.Name]}
                     />
                   )}
                 </span>

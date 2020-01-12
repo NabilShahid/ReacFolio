@@ -35,7 +35,7 @@ class Navbar extends Component {
   navbarHeight="51px";
   render() {
     const { options, expandableMenuShown } = this.state;
-    const { activeIndex, scrollToRef } = this.props;
+    const { activeIndex, scrollToRef,scrollToHome } = this.props;
     return (
       <div className="brackets">
         <nav
@@ -45,7 +45,7 @@ class Navbar extends Component {
             
           
         >
-          <UserInfo userName="Nabil Shahid" />
+          <UserInfo scrollToHome={scrollToHome}  userName="Nabil Shahid" />
 
           <div
             className="navBarToggleButton"
