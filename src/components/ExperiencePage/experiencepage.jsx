@@ -40,7 +40,7 @@ class ExperiencePage extends Component {
             <h4 className="vertical-timeline-element-subtitle">AuxilioTech</h4>
             <div className="experiencePageLocation">Islamabad, Pakistan</div>
             <p>
-              Working as lead developer on the company's flagship software
+              Working as Full Stack developer on the company's flagship software
               product.
             </p>
           </VerticalTimelineElement>

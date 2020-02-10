@@ -5,7 +5,7 @@ import { ReactComponent as Graduation } from "../../assets/svgs/college-graduati
 import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
 import "./aboutpage.css";
 import FadeReveal from "react-reveal/Zoom";
- const aboutIconsStyle = {
+const aboutIconsStyle = {
   height: "25px",
   width: "25px",
   marginRight: "5px",
@@ -13,7 +13,6 @@ import FadeReveal from "react-reveal/Zoom";
   fill: "#737373"
 };
 const AboutPage = () => {
-  
   return (
     <div id="aboutPage">
       <div className="pageHeader">
@@ -24,10 +23,9 @@ const AboutPage = () => {
           className="col-md-5"
           style={{ textAlign: "center", borderRight: " 1px solid #d0d0d0" }}
         >
-            <div className="aboutMeDiv">
-              <img src={MyImage} alt="profile" className="profileImage" />
-              <FadeReveal duration={700}>
-
+          <div className="aboutMeDiv">
+            <img src={MyImage} alt="profile" className="profileImage" />
+            <FadeReveal duration={700}>
               {/* <div className="aboutMeHeader">About Me</div> */}
               <div className="row aboutMeInfoItemContainer">
                 <div className="abouteMeInfoItem col-md-6 aboutMeInfoItemsSeperator">
@@ -43,26 +41,23 @@ const AboutPage = () => {
                       width: "23px"
                     }}
                   />{" "}
-                  3.5+ Years Experience
+                  4+ Years Experience
                 </div>
               </div>
-              </FadeReveal>
-              <FadeReveal duration={700} delay={200}>
+            </FadeReveal>
+            <FadeReveal duration={700} delay={200}>
               <div className="aboutMeText">
-                Hey it’s Nabil Shahid. I am a quality focused Full Stack
-                Developer with a record of delivering high quality, robust and
-                reliable software. Having propensity to write reusable,
-                understandable and optimal code while keeping in mind best
-                practices and standards. Profound insight and knowledge of front
-                end and back end development technologies, frameworks, libraries,
-                databases, architecture styles, patterns, and algorithms. I
-                consider myself really good at Angular, React, JavaScript,
-                SQL and Relational databases as I have worked on these
-                technologies extensively and try to learn more about
-                them every day.
+                Hey it’s Nabil Shahid. I am Full Stack
+                JavaScript developer. Proficiently skilled in working with most
+                in demand Frontend and Backend technologies including React,
+                Angular, Node, Nest.js, TypeScript and many other. Working on a
+                myriad of professional and personal projects, I have become
+                reasonably skilled in writing clean and reusable code, bug
+                fixing, solving complicated and critical software problems,
+                optimizing code and creating good user experiences.
               </div>
-          </FadeReveal>
-            </div>
+            </FadeReveal>
+          </div>
         </div>
         <div className="col-md-7">
           <SkillsCard />
