@@ -12,7 +12,7 @@
     "bootstrap": "^4.3.1",
     "firebase": "^7.6.1",
     "fullpage-react": "^3.1.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "react": "^16.5.2",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.5.2",
