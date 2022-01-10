@@ -72,8 +72,6 @@ const IntroText = ({scrollToWork}) => {
         <span className="word">Full Stack Developer</span>
         <span className="word">Front End Developer</span>
         <span className="word">Back End Developer</span>
-        <span className="word">JavaScript Developer</span>
-        <span className="word">Database Administrator</span>
       </div>
       <div style={{ marginTop: "70px" }}>
         <ProfileLinks />
