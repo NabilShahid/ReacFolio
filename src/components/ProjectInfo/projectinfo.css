@@ -1,9 +1,12 @@
 .projectsInfoDiv{
     /* height: 75vh; */
+    color: #1b3a57;
+    padding: 5px 10px;
 }
 .styles_modal__gNwvD{
     border-radius: 5px;
-    background: #d8d8d8;
+    background: #f6f7f9;
+    overflow: hidden;
 }
 .gallery{
     max-width: 85vw;
@@ -14,7 +17,7 @@
 }
 .projectInfoName{
     font-size: 27px;
-    color: var(--color-1);
+    color:#1b3a57;
     margin-top: 7px; 
 }
 .projectInfoSubtitle{
@@ -62,7 +65,7 @@ height: 350px;
 .projectLink{
     height: 20px;
     width: 20px;
-    fill: var(--color-1);
+    fill: #1b3a57;
     margin-bottom: 4px;
     margin-left: 5px;
 }
@@ -75,8 +78,7 @@ height: 350px;
 }
 
 .projectInfoRepo{
-     color: var(--color-1);
-    font-size: 14px;
+     font-size: 14px;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -84,7 +86,7 @@ height: 350px;
 .projectInfoRepoLink{
     height: 17px;
     width: 17px;
-    fill: var(--color-1);
+    fill: #1b3a57;
     margin-bottom: 1px;
     margin-left: 5px;
 
@@ -94,8 +96,8 @@ height: 350px;
 }
 .projectInfoTechnology{
     display: inline-block;
-    background: #8f9090 !important;
-    color: white;
+    background: #e6e6e6 !important;
+    color: #888888;
     font-size: 12px;
     padding: 5px 8px 4px 7px;
     margin-right: 10px;

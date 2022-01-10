@@ -6,7 +6,7 @@ class Particles extends Component {
   state = {};
   componentDidMount() {
     setTimeout(() => {
-      createParticles();
+      createParticles("particles-js");
     }, 200);
   }
   render() {

@@ -10,7 +10,6 @@ import FadeReveal from "react-reveal/Fade";
 class ProjectsPage extends Component {
   state = { modalOpen: false, selectedProject: {} };
   projectsArray = [];
-  currentAnimSpy = 0;
   setProjectsArray = () => {
     let projectsCounter = 0;
     for (let i = 0; i < Math.ceil(PROJECTS.length / 3); i++) {
@@ -31,12 +30,13 @@ class ProjectsPage extends Component {
   }
   render() {
     const { modalOpen, selectedProject } = this.state;
-    const { activeIndex, pageIndex } = this.props;
-    if (activeIndex == pageIndex) this.currentAnimSpy++;
     return (
       <div id="projectsPage">
         <div className="pageHeader">
-          <span className="pageHeaderText">Projects</span>
+          <span className="pageHeaderText">Work</span>
+          <div className="pageSubtitleText">
+           Following are some of the recent projects that I have worked on. Click on the project tile to learn more about it.
+          </div>
         </div>
         <Modal open={modalOpen} onClose={this.setModalVisibility}>
           <ProjectInfo project={selectedProject} />
@@ -45,20 +45,11 @@ class ProjectsPage extends Component {
         {this.projectsArray.map((row, i) => (
           <div key={i} className="row projectsRow">
             {row.map((col, j) => (
-              <div
-                  key={j}
-                  className="col-sm-4"
-                  style={{ margin: "30px 0px" }}
-                >
-                        <FadeReveal duration={700} spy={this.currentAnimSpy}>
-                  <ProjectCard
-                    activeIndex={activeIndex}
-                    pageIndex={pageIndex}
-                    action={this.setModalVisibility}
-                    project={col}
-                  />
-              </FadeReveal>
-                </div>
+              <div key={j} className="col-sm-4" style={{ margin: "30px 0px" }}>
+                <FadeReveal duration={700}>
+                  <ProjectCard action={this.setModalVisibility} project={col} />
+                </FadeReveal>
+              </div>
             ))}
           </div>
         ))}

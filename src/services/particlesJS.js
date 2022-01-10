@@ -1,5 +1,5 @@
-export function createParticles() {
-  window.particlesJS("particles-js", {
+export function createParticles(divSelector) {
+  window.particlesJS(divSelector, {
     "particles": {
       "number": {
         "value": 160,

@@ -6,7 +6,8 @@ export function reacordUserVisit() {
     clientInfo = {
       UserAgent: navigator.userAgent || "",
       Platform: navigator.platform || "",
-      Languages: navigator.languages
+      Languages: navigator.languages,
+      LocalTime: new Date().toString()
     };
   }
 

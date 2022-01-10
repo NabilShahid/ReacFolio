@@ -25,3 +25,13 @@
 
 } */
 
+.dividerDiv{
+  height: 35px;
+  opacity: 0.9;
+  background: linear-gradient(
+    115deg,
+    var(--color-1) 35%,
+    var(--color-4),
+    var(--color-5)
+  );
+}

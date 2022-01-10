@@ -40,7 +40,7 @@ class ExperiencePage extends Component {
             <h4 className="vertical-timeline-element-subtitle">AuxilioTech</h4>
             <div className="experiencePageLocation">Islamabad, Pakistan</div>
             <p>
-              Working as lead developer on the company's flagship software
+              Working as Full Stack developer on the company's flagship software
               product.
             </p>
           </VerticalTimelineElement>
@@ -48,7 +48,7 @@ class ExperiencePage extends Component {
             className="vertical-timeline-element--work"
             date="Mar 2016 - Aug 2019"
             contentStyle={{ borderTop: "3px solid var(--color-5)" }}
-            iconStyle={{ background: "#8f9090", color: "white", fill: "white" }}
+            iconStyle={{ background: "#737373", color: "white", fill: "white" }}
             icon={<Work />}
           >
             <h3 className="vertical-timeline-element-title">
@@ -72,7 +72,7 @@ class ExperiencePage extends Component {
             className="vertical-timeline-element--work"
             date="Aug 2011 - July 2015"
             contentStyle={{ borderTop: "3px solid var(--color-5)" }}
-            iconStyle={{ background: "#8f9090", color: "#fff", fill: "white" }}
+            iconStyle={{ background: "#737373", color: "#fff", fill: "white" }}
             icon={<Graduation />}
           >
             <h3 className="vertical-timeline-element-title">

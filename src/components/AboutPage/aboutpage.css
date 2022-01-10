@@ -7,19 +7,21 @@
 .profileImage {
   border-radius: 50%;
   width: 190px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 1px 5px 0px rgb(115, 119, 255); */
+  background: #e8e8e8;
 }
 .aboutMeHeader {
   font-size: 25px;
-  color: var(--color-1);
+  color: #1b3a57;
   margin: 10px 0px;
 }
 
 .aboutMeText {
-      font-size: 13.4px;
+      font-size: 16px;
       text-align: left;
       margin-bottom: 15px;
-      
+      color: #1b3a57;
+
 }
 
 .aboutMeDiv {
@@ -27,8 +29,10 @@
 }
 
 .aboutMeInfoItemContainer {
+  margin-top: 20px;
   margin-bottom: 12px;
   font-size: 15px;
+  color: #1b3a57;
   /* color: #797979; */
 }
 

@@ -5,10 +5,11 @@ import { TechologiesIcons } from "../../assets/iconifyicons";
 import { PLATFORM_ICONS, ICON_LABELS } from "../../constants.js";
 import ReactTooltip from "react-tooltip";
 import FadeReveal from "react-reveal/Fade";
+import { ReactComponent as InfoIcon } from "../../assets/svgs/info.svg";
 
 class ProjectCard extends Component {
   state = {};
-  technologyIconStyle = { width: "25px", height: "25px", marginRight: "10px" };
+  technologyIconStyle = { width: "23px", height: "23px", marginRight: "15px" };
   render() {
     const {
       Name,
@@ -22,7 +23,13 @@ class ProjectCard extends Component {
     const PlatformIcon = PLATFORM_ICONS[Platform];
     return (
       <div className="projectCardContainer">
-        <div className="projectCard" style={{ borderBottomColor: Color }}>
+        <div
+          className="projectCard"
+          onClick={() => {
+            action(project);
+          }}
+          style={{ borderBottomColor: Color }}
+        >
           <div className="projectCardAvatar" style={{ background: Color }}>
             <PlatformIcon
               style={{ width: "34px", height: "34px", fill: "white" }}
@@ -31,14 +38,6 @@ class ProjectCard extends Component {
           <div className="projectCardContentDiv">
             <div className="projectName">
               <div className="projectNameText">{Name}</div>
-              <div                
-                onClick={() => {
-                  action(project);
-                }}
-                className="projectLearnMoreDiv"
-              >
-                Details
-              </div>
             </div>
             <ReactTooltip />
             <div className="projectTechnologies">
@@ -48,12 +47,12 @@ class ProjectCard extends Component {
                     <Icon
                       style={this.technologyIconStyle}
                       icon={TechologiesIcons[t]}
-                      data-tip={ICON_LABELS[t]}
+                      // data-tip={ICON_LABELS[t]}
                     />
                   ) : (
                     <t.Icon
-                      data-tip={ICON_LABELS[t.Name]}
-                      style={this.technologyIconStyle}
+                    style={this.technologyIconStyle}
+                    // data-tip={ICON_LABELS[t.Name]}
                     />
                   )}
                 </span>
