@@ -1,8 +1,7 @@
 #contactPage {
-  padding:15px 10px 0 10px;
+  padding: 15px 10px 0 10px;
   height: 100%;
   overflow-y: auto;
-
 }
 .contactText {
   margin-left: 10px;
@@ -23,7 +22,12 @@
 .colorsAnimText {
   color: #fff;
   font-size: 15px;
-  background: linear-gradient(to right, var(--color-1),var(--color-4),var(--color-5));
+  background: linear-gradient(
+    to right,
+    var(--color-1),
+    var(--color-4),
+    var(--color-5)
+  );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;

@@ -3,7 +3,7 @@ import ImageGallery from "react-image-gallery";
 import "./projectinfo.css";
 import { ReactComponent as LinkIcon } from "../../assets/svgs/external-link-symbol.svg";
 import { ReactComponent as GitHubLogo } from "../../assets/svgs/github-logo.svg";
-import {  toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { Icon } from "@iconify/react";
 import { TechologiesIcons } from "../../assets/iconifyicons";
 import { ICON_LABELS } from "../../constants.js";
@@ -17,7 +17,7 @@ const getImagesArrayForGallery = (imageCount, folderName, parentPath) => {
     const imagePath = parentPath + folderName + "/" + (i + 1) + ".PNG";
     images.push({
       original: imagePath,
-      thumbnail: imagePath
+      thumbnail: imagePath,
     });
   }
   return images;
@@ -26,12 +26,12 @@ const iconStyle = {
   width: "20px",
   height: "20px",
   marginRight: "1px",
-  marginTop: "-3px"
+  marginTop: "-3px",
 };
-const openUrl = link => {
+const openUrl = (link) => {
   window.open(link, "_blank");
 };
-const showToastMessage = message => {
+const showToastMessage = (message) => {
   toast(message);
 };
 const ProjectInfo = ({ project }) => {
@@ -42,25 +42,24 @@ const ProjectInfo = ({ project }) => {
   );
   return (
     <div className="projectsInfoDiv">
-      <div
-        
-        className="projectInfoName"
-      >
-        <span style={{cursor:"pointer"}} onClick={() => {
-          project.HasUrl
-            ? openUrl(project.UrlLink)
-            : showToastMessage(project.NoUrlReason);
-        }}> 
-
-        {project.Name}
-        <LinkIcon className="projectLink" />
+      <div className="projectInfoName">
+        <span
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            project.HasUrl
+              ? openUrl(project.UrlLink)
+              : showToastMessage(project.NoUrlReason);
+          }}
+        >
+          {project.Name}
+          <LinkIcon className="projectLink" />
         </span>
       </div>
       <div className="projectInfoSubtitle">
         {project.Subtitle + " (" + project.Target + ")"}
       </div>
       <div className="projectInfoTechnologiesContainer">
-        {project.Technologies.map(t => (
+        {project.Technologies.map((t) => (
           <span className="projectInfoTechnology">
             <span>
               {typeof t == "string" ? (
@@ -98,7 +97,7 @@ const ProjectInfo = ({ project }) => {
           size="100px"
           items={images}
         />
-      </div>    
+      </div>
     </div>
   );
 };

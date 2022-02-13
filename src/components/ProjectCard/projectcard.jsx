@@ -11,14 +11,8 @@ class ProjectCard extends Component {
   state = {};
   technologyIconStyle = { width: "23px", height: "23px", marginRight: "15px" };
   render() {
-    const {
-      Name,
-      Description,
-      Color,
-      ImageFile,
-      Technologies,
-      Platform
-    } = this.props.project;
+    const { Name, Description, Color, ImageFile, Technologies, Platform } =
+      this.props.project;
     const { action, project } = this.props;
     const PlatformIcon = PLATFORM_ICONS[Platform];
     return (
@@ -41,7 +35,7 @@ class ProjectCard extends Component {
             </div>
             <ReactTooltip />
             <div className="projectTechnologies">
-              {Technologies.map(t => (
+              {Technologies.map((t) => (
                 <span className="projectCardIcons">
                   {typeof t == "string" ? (
                     <Icon
@@ -51,8 +45,8 @@ class ProjectCard extends Component {
                     />
                   ) : (
                     <t.Icon
-                    style={this.technologyIconStyle}
-                    // data-tip={ICON_LABELS[t.Name]}
+                      style={this.technologyIconStyle}
+                      // data-tip={ICON_LABELS[t.Name]}
                     />
                   )}
                 </span>

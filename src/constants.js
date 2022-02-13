@@ -7,7 +7,7 @@ const PROJECT_TARGETS = {
   Personal: "Personal Project",
   AbbVie: "Created for AbbVie Inc.",
   FreelanceClient: "Freelance Project for Client",
-  FreelanceStartup: "Freelance Project for a Startup"
+  FreelanceStartup: "Freelance Project for a Startup",
 };
 const PROPRIETARY_SOFTWARE_TEXT =
   "No repository link as it is company's proprietary software";
@@ -36,8 +36,8 @@ export const PROJECTS = [
       "Firebase",
       "Googlecloudfunctions",
       "Typescript",
-      { Name: "Antdesign", Icon: AntDesign }
-    ]
+      { Name: "Antdesign", Icon: AntDesign },
+    ],
   },
   {
     Name: "RapidFlow",
@@ -64,8 +64,8 @@ export const PROJECTS = [
       "Dotnet",
 
       { Name: "Sql", Icon: Sql },
-      { Name: "Mssql", Icon: Sqlserver }
-    ]
+      { Name: "Mssql", Icon: Sqlserver },
+    ],
   },
   {
     Name: "RapidFlow App Studio",
@@ -92,8 +92,8 @@ export const PROJECTS = [
       "Node",
 
       { Name: "Sql", Icon: Sql },
-      "Postgresql"
-    ]
+      "Postgresql",
+    ],
   },
   {
     Name: "Ndis",
@@ -116,8 +116,8 @@ export const PROJECTS = [
       "Csharp",
       "Dotnet",
       { Name: "Sql", Icon: Sql },
-      { Name: "Mssql", Icon: Sqlserver }
-    ]
+      { Name: "Mssql", Icon: Sqlserver },
+    ],
   },
   {
     Name: "Portfolio",
@@ -135,7 +135,7 @@ export const PROJECTS = [
     NoUrlReason: "You are on the same website !",
     NoRepoReason: "",
     Target: PROJECT_TARGETS.Personal,
-    Technologies: ["React", "Javascript", "Firebase"]
+    Technologies: ["React", "Javascript", "Firebase"],
   },
   {
     Name: "Cointec",
@@ -154,7 +154,7 @@ export const PROJECTS = [
     NoUrlReason: "",
     NoRepoReason: PROPRIETARY_SOFTWARE_TEXT,
     Target: PROJECT_TARGETS.FreelanceStartup + ", Currently in Development",
-    Technologies: ["React", "Javascript", "Node"]
+    Technologies: ["React", "Javascript", "Node"],
   },
   {
     Name: "Eventrone",
@@ -173,8 +173,8 @@ export const PROJECTS = [
     NoUrlReason: "",
     NoRepoReason: PROPRIETARY_SOFTWARE_TEXT,
     Target: PROJECT_TARGETS.FreelanceStartup,
-    Technologies: ["Javascript", "Jquery", "Python", "Django"]
-  }
+    Technologies: ["Javascript", "Jquery", "Python", "Django"],
+  },
 ];
 export const SKILLS = [
   {
@@ -190,8 +190,8 @@ export const SKILLS = [
       { Name: "Babel", Icon: "Babel" },
       { Name: "Rxjs", Icon: "Rxjs" },
       { Name: "HTML", Icon: "Html" },
-      { Name: "CSS", Icon: "Css" }
-    ]
+      { Name: "CSS", Icon: "Css" },
+    ],
   },
   {
     Title: "Back End",
@@ -208,9 +208,9 @@ export const SKILLS = [
       {
         Name: "Google Cloud Functions",
 
-        Icon: "Googlecloudfunctions"
-      }
-    ]
+        Icon: "Googlecloudfunctions",
+      },
+    ],
   },
   {
     Title: "Database",
@@ -222,13 +222,13 @@ export const SKILLS = [
         Name: "MS SQL Server",
 
         Icon: Sqlserver,
-        IconSvg: true
-      }
-    ]
+        IconSvg: true,
+      },
+    ],
   },
   {
     Title: "Version Control",
-    Items: [{ Name: "Git", Icon: "Git" }]
+    Items: [{ Name: "Git", Icon: "Git" }],
   },
   {
     /*
@@ -241,9 +241,9 @@ export const SKILLS = [
       { Name: "Functional Programming" },
       { Name: "Object Oriented Programming" },
       { Name: "Database Indexing and Tuning" },
-      { Name: "Query Optimization" }
-    ]
-  }
+      { Name: "Query Optimization" },
+    ],
+  },
 ];
 export const PLATFORM_ICONS = { Web, Desktop };
 
@@ -276,5 +276,5 @@ export const ICON_LABELS = {
   Python: "Python",
   Mssql: "MS SQL Server",
   Django: "Django",
-  Es6: "ECMAScript 6"
+  Es6: "ECMAScript 6",
 };

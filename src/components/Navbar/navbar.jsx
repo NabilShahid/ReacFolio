@@ -10,42 +10,39 @@ class Navbar extends Component {
     options: [
       {
         refName: "homePage",
-        label: "Home"
+        label: "Home",
       },
       {
         refName: "aboutPage",
-        label: "About"
+        label: "About",
       },
       {
         refName: "projectsPage",
-        label: "Work"
+        label: "Work",
       },
       {
         refName: "experiencePage",
-        label: "Experience"
+        label: "Experience",
       },
       {
         refName: "contactPage",
-        label: "Contact"
+        label: "Contact",
       },
     ],
     options1: ["Home", "About", "Projects", "Experience", "Contact"],
-    expandableMenuShown: false
+    expandableMenuShown: false,
   };
-  navbarHeight="51px";
+  navbarHeight = "51px";
   render() {
     const { options, expandableMenuShown } = this.state;
-    const { activeIndex, scrollToRef,scrollToHome } = this.props;
+    const { activeIndex, scrollToRef, scrollToHome } = this.props;
     return (
       <div className="brackets">
         <nav
-          className=
-            "navbar navbar-expand-lg navbar-light " 
-          style={{height:this.navbarHeight}}
-            
-          
+          className="navbar navbar-expand-lg navbar-light "
+          style={{ height: this.navbarHeight }}
         >
-          <UserInfo scrollToHome={scrollToHome}  userName="Nabil Shahid" />
+          <UserInfo scrollToHome={scrollToHome} userName="Nabil Shahid" />
 
           <div
             className="navBarToggleButton"
@@ -86,9 +83,12 @@ class Navbar extends Component {
             </div>
           </Flash>
         </nav>
-        <div style={{height:this.navbarHeight}} className={"opacityAnimDiv "+(activeIndex == 0 && "navbarFirstPage")}>
-
-        </div>
+        <div
+          style={{ height: this.navbarHeight }}
+          className={
+            "opacityAnimDiv " + (activeIndex == 0 && "navbarFirstPage")
+          }
+        ></div>
       </div>
     );
   }

@@ -20,7 +20,7 @@ class ProjectsPage extends Component {
       }
     }
   };
-  setModalVisibility = selectedProject => {
+  setModalVisibility = (selectedProject) => {
     const { modalOpen } = this.state;
     if (modalOpen) this.setState({ modalOpen: !modalOpen });
     else this.setState({ modalOpen: !modalOpen, selectedProject });
@@ -35,7 +35,8 @@ class ProjectsPage extends Component {
         <div className="pageHeader">
           <span className="pageHeaderText">Work</span>
           <div className="pageSubtitleText">
-           Following are some of the recent projects that I have worked on. Click on the project tile to learn more about it.
+            Following are some of the recent projects that I have worked on.
+            Click on the project tile to learn more about it.
           </div>
         </div>
         <Modal open={modalOpen} onClose={this.setModalVisibility}>

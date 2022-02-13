@@ -1,46 +1,44 @@
-.projectsInfoDiv{
-    /* height: 75vh; */
-    color: #1b3a57;
-    padding: 5px 10px;
+.projectsInfoDiv {
+  /* height: 75vh; */
+  color: #1b3a57;
+  padding: 5px 10px;
 }
-.styles_modal__gNwvD{
-    border-radius: 5px;
-    background: #f6f7f9;
-    overflow: hidden;
+.styles_modal__gNwvD {
+  border-radius: 5px;
+  background: #f6f7f9;
+  overflow: hidden;
 }
-.gallery{
-    max-width: 85vw;
-    margin: 9px 3px;
-    border: 1px solid #d8d8d8;
-    padding: 5px;
-    border-radius: 5px;
+.gallery {
+  max-width: 85vw;
+  margin: 9px 3px;
+  border: 1px solid #d8d8d8;
+  padding: 5px;
+  border-radius: 5px;
 }
-.projectInfoName{
-    font-size: 27px;
-    color:#1b3a57;
-    margin-top: 7px; 
+.projectInfoName {
+  font-size: 27px;
+  color: #1b3a57;
+  margin-top: 7px;
 }
-.projectInfoSubtitle{
-    font-size: 14px;
-    margin-top: -5px;
-    padding-bottom: 4px;
-    margin-right: 5px;
-    border-bottom: 1px solid #d8d8d8;
-}
-
-
-.projectInfoDescription{
-    font-size: 13px;
-    margin-top: 14px;
-    margin-bottom: 15px;
-    padding: 0px 16px;
+.projectInfoSubtitle {
+  font-size: 14px;
+  margin-top: -5px;
+  padding-bottom: 4px;
+  margin-right: 5px;
+  border-bottom: 1px solid #d8d8d8;
 }
 
+.projectInfoDescription {
+  font-size: 13px;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  padding: 0px 16px;
+}
 
 .styles_closeIcon__1QwbI {
-    width: 30px;
-    height: 30px;
-    fill: #a2a2a2;
+  width: 30px;
+  height: 30px;
+  fill: #a2a2a2;
 }
 /* .styles_closeButton__20ID4 {
     bottom: 2px ;
@@ -48,64 +46,63 @@
     top: unset;
     
 } */
-.image-gallery-left-nav, .image-gallery-right-nav{
-    font-size: 2.5em;
-    padding: 0px 15px;
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  font-size: 2.5em;
+  padding: 0px 15px;
 }
-.image-gallery-slides{
-    border-radius: 3px;
+.image-gallery-slides {
+  border-radius: 3px;
 }
 /* .image-gallery-slide-wrapper{
 height: 350px;
 } */
-.styles_closeIcon__1QwbI{
-    width: 23px;
-    height: 23px;
+.styles_closeIcon__1QwbI {
+  width: 23px;
+  height: 23px;
 }
-.projectLink{
-    height: 20px;
-    width: 20px;
-    fill: #1b3a57;
-    margin-bottom: 4px;
-    margin-left: 5px;
-}
-
-.githubRepoIcon{
-    height: 20px;
-    width: 20px;
-    margin-bottom: 4px;
-    margin-right: 5px;  
+.projectLink {
+  height: 20px;
+  width: 20px;
+  fill: #1b3a57;
+  margin-bottom: 4px;
+  margin-left: 5px;
 }
 
-.projectInfoRepo{
-     font-size: 14px;
-    margin-top: 10px;
-    cursor: pointer;
+.githubRepoIcon {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 4px;
+  margin-right: 5px;
 }
 
-.projectInfoRepoLink{
-    height: 17px;
-    width: 17px;
-    fill: #1b3a57;
-    margin-bottom: 1px;
-    margin-left: 5px;
+.projectInfoRepo {
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
+.projectInfoRepoLink {
+  height: 17px;
+  width: 17px;
+  fill: #1b3a57;
+  margin-bottom: 1px;
+  margin-left: 5px;
 }
-.projectInfoTechnologiesContainer{
-    margin: 1px 10px;
+.projectInfoTechnologiesContainer {
+  margin: 1px 10px;
 }
-.projectInfoTechnology{
-    display: inline-block;
-    background: #e6e6e6 !important;
-    color: #888888;
-    font-size: 12px;
-    padding: 5px 8px 4px 7px;
-    margin-right: 10px;
-    margin-top: 8px;
-    border-radius: 20px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-
+.projectInfoTechnology {
+  display: inline-block;
+  background: #e6e6e6 !important;
+  color: #888888;
+  font-size: 12px;
+  padding: 5px 8px 4px 7px;
+  margin-right: 10px;
+  margin-top: 8px;
+  border-radius: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
-.projectInfoTechnologyText{
-    padding: 0px 4px;
- }
+.projectInfoTechnologyText {
+  padding: 0px 4px;
+}

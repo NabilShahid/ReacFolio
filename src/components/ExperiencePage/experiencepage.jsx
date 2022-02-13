@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
   VerticalTimeline,
-  VerticalTimelineElement
+  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
@@ -10,7 +10,7 @@ import { ReactComponent as Start } from "../../assets/svgs/power.svg";
 import { ReactComponent as LinkIcon } from "../../assets/svgs/external-link-symbol.svg";
 
 import "./experiencepage.css";
-const openUrl = link => {
+const openUrl = (link) => {
   window.open(link, "_blank");
 };
 class ExperiencePage extends Component {
@@ -30,7 +30,7 @@ class ExperiencePage extends Component {
             iconStyle={{
               background: "var(--color-5)",
               color: "white",
-              fill: "white"
+              fill: "white",
             }}
             icon={<Work />}
           >
@@ -56,7 +56,7 @@ class ExperiencePage extends Component {
             </h3>
             <h4
               onClick={() => openUrl("http://www.abbvie.com")}
-              style={{cursor:"pointer"}}
+              style={{ cursor: "pointer" }}
               className="vertical-timeline-element-subtitle"
             >
               AbbVie Inc.
@@ -80,7 +80,7 @@ class ExperiencePage extends Component {
             </h3>
             <h4
               onClick={() => openUrl("http://nu.edu.pk")}
-              style={{cursor:"pointer"}}
+              style={{ cursor: "pointer" }}
               className="verticaertical-timeline-element-subtitle"
             >
               National University of Computer and Emerging Sciences (FAST)
@@ -96,7 +96,7 @@ class ExperiencePage extends Component {
             iconStyle={{
               background: "var(--color-5)",
               color: "#fff",
-              fill: "white"
+              fill: "white",
             }}
             icon={<Start />}
           />

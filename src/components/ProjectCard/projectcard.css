@@ -4,8 +4,8 @@
   transition: 0.3s;
 }
 .projectCardContainer:hover {
-transform: translateY(-6px);
-transition: 0.3s;
+  transform: translateY(-6px);
+  transition: 0.3s;
 }
 .projectCard {
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.11);
@@ -32,8 +32,8 @@ transition: 0.3s;
   border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 10px;
- }
- 
+}
+
 .projectCardContentDiv {
   text-align: center;
   position: relative;

@@ -11,8 +11,13 @@ canvas {
   /* background-color: #233452; */
   /* background: linear-gradient(to top, #4b6cb7, #182848); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* background: linear-gradient(to right bottom, #051937, #004668, #00757d, #0ea36f, #a5c955); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(120deg, var(--color-1),var(--color-4), var(--color-5));
-/*   
+  background: linear-gradient(
+    120deg,
+    var(--color-1),
+    var(--color-4),
+    var(--color-5)
+  );
+  /*   
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;

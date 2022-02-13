@@ -10,7 +10,7 @@ const aboutIconsStyle = {
   width: "25px",
   marginRight: "5px",
   marginTop: "-5px",
-  fill: "#737373"
+  fill: "#737373",
 };
 const AboutPage = () => {
   return (
@@ -38,7 +38,7 @@ const AboutPage = () => {
                     style={{
                       ...aboutIconsStyle,
                       height: "23px",
-                      width: "23px"
+                      width: "23px",
                     }}
                   />{" "}
                   4+ Years Experience
@@ -47,14 +47,14 @@ const AboutPage = () => {
             </FadeReveal>
             <FadeReveal duration={700} delay={200}>
               <div className="aboutMeText">
-                Hey it’s Nabil Shahid. I am Full Stack
-                JavaScript developer. Proficiently skilled in working with most
-                in demand Frontend and Backend technologies including React,
-                Angular, Node, Nest.js, TypeScript and many other. Working on a
-                myriad of professional and personal projects, I have become
-                reasonably skilled in writing clean and reusable code, bug
-                fixing, solving complicated and critical software problems,
-                optimizing code and creating good user experiences.
+                Hey it’s Nabil Shahid. I am Full Stack JavaScript developer.
+                Proficiently skilled in working with most in demand Frontend and
+                Backend technologies including React, Angular, Node, Nest.js,
+                TypeScript and many other. Working on a myriad of professional
+                and personal projects, I have become reasonably skilled in
+                writing clean and reusable code, bug fixing, solving complicated
+                and critical software problems, optimizing code and creating
+                good user experiences.
               </div>
             </FadeReveal>
           </div>

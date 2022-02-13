@@ -147,7 +147,7 @@
   width: 185px;
   transition: 0.3s;
 }
-.viewWorkIcon{
+.viewWorkIcon {
   width: 20px;
   fill: white;
   height: 20px;
@@ -181,9 +181,9 @@
     width: 170px;
   }
   .viewWorkIcon {
-    width: 17px;   
+    width: 17px;
     height: 17px;
-}
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {

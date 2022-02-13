@@ -7,12 +7,12 @@ class ContactForm extends Component {
   state = {
     name: "",
     email: "",
-    message: ""
+    message: "",
   };
-  showToastInfoMessage = message => {
+  showToastInfoMessage = (message) => {
     toast.info(message);
   };
-  showToastErrorMessage = message => {
+  showToastErrorMessage = (message) => {
     toast(message);
   };
 
@@ -33,17 +33,17 @@ class ContactForm extends Component {
     this.showToastInfoMessage("Message Sent! I will try to get back asap");
   };
 
-  setFieldValue = e => {
+  setFieldValue = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
   render() {
-     const { name, email, message } = this.state;
+    const { name, email, message } = this.state;
 
     return (
       <form onSubmit={this.sendEmail} className="contactForm">
         <div className="contactFormDiv">
-          <FadeReveal  delay={200} duration={500}>
+          <FadeReveal delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Name</div>
               <div className="contactFormControl">
@@ -57,7 +57,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </FadeReveal>
-          <FadeReveal  delay={200} duration={500}>
+          <FadeReveal delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Email</div>
               <div className="contactFormControl">
@@ -71,7 +71,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </FadeReveal>
-          <FadeReveal  delay={200} duration={500}>
+          <FadeReveal delay={200} duration={500}>
             <div className="contactFormField">
               <div className="contactFormLabel">Message</div>
               <div className="contactFormControl">
@@ -97,7 +97,7 @@ class ContactForm extends Component {
               </div>
             </div>
           </FadeReveal>
-        </div>  
+        </div>
       </form>
     );
   }

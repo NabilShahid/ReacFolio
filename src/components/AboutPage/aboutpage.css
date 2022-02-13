@@ -17,11 +17,10 @@
 }
 
 .aboutMeText {
-      font-size: 16px;
-      text-align: left;
-      margin-bottom: 15px;
-      color: #1b3a57;
-
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #1b3a57;
 }
 
 .aboutMeDiv {
@@ -46,13 +45,13 @@
 
     /* padding-bottom: 7px; */
   }
-  .aboutMeText {    
+  .aboutMeText {
     padding: 0px 10%;
-}
-  .abouteMeInfoItem:nth-child(1){
+  }
+  .abouteMeInfoItem:nth-child(1) {
     text-align: center;
   }
-  .abouteMeInfoItem:nth-child(2){
+  .abouteMeInfoItem:nth-child(2) {
     text-align: center;
   }
 }

@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   //variables
   var hijacking = $("#mainScrollerDiv").data("hijacking"),
     animationType = $("#mainScrollerDiv").data("animation"),
@@ -13,13 +13,10 @@ jQuery(document).ready(function($) {
     prevArrow = verticalNav.find("a.cd-prev"),
     nextArrow = verticalNav.find("a.cd-next");
 
-  $(".main-nav-item").on("click", e => {
+  $(".main-nav-item").on("click", (e) => {
     var toSection = parseInt(e.target.id.split("-")[1]);
     var fromSection = parseInt(
-      $("#mainScrollerDiv")
-        .find(".visible")
-        .attr("id")
-        .split("-")[1]
+      $("#mainScrollerDiv").find(".visible").attr("id").split("-")[1]
     );
     if (fromSection == toSection) return;
     if (fromSection < toSection) {
@@ -29,7 +26,7 @@ jQuery(document).ready(function($) {
           nextSection(e, false);
         } else {
           setTimeout(() => {
-            nextSection(e, i == toSection ? 700 : 250);//slow anim : fast anim
+            nextSection(e, i == toSection ? 700 : 250); //slow anim : fast anim
           }, counter * 300); // anim after time. should be greater than fast anim
           counter++;
         }
@@ -54,7 +51,7 @@ jQuery(document).ready(function($) {
 
   bindEvents(MQ, true);
 
-  $(window).on("resize", function() {
+  $(window).on("resize", function () {
     MQ = deviceType();
     bindEvents(MQ, bindToggle);
     if (MQ == "mobile") bindToggle = true;
@@ -74,7 +71,7 @@ jQuery(document).ready(function($) {
       prevArrow.on("click", prevSection);
       nextArrow.on("click", nextSection);
 
-      $(document).on("keydown", function(event) {
+      $(document).on("keydown", function (event) {
         if (event.which == "40" && !nextArrow.hasClass("inactive")) {
           event.preventDefault();
           nextSection();
@@ -113,7 +110,7 @@ jQuery(document).ready(function($) {
       windowHeight = $(window).height(),
       windowWidth = $(window).width();
 
-    sectionsAvailable.each(function() {
+    sectionsAvailable.each(function () {
       var actualBlock = $(this),
         offset = scrollTop - actualBlock.offset().top;
 
@@ -156,7 +153,7 @@ jQuery(document).ready(function($) {
         rotateX: rotateXValue,
         opacity: opacityValue,
         boxShadowBlur: boxShadow + "px",
-        translateZ: 0
+        translateZ: 0,
       },
       0
     );
@@ -172,7 +169,7 @@ jQuery(document).ready(function($) {
       animationTop = animationParams[1],
       animationBottom = animationParams[2];
 
-    visibleSection.children("div").velocity(animationVisible, 1, function() {
+    visibleSection.children("div").velocity(animationVisible, 1, function () {
       visibleSection.css("opacity", 1);
       topSection.css("opacity", 1);
       bottomSection.css("opacity", 1);
@@ -231,7 +228,7 @@ jQuery(document).ready(function($) {
           animationParams[0],
           duration ? duration : animationParams[3],
           animationParams[4],
-          function() {
+          function () {
             animating = false;
             if (hijacking == "off") $(window).on("scroll", scrollAnimation);
           }
@@ -274,7 +271,7 @@ jQuery(document).ready(function($) {
           animationParams[0],
           animationParams[3],
           animationParams[4],
-          function() {
+          function () {
             animating = false;
             if (hijacking == "off") $(window).on("scroll", scrollAnimation);
           }
@@ -321,7 +318,7 @@ jQuery(document).ready(function($) {
           animationParams[0],
           duration ? duration : animationParams[3],
           animationParams[4],
-          function() {
+          function () {
             animating = false;
             if (hijacking == "off") $(window).on("scroll", scrollAnimation);
           }
@@ -362,7 +359,7 @@ jQuery(document).ready(function($) {
           animationParams[0],
           animationParams[3],
           animationParams[4],
-          function() {
+          function () {
             animating = false;
             if (hijacking == "off") $(window).on("scroll", scrollAnimation);
           }
@@ -400,7 +397,7 @@ jQuery(document).ready(function($) {
 
   function resetSectionStyle() {
     //on mobile - remove style applied with jQuery
-    sectionsAvailable.children("div").each(function() {
+    sectionsAvailable.children("div").each(function () {
       $(this).attr("style", "");
     });
   }
@@ -472,7 +469,7 @@ jQuery(document).ready(function($) {
       animationTop,
       animationBottom,
       animDuration,
-      easing
+      easing,
     ];
   }
 
@@ -650,11 +647,11 @@ jQuery(document).ready(function($) {
 //none
 $.Velocity.RegisterEffect("translateUp", {
   defaultDuration: 1,
-  calls: [[{ translateY: "-100%" }, 1]]
+  calls: [[{ translateY: "-100%" }, 1]],
 });
 $.Velocity.RegisterEffect("translateDown", {
   defaultDuration: 1,
-  calls: [[{ translateY: "100%" }, 1]]
+  calls: [[{ translateY: "100%" }, 1]],
 });
 $.Velocity.RegisterEffect("translateNone", {
   defaultDuration: 1,
@@ -665,26 +662,26 @@ $.Velocity.RegisterEffect("translateNone", {
         opacity: "1",
         scale: "1",
         rotateX: "0",
-        boxShadowBlur: "0"
+        boxShadowBlur: "0",
       },
-      1
-    ]
-  ]
+      1,
+    ],
+  ],
 });
 
 //scale down
 $.Velocity.RegisterEffect("scaleDown", {
   defaultDuration: 1,
-  calls: [[{ opacity: "0", scale: "0.7", boxShadowBlur: "40px" }, 1]]
+  calls: [[{ opacity: "0", scale: "0.7", boxShadowBlur: "40px" }, 1]],
 });
 //rotation
 $.Velocity.RegisterEffect("rotation", {
   defaultDuration: 1,
-  calls: [[{ opacity: "0", rotateX: "90", translateY: "-100%" }, 1]]
+  calls: [[{ opacity: "0", rotateX: "90", translateY: "-100%" }, 1]],
 });
 $.Velocity.RegisterEffect("rotation.scroll", {
   defaultDuration: 1,
-  calls: [[{ opacity: "0", rotateX: "90", translateY: "0" }, 1]]
+  calls: [[{ opacity: "0", rotateX: "90", translateY: "0" }, 1]],
 });
 //gallery
 $.Velocity.RegisterEffect("scaleDown.moveUp", {
@@ -692,70 +689,70 @@ $.Velocity.RegisterEffect("scaleDown.moveUp", {
   calls: [
     [{ translateY: "-10%", scale: "0.9", boxShadowBlur: "40px" }, 0.2],
     [{ translateY: "-100%" }, 0.6],
-    [{ translateY: "-100%", scale: "1", boxShadowBlur: "0" }, 0.2]
-  ]
+    [{ translateY: "-100%", scale: "1", boxShadowBlur: "0" }, 0.2],
+  ],
 });
 $.Velocity.RegisterEffect("scaleDown.moveUp.scroll", {
   defaultDuration: 1,
   calls: [
     [{ translateY: "-100%", scale: "0.9", boxShadowBlur: "40px" }, 0.6],
-    [{ translateY: "-100%", scale: "1", boxShadowBlur: "0" }, 0.4]
-  ]
+    [{ translateY: "-100%", scale: "1", boxShadowBlur: "0" }, 0.4],
+  ],
 });
 $.Velocity.RegisterEffect("scaleUp.moveUp", {
   defaultDuration: 1,
   calls: [
     [{ translateY: "90%", scale: "0.9", boxShadowBlur: "40px" }, 0.2],
     [{ translateY: "0%" }, 0.6],
-    [{ translateY: "0%", scale: "1", boxShadowBlur: "0" }, 0.2]
-  ]
+    [{ translateY: "0%", scale: "1", boxShadowBlur: "0" }, 0.2],
+  ],
 });
 $.Velocity.RegisterEffect("scaleUp.moveUp.scroll", {
   defaultDuration: 1,
   calls: [
     [{ translateY: "0%", scale: "0.9", boxShadowBlur: "40px" }, 0.6],
-    [{ translateY: "0%", scale: "1", boxShadowBlur: "0" }, 0.4]
-  ]
+    [{ translateY: "0%", scale: "1", boxShadowBlur: "0" }, 0.4],
+  ],
 });
 $.Velocity.RegisterEffect("scaleDown.moveDown", {
   defaultDuration: 1,
   calls: [
     [{ translateY: "10%", scale: "0.9", boxShadowBlur: "40px" }, 0.2],
     [{ translateY: "100%" }, 0.6],
-    [{ translateY: "100%", scale: "1", boxShadowBlur: "0" }, 0.2]
-  ]
+    [{ translateY: "100%", scale: "1", boxShadowBlur: "0" }, 0.2],
+  ],
 });
 $.Velocity.RegisterEffect("scaleDown.moveDown.scroll", {
   defaultDuration: 1,
   calls: [
     [{ translateY: "100%", scale: "0.9", boxShadowBlur: "40px" }, 0.6],
-    [{ translateY: "100%", scale: "1", boxShadowBlur: "0" }, 0.4]
-  ]
+    [{ translateY: "100%", scale: "1", boxShadowBlur: "0" }, 0.4],
+  ],
 });
 $.Velocity.RegisterEffect("scaleUp.moveDown", {
   defaultDuration: 1,
   calls: [
     [{ translateY: "-90%", scale: "0.9", boxShadowBlur: "40px" }, 0.2],
     [{ translateY: "0%" }, 0.6],
-    [{ translateY: "0%", scale: "1", boxShadowBlur: "0" }, 0.2]
-  ]
+    [{ translateY: "0%", scale: "1", boxShadowBlur: "0" }, 0.2],
+  ],
 });
 //catch up
 $.Velocity.RegisterEffect("translateUp.delay", {
   defaultDuration: 1,
-  calls: [[{ translateY: "0%" }, 0.8, { delay: 100 }]]
+  calls: [[{ translateY: "0%" }, 0.8, { delay: 100 }]],
 });
 //opacity
 $.Velocity.RegisterEffect("hide.scaleUp", {
   defaultDuration: 1,
-  calls: [[{ opacity: "0", scale: "1.2" }, 1]]
+  calls: [[{ opacity: "0", scale: "1.2" }, 1]],
 });
 $.Velocity.RegisterEffect("hide.scaleDown", {
   defaultDuration: 1,
-  calls: [[{ opacity: "0", scale: "0.8" }, 1]]
+  calls: [[{ opacity: "0", scale: "0.8" }, 1]],
 });
 //parallax
 $.Velocity.RegisterEffect("translateUp.half", {
   defaultDuration: 1,
-  calls: [[{ translateY: "-50%" }, 1]]
+  calls: [[{ translateY: "-50%" }, 1]],
 });

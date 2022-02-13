@@ -19,10 +19,10 @@ class MainScroller extends Component {
     aboutPage: null,
     projectsPage: null,
     experiencePage: null,
-    contactPage: null
+    contactPage: null,
   };
   state = {
-    activeIndex: 0
+    activeIndex: 0,
   };
   constructor(props) {
     super(props);
@@ -37,7 +37,7 @@ class MainScroller extends Component {
       delay: 200,
       smooth: "easeInOutCubic",
       containerId: "containerElement",
-      offset: 150
+      offset: 150,
     });
     this.activeIndexCopy = activeIndex;
     // this.containerReference.current.scrollTo({
@@ -74,7 +74,7 @@ class MainScroller extends Component {
           height: "100vh",
           overflowY: "scroll",
           overflowX: "hidden",
-          position: "relative"
+          position: "relative",
         }}
       >
         <div id="navbarDiv">
@@ -90,20 +90,19 @@ class MainScroller extends Component {
           {" "}
           <Particles />
           <IntroText scrollToWork={() => this.scrollToRef("projectsPage")} />
-          <HomeIcons />
         </SinglePage>
         <SinglePage currRef={this.refrences.aboutPage}>
           <AboutPage activeIndex={activeIndex} pageIndex={1} />
         </SinglePage>
-        <div className="dividerDiv"></div>
+        <div className="dividerDiv" />
         <SinglePage currRef={this.refrences.projectsPage}>
           <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
         </SinglePage>
-        <div className="dividerDiv"></div>
+        <div className="dividerDiv" />
         <SinglePage currRef={this.refrences.experiencePage}>
           <ExperiencePage />{" "}
         </SinglePage>
-        <div className="dividerDiv"></div>
+        <div className="dividerDiv" />
         <SinglePage currRef={this.refrences.contactPage}>
           <ContactPage activeIndex={activeIndex} pageIndex={4} />
         </SinglePage>
@@ -125,13 +124,13 @@ class MainScroller extends Component {
 
   createReferences = () => {
     this.containerReference = React.createRef();
-    Object.keys(this.refrences).forEach(ref => {
+    Object.keys(this.refrences).forEach((ref) => {
       this.refrences[ref] = React.createRef();
     });
   };
 
   checkWhichPageIndexInViewport() {
-    let index = Object.keys(this.refrences).findIndex(ref =>
+    let index = Object.keys(this.refrences).findIndex((ref) =>
       isInViewport(this.refrences[ref].current)
     );
     return index != this.state.activeIndex ? index : -1;

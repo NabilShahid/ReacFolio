@@ -34,13 +34,13 @@ setTimeout(() => {
   }
 
   function animateLetterOut(cw, i) {
-    setTimeout(function() {
+    setTimeout(function () {
       cw[i].className = "letter out";
     }, i * 80);
   }
 
   function animateLetterIn(nw, i) {
-    setTimeout(function() {
+    setTimeout(function () {
       nw[i].className = "letter in";
     }, 340 + i * 80);
   }
@@ -64,7 +64,7 @@ setTimeout(() => {
   changeWord();
   setInterval(changeWord, 4000);
 }, 1000);
-const IntroText = ({scrollToWork}) => {
+const IntroText = ({ scrollToWork }) => {
   return (
     <div className="textDiv">
       <p className="rotateTextP">Hi, I am a </p>
@@ -78,43 +78,11 @@ const IntroText = ({scrollToWork}) => {
       </div>
       <div style={{ marginTop: "15px" }}>
         <div onClick={scrollToWork} className="viewWorkButton buttonHover">
-          <DownArrow
-            className="viewWorkIcon"
-          />
+          <DownArrow className="viewWorkIcon" />
           View My Work
         </div>
       </div>
     </div>
-
-    // <div>
-    //   <div className="Iam">
-    //     <p>This is</p>
-    //     <b>
-    //       <div className="innerIam">
-    //         leggera
-    //         <br />
-    //         a theme in progress
-    //         <br />
-    //         built on bootstrap
-    //         <br />
-    //         how I learn stuff
-    //         <br />
-    //         how we do it
-    //       </div>
-    //     </b>
-    //   </div>
-    // </div>
-
-    // <div className="textDiv">
-    //   <p className="rotateTextP">Hi, I am a </p>
-    //   <p style={{marginLeft:"10px"}} className="rotateTextP">
-    //     <span className="word">Full Stack Developer</span>
-    //     <span className="word">Front End Developer</span>
-    //     <span className="word">Backend Engineer</span>
-    //     <span className="word">JavaScript Developer</span>
-    //     <span className="word">Database Programmer</span>
-    //   </p>
-    // </div>
   );
 };
 

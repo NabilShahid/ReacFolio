@@ -9,7 +9,7 @@ const iconStyle = {
   width: "25px",
   height: "25px",
   marginRight: "5px",
-  marginTop: "0px"
+  marginTop: "0px",
 };
 const SkillsCard = () => {
   return (
@@ -17,11 +17,11 @@ const SkillsCard = () => {
       <FadeReveal duration={700}>
         <div className="skillsHeader">Top Skills</div>
 
-        {SKILLS.map(skillarea => (
+        {SKILLS.map((skillarea) => (
           <div className="skillsSection">
             <div className="skillsSectionHeader">{skillarea.Title}</div>
             <div className="skillsSectionBody">
-              {skillarea.Items.map(item => (
+              {skillarea.Items.map((item) => (
                 <span className="singleSkill">
                   <span className="singleSkillIcon">
                     {item.IconSvg && <item.Icon style={iconStyle} />}

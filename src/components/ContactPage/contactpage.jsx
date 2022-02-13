@@ -3,24 +3,28 @@ import { ReactComponent as EmailIcon } from "../../assets/svgs/email.svg";
 import { ReactComponent as PhoneIcon } from "../../assets/svgs/telephone.svg";
 import ContactForm from "../ContactForm/contactform";
 import FadeReveal from "react-reveal/Zoom";
-import ProfileLinks from "../ProfileLinks/profilelinks"
+import ProfileLinks from "../ProfileLinks/profilelinks";
 
 import "./contactpage.css";
 const contactIconsStyle = {
   height: "24px",
   width: "24px",
-  fill: "#585858"
+  fill: "#585858",
 };
- const Contact = () => {
-   return (
+const Contact = () => {
+  return (
     <div id="contactPage">
       <div className="pageHeader">
         <span className="pageHeaderText">Contact</span>
       </div>
       <FadeReveal duration={500}>
         <div className="contactTypes">
-          <div className="pageSubtitleText" style={{marginBottom:"20px",textAlign:"center"}}>
-            Interested in working together and get amazing things done ?<br/> Feel free to contact me.
+          <div
+            className="pageSubtitleText"
+            style={{ marginBottom: "20px", textAlign: "center" }}
+          >
+            Interested in working together and get amazing things done ?<br />{" "}
+            Feel free to contact me.
           </div>
           <div className="contactType">
             <EmailIcon style={contactIconsStyle} />
@@ -31,13 +35,12 @@ const contactIconsStyle = {
             <span className="contactText">+923477363136</span>
           </div>
           <div className="contactType">
-            <ProfileLinks/>
+            <ProfileLinks />
           </div>
         </div>
       </FadeReveal>
 
       <div className="contactFormContainer">
-
         <ContactForm />
       </div>
     </div>

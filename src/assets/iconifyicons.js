@@ -9,23 +9,21 @@ import Vscode from "@iconify/icons-logos/visual-studio-code";
 import Npm from "@iconify/icons-logos/npm";
 import Nest from "@iconify/icons-logos/nestjs";
 import Redux from "@iconify/icons-logos/redux";
-import Webpack from '@iconify/icons-logos/webpack';
-import Typescript from '@iconify/icons-logos/typescript-icon';
-import Html from '@iconify/icons-logos/html-5';
-import Css from '@iconify/icons-logos/css-3'; 
-import Ionic from '@iconify/icons-logos/ionic';
-import Rxjs from '@iconify/icons-logos/reactivex';
-import Babel from '@iconify/icons-logos/babel';
-import Express from '@iconify/icons-logos/express';
-import Googlecloudfunctions from '@iconify/icons-logos/google-cloud-functions';
-import Dotnet from '@iconify/icons-logos/dotnet';
-import Git from '@iconify/icons-logos/git-icon';
-import Jquery from '@iconify/icons-logos/jquery';
-import Python from '@iconify/icons-logos/python';
-import Django from '@iconify/icons-logos/django';
-import Es6 from '@iconify/icons-logos/es6';
-
-
+import Webpack from "@iconify/icons-logos/webpack";
+import Typescript from "@iconify/icons-logos/typescript-icon";
+import Html from "@iconify/icons-logos/html-5";
+import Css from "@iconify/icons-logos/css-3";
+import Ionic from "@iconify/icons-logos/ionic";
+import Rxjs from "@iconify/icons-logos/reactivex";
+import Babel from "@iconify/icons-logos/babel";
+import Express from "@iconify/icons-logos/express";
+import Googlecloudfunctions from "@iconify/icons-logos/google-cloud-functions";
+import Dotnet from "@iconify/icons-logos/dotnet";
+import Git from "@iconify/icons-logos/git-icon";
+import Jquery from "@iconify/icons-logos/jquery";
+import Python from "@iconify/icons-logos/python";
+import Django from "@iconify/icons-logos/django";
+import Es6 from "@iconify/icons-logos/es6";
 
 export const TechologiesIcons = {
   Postgresql,
@@ -40,7 +38,7 @@ export const TechologiesIcons = {
   Nest,
   Redux,
   Webpack,
-  Typescript,  
+  Typescript,
   Html,
   Css,
   Ionic,
@@ -53,5 +51,5 @@ export const TechologiesIcons = {
   Jquery,
   Python,
   Django,
-  Es6
-}; 
+  Es6,
+};

@@ -119,7 +119,7 @@ const HomeIcons = () => {
         </div>
 
         <div className="homeIconsRow">
-        <div className="homeIconsCol"></div>
+          <div className="homeIconsCol"></div>
 
           <div className="homeIconsCol">
             {" "}
@@ -145,7 +145,7 @@ const HomeIcons = () => {
             />{" "}
           </div>
           <div className="homeIconsCol">
-          <AnimatedIcon
+            <AnimatedIcon
               animDuration={durationsFlash[1]}
               styleClass="homeIconLarge"
               iconType={TechologiesIcons.Babel}
@@ -202,8 +202,8 @@ const HomeIcons = () => {
             />{" "}
           </div>
           <div className="homeIconsCol">
-            {" "}           
-             <Flash forever={true} duration={durationsFlash[2]}>
+            {" "}
+            <Flash forever={true} duration={durationsFlash[2]}>
               <Sql className="homeIconLarge" />
             </Flash>
           </div>
