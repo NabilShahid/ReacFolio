@@ -13,17 +13,17 @@ const iconStyle = {
 };
 const SkillsCard = () => {
   return (
-    <div id="skillsCard">
+    <div id="skills-card">
       <FadeReveal duration={700}>
-        <div className="skillsHeader">Top Skills</div>
+        <div className="skills-header">Top Skills</div>
 
         {SKILLS.map((skillarea) => (
-          <div className="skillsSection">
-            <div className="skillsSectionHeader">{skillarea.Title}</div>
-            <div className="skillsSectionBody">
+          <div className="skills-section">
+            <div className="skills-section-header">{skillarea.Title}</div>
+            <div className="skills-section-body">
               {skillarea.Items.map((item) => (
-                <span className="singleSkill">
-                  <span className="singleSkillIcon">
+                <span className="technology-item">
+                  <span>
                     {item.IconSvg && <item.Icon style={iconStyle} />}
                     {!item.IconSvg && (
                       <Icon
@@ -32,7 +32,7 @@ const SkillsCard = () => {
                       />
                     )}
                   </span>
-                  <span className="singleSkillText">{item.Name}</span>
+                  <p>{item.Name}</p>
                 </span>
               ))}
             </div>

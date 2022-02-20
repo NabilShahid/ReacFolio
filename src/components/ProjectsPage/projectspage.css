@@ -1,10 +1,10 @@
-#projectsPage {
+#projects-page {
   height: 100%;
   padding: 15px 10px 0 10px;
   overflow-y: auto;
   overflow-x: hidden;
 }
-.projectsRow {
+.projects-row {
 }
 .modal {
   outline: none;
@@ -21,7 +21,7 @@
   will-change: transform;
   transform: translate3d(0, 0, 0);
 }
-.projectGridContainer {
+.project-grid-container {
   text-align: center;
 }
 

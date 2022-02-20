@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cairo|Rubik|Roboto+Slab&display=swap");
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @import "./assets//styleVars.css";
+@import "./styles/technology-item.css";
 
 :root {
   /* Global colors */
@@ -26,7 +27,7 @@ div {
   padding: 0px 8px 8px 8px;
 }
 
-.pageHeader {
+.page-header {
   color: #1b3a57;
   /* font-family: "Google Sans",sans-serif; */
   font-size: 35px;
@@ -34,12 +35,12 @@ div {
   padding-bottom: 30px;
   text-align: center;
 }
-.pageSubtitleText {
+.page-subtitle-text {
   font-size: 17px;
   /* font-family: "Roboto Slab"; */
   color: #4e4e4e;
 }
-.pageHeaderText {
+.page-header-text {
   /* border-bottom: 1px solid #bbbbbb;
   padding: 0px 14px;
   padding-bottom: 5px;
@@ -51,7 +52,7 @@ div {
   background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
-.buttonHover:hover {
+.button-hover:hover {
   background: #04c2c9;
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(0.9);

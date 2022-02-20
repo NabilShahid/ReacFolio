@@ -14,26 +14,26 @@ const aboutIconsStyle = {
 };
 const AboutPage = () => {
   return (
-    <div id="aboutPage">
-      <div className="pageHeader">
-        <span className="pageHeaderText">About</span>
+    <div className="about-page">
+      <div className="page-header">
+        <span className="page-header-text">About</span>
       </div>
       <div className="row">
         <div
           className="col-md-5"
           style={{ textAlign: "center", borderRight: " 1px solid #d0d0d0" }}
         >
-          <div className="aboutMeDiv">
-            <img src={MyImage} alt="profile" className="profileImage" />
+          <div className="about-me-div">
+            <img src={MyImage} alt="profile" className="profile-image" />
             <FadeReveal duration={700}>
               {/* <div className="aboutMeHeader">About Me</div> */}
-              <div className="row aboutMeInfoItemContainer">
-                <div className="abouteMeInfoItem col-md-6 aboutMeInfoItemsSeperator">
+              <div className="row about-me-info-item-container">
+                <div className="aboute-me-info-item col-md-6 about-me-info-items-seperator">
                   <Graduation style={{ ...aboutIconsStyle }} /> BS Computer
                   Science
                 </div>
 
-                <div className="abouteMeInfoItem col-md-6">
+                <div className="aboute-me-info-item col-md-6">
                   <Work
                     style={{
                       ...aboutIconsStyle,
@@ -46,7 +46,7 @@ const AboutPage = () => {
               </div>
             </FadeReveal>
             <FadeReveal duration={700} delay={200}>
-              <div className="aboutMeText">
+              <div className="about-me-text">
                 Hey it’s Nabil Shahid. I am Full Stack JavaScript developer.
                 Proficiently skilled in working with most in demand Frontend and
                 Backend technologies including React, Angular, Node, Nest.js,

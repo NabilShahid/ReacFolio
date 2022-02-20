@@ -36,15 +36,10 @@ class MainScroller extends Component {
       duration: 1300,
       delay: 200,
       smooth: "easeInOutCubic",
-      containerId: "containerElement",
+      containerId: "container-element",
       offset: 150,
     });
     this.activeIndexCopy = activeIndex;
-    // this.containerReference.current.scrollTo({
-    //   top: this.refrences[targetRef].current.offsetTop,
-    //   left: 0,
-    //   behavior: "smooth"
-    // });
   };
   scrollFn = () => {
     if (!this.autoScroll) {
@@ -58,18 +53,17 @@ class MainScroller extends Component {
       "scroll",
       this.throttledScrollToFn
     );
-    Events.scrollEvent.register("end", (to, element) => {
+    Events.scrollEvent.register("end", () => {
       this.setState({ activeIndex: this.activeIndexCopy });
       this.autoScroll = false;
     });
-    // setInterval(this.scrollFn,500)
   }
   render() {
     const { activeIndex } = this.state;
     return (
       <div
         ref={this.containerReference}
-        id="containerElement"
+        id="container-element"
         style={{
           height: "100vh",
           overflowY: "scroll",
@@ -77,7 +71,7 @@ class MainScroller extends Component {
           position: "relative",
         }}
       >
-        <div id="navbarDiv">
+        <div id="navbar-div">
           <Navbar
             activeIndex={activeIndex}
             scrollToRef={this.scrollToRef}
@@ -94,15 +88,15 @@ class MainScroller extends Component {
         <SinglePage currRef={this.refrences.aboutPage}>
           <AboutPage activeIndex={activeIndex} pageIndex={1} />
         </SinglePage>
-        <div className="dividerDiv" />
+        <div className="divider-div" />
         <SinglePage currRef={this.refrences.projectsPage}>
           <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
         </SinglePage>
-        <div className="dividerDiv" />
+        <div className="divider-div" />
         <SinglePage currRef={this.refrences.experiencePage}>
           <ExperiencePage />{" "}
         </SinglePage>
-        <div className="dividerDiv" />
+        <div className="divider-div" />
         <SinglePage currRef={this.refrences.contactPage}>
           <ContactPage activeIndex={activeIndex} pageIndex={4} />
         </SinglePage>

@@ -1,55 +1,55 @@
-.homeIcons {
+.home-icons {
   position: absolute;
   right: 10px;
   bottom: 10px;
 }
-.homeIconsRow {
+.home-icons-row {
   display: flex;
   /* flex-direction: row; */
 }
-.homeIconsCol {
+.home-icons-col {
   width: 75px;
   height: 90px;
   margin: 0px 0px;
 }
-.homeIconsBorder {
+.home-icons-border {
   background: #014e673b;
   height: 29px;
   transform: rotate(137deg) translateX(94px) translateY(-60px) scaleX(3);
 }
-.homeIconLarge {
+.home-icon-large {
   width: 45px;
   height: 45px;
 }
 
 @media (max-width: 480px) {
-  .homeIcons {
+  .home-icons {
     position: absolute;
     right: 10px;
     bottom: 25px;
   }
-  .homeIconsCol {
+  .home-icons-col {
     width: 34px;
     height: 37px;
     margin: 0px 0px;
   }
-  .homeIconLarge {
+  .home-icon-large {
     width: 22px;
     height: 22px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .homeIcons {
+  .home-icons {
     position: absolute;
     right: 10px;
     bottom: 15px;
   }
-  .homeIconsCol {
+  .home-icons-col {
     width: 33px;
     height: 33px;
     margin: 0px 0px;
   }
-  .homeIconLarge {
+  .home-icon-large {
     width: 21px;
     height: 21px;
   }

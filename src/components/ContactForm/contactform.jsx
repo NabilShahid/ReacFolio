@@ -41,56 +41,56 @@ class ContactForm extends Component {
     const { name, email, message } = this.state;
 
     return (
-      <form onSubmit={this.sendEmail} className="contactForm">
+      <form onSubmit={this.sendEmail} className="contact-form">
         <div className="contactFormDiv">
           <FadeReveal delay={200} duration={500}>
-            <div className="contactFormField">
-              <div className="contactFormLabel">Name</div>
-              <div className="contactFormControl">
+            <div className="contact-form-field">
+              <div className="contact-form-label">Name</div>
+              <div className="contact-form-control">
                 <input
                   value={name}
                   onInput={this.setFieldValue}
                   name="name"
-                  className="contactInputField"
+                  className="contact-input-field"
                   type="text"
                 />
               </div>
             </div>
           </FadeReveal>
           <FadeReveal delay={200} duration={500}>
-            <div className="contactFormField">
-              <div className="contactFormLabel">Email</div>
-              <div className="contactFormControl">
+            <div className="contact-form-field">
+              <div className="contact-form-label">Email</div>
+              <div className="contact-form-control">
                 <input
                   value={email}
                   onInput={this.setFieldValue}
                   name="email"
-                  className="contactInputField"
+                  className="contact-input-field"
                   type="text"
                 />
               </div>
             </div>
           </FadeReveal>
           <FadeReveal delay={200} duration={500}>
-            <div className="contactFormField">
-              <div className="contactFormLabel">Message</div>
-              <div className="contactFormControl">
+            <div className="contact-form-field">
+              <div className="contact-form-label">Message</div>
+              <div className="contact-form-control">
                 <textarea
                   name="message"
                   rows="4"
                   value={message}
-                  className="contactInputField"
+                  className="contact-input-field"
                   type="text"
                   onInput={this.setFieldValue}
                 ></textarea>
               </div>
               <div
-                className="contactFormControl"
+                className="contact-form-control"
                 style={{ display: "flex", marginTop: "20px" }}
               >
                 <span
                   onClick={this.sendEmail}
-                  className="sendMessageButton buttonHover"
+                  className="send-message-button button-hover"
                 >
                   Send
                 </span>

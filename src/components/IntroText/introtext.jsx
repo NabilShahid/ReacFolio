@@ -34,13 +34,13 @@ setTimeout(() => {
   }
 
   function animateLetterOut(cw, i) {
-    setTimeout(function () {
+    setTimeout(function() {
       cw[i].className = "letter out";
     }, i * 80);
   }
 
   function animateLetterIn(nw, i) {
-    setTimeout(function () {
+    setTimeout(function() {
       nw[i].className = "letter in";
     }, 340 + i * 80);
   }
@@ -66,9 +66,9 @@ setTimeout(() => {
 }, 1000);
 const IntroText = ({ scrollToWork }) => {
   return (
-    <div className="textDiv">
-      <p className="rotateTextP">Hi, I am a </p>
-      <div id="rotatingSpans" className="rotateTextP">
+    <div className="text-div">
+      <p className="rotate-text-p">Hi, I am a </p>
+      <div className="rotating-spans rotate-text-p">
         <span className="word">Full Stack Developer</span>
         <span className="word">Front End Developer</span>
         <span className="word">Back End Developer</span>
@@ -77,8 +77,8 @@ const IntroText = ({ scrollToWork }) => {
         <ProfileLinks />
       </div>
       <div style={{ marginTop: "15px" }}>
-        <div onClick={scrollToWork} className="viewWorkButton buttonHover">
-          <DownArrow className="viewWorkIcon" />
+        <div onClick={scrollToWork} className="view-work-button button-hover">
+          <DownArrow className="view-work-icon" />
           View My Work
         </div>
       </div>

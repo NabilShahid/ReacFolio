@@ -1,13 +1,13 @@
-.projectCardContainer {
+.project-card-container {
   display: flex;
   justify-content: center;
   transition: 0.3s;
 }
-.projectCardContainer:hover {
+.project-card-container:hover {
   transform: translateY(-6px);
   transition: 0.3s;
 }
-.projectCard {
+.project-card {
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.11);
   border-radius: 5px;
   border-bottom-width: 5px;
@@ -18,23 +18,23 @@
   background: white;
 }
 
-.projectCardInfoDiv {
+.project-card-info-div {
   /* margin-top: 8px; */
   padding: 0px 8px;
   font-size: 13px;
 }
-.projectDescription {
+.project-description {
   font-size: 13px;
 }
 
-.projectCardImg {
+.project-card-img {
   width: 97%;
   border-radius: 5px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
-.projectCardContentDiv {
+.project-card-content-div {
   text-align: center;
   position: relative;
   border-top-left-radius: 5px;
@@ -46,7 +46,7 @@
   /* background: #f9f9f9; */
 }
 
-.projectName {
+.project-name {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -54,24 +54,24 @@
   margin-bottom: 5px; */
 }
 
-.projectTechnologies {
+.project-technologies {
   margin: 10px 0px;
   text-align: center;
   padding-left: 15px;
 }
 
-.projectNameText {
+.project-name-text {
   /* color: #4b4f4e; */
   font-size: 24px;
   /* font-weight: bold; */
   padding: 4px 2px;
 }
-/* .projectDetailsIDiv {
+/* .project-details-i-div {
  position: absolute; 
  width: 100%;
  height: 100%;
 } */
-/* .projectDetailsIDiv {
+/* .project-details-i-div {
    
   position: absolute;
   
@@ -79,7 +79,7 @@
   height: 100%;
 } */
 
-.projectCardAvatar {
+.project-card-avatar {
   background: #f661ff;
   position: absolute;
   margin-top: 1px;

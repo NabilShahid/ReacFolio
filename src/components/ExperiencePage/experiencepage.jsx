@@ -17,9 +17,9 @@ class ExperiencePage extends Component {
   state = {};
   render() {
     return (
-      <div id="experiencePage">
-        <div className="pageHeader">
-          <span className="pageHeaderText">Experience</span>
+      <div id="experience-page">
+        <div className="page-header">
+          <span className="page-header-text">Experience</span>
         </div>
         <VerticalTimeline>
           <VerticalTimelineElement
@@ -38,7 +38,7 @@ class ExperiencePage extends Component {
               Full Stack Developer
             </h3>
             <h4 className="vertical-timeline-element-subtitle">AuxilioTech</h4>
-            <div className="experiencePageLocation">Islamabad, Pakistan</div>
+            <div className="experience-page-location">Islamabad, Pakistan</div>
             <p>
               Working as Full Stack developer on the company's flagship software
               product.
@@ -60,9 +60,9 @@ class ExperiencePage extends Component {
               className="vertical-timeline-element-subtitle"
             >
               AbbVie Inc.
-              <LinkIcon className="homeLink" />
+              <LinkIcon className="home-link" />
             </h4>
-            <div className="experiencePageLocation">Islamabad, Pakistan</div>
+            <div className="experience-page-location">Islamabad, Pakistan</div>
             <p>
               Worked on various projects related to business workflows
               automation.
@@ -84,9 +84,9 @@ class ExperiencePage extends Component {
               className="verticaertical-timeline-element-subtitle"
             >
               National University of Computer and Emerging Sciences (FAST)
-              <LinkIcon className="homeLink" />
+              <LinkIcon className="home-link" />
             </h4>
-            <div className="experiencePageLocation">Islamabad, Pakistan</div>
+            <div className="experience-page-location">Islamabad, Pakistan</div>
 
             {/* <p>Graduated as Bachelor of Science </p> */}
           </VerticalTimelineElement>

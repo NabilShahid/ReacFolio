@@ -1,4 +1,4 @@
-.projectsInfoDiv {
+.projects-info-div {
   /* height: 75vh; */
   color: #1b3a57;
   padding: 5px 10px;
@@ -15,12 +15,12 @@
   padding: 5px;
   border-radius: 5px;
 }
-.projectInfoName {
+.project-info-name {
   font-size: 27px;
   color: #1b3a57;
   margin-top: 7px;
 }
-.projectInfoSubtitle {
+.project-info-subtitle {
   font-size: 14px;
   margin-top: -5px;
   padding-bottom: 4px;
@@ -28,7 +28,7 @@
   border-bottom: 1px solid #d8d8d8;
 }
 
-.projectInfoDescription {
+.project-info-description {
   font-size: 13px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -61,7 +61,7 @@ height: 350px;
   width: 23px;
   height: 23px;
 }
-.projectLink {
+.project-link {
   height: 20px;
   width: 20px;
   fill: #1b3a57;
@@ -69,40 +69,26 @@ height: 350px;
   margin-left: 5px;
 }
 
-.githubRepoIcon {
+.github-repo-icon {
   height: 20px;
   width: 20px;
   margin-bottom: 4px;
   margin-right: 5px;
 }
 
-.projectInfoRepo {
+.project-info-repo {
   font-size: 14px;
   margin-top: 10px;
   cursor: pointer;
 }
 
-.projectInfoRepoLink {
+.project-info-repo-link {
   height: 17px;
   width: 17px;
   fill: #1b3a57;
   margin-bottom: 1px;
   margin-left: 5px;
 }
-.projectInfoTechnologiesContainer {
+.project-info-technologies-container {
   margin: 1px 10px;
-}
-.projectInfoTechnology {
-  display: inline-block;
-  background: #e6e6e6 !important;
-  color: #888888;
-  font-size: 12px;
-  padding: 5px 8px 4px 7px;
-  margin-right: 10px;
-  margin-top: 8px;
-  border-radius: 20px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-}
-.projectInfoTechnologyText {
-  padding: 0px 4px;
 }

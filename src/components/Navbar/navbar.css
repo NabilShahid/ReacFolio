@@ -15,17 +15,17 @@
   z-index: 0;
   cursor: pointer;
 }
-.navBarToggleButton {
+.nav-bar-toggle-button {
   display: none;
 }
-.navLink {
+.nav-link {
   position: relative;
   margin: 0px 10px;
   padding: 12px 5px;
   cursor: pointer;
 }
 
-.selectedNavItem {
+.selected-nav-item {
   color: #75b2ff !important;
   /* border-bottom: 2px solid #ababab; */
 }
@@ -42,7 +42,7 @@ div.brackets a:after {
   z-index: 1;
 }
 
-.opacityAnimDiv {
+.opacity-anim-div {
   position: absolute;
   width: 100%;
   top: 0;
@@ -57,7 +57,7 @@ div.brackets a:after {
   opacity: 1;
 }
 
-.navbarFirstPage {
+.navbar-first-page {
   background: unset;
   box-shadow: unset;
   transition: 0.2s;
@@ -83,14 +83,14 @@ div.brackets a:hover:after {
   transform: translateX(0px);
 }
 
-.navBarExpandButton {
+.nav-bar-expand-button {
   display: none;
 }
 .navbar-nav {
   width: 99% !important;
 }
 
-.expandedNavBar {
+.expanded-nav-bar {
   display: block !important;
 }
 .navbar-nav {
@@ -98,13 +98,13 @@ div.brackets a:hover:after {
   width: 100%;
 }
 @media (max-width: 992px) {
-  .navBarExpandButton {
+  .nav-bar-expand-button {
     display: inline-block;
   }
   .container {
     display: none;
   }
-  .selectedNavItem {
+  .selected-nav-item {
     border-bottom: 0px;
   }
   div.brackets a:before {
@@ -117,7 +117,7 @@ div.brackets a:hover:after {
   .navbar-nav {
     justify-content: unset;
   }
-  .navLink {
+  .nav-link {
     position: relative;
     padding: 5px 0px;
   }
@@ -130,7 +130,7 @@ div.brackets a:hover:after {
     ); */
     background: #2b2b2b;
   }
-  .navBarToggleButton {
+  .nav-bar-toggle-button {
     margin-right: 10px;
     margin-top: -3px;
     display: block;

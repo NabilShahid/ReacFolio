@@ -2,7 +2,7 @@ import React from "react";
 import "./iconbutton.css";
 const IconButton = ({ Icon, Style, Link, Text, onClick }) => {
   return (
-    <div className="iconButton buttonHover" onClick={() => onClick()}>
+    <div className="icon-button button-hover" onClick={() => onClick()}>
       <Icon style={Style} />
       {/* <span className="iconButtonText">{Text}</span> */}
     </div>

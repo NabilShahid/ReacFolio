@@ -1,33 +1,33 @@
-#aboutPage {
+.about-page {
   height: 100%;
   padding-top: 15px;
   overflow-y: auto;
   overflow-x: hidden;
 }
-.profileImage {
+.profile-image {
   border-radius: 50%;
   width: 190px;
   /* box-shadow: 0 1px 5px 0px rgb(115, 119, 255); */
   background: #e8e8e8;
 }
-.aboutMeHeader {
+.about-me-header {
   font-size: 25px;
   color: #1b3a57;
   margin: 10px 0px;
 }
 
-.aboutMeText {
+.about-me-text {
   font-size: 16px;
   text-align: left;
   margin-bottom: 15px;
   color: #1b3a57;
 }
 
-.aboutMeDiv {
+.about-me-div {
   padding: 0px 15px;
 }
 
-.aboutMeInfoItemContainer {
+.about-me-info-item-container {
   margin-top: 20px;
   margin-bottom: 12px;
   font-size: 15px;
@@ -35,23 +35,23 @@
   /* color: #797979; */
 }
 
-.aboutMeInfoItemsSeperator {
+.about-me-info-items-seperator {
   /* padding-bottom: 7px; */
 }
 
 @media (min-width: 768px) {
-  .aboutMeInfoItemsSeperator {
+  .about-me-info-items-seperator {
     border-right: 1px solid #bbbbbb;
 
     /* padding-bottom: 7px; */
   }
-  .aboutMeText {
+  .about-me-text {
     padding: 0px 10%;
   }
-  .abouteMeInfoItem:nth-child(1) {
+  .aboute-me-info-item:nth-child(1) {
     text-align: center;
   }
-  .abouteMeInfoItem:nth-child(2) {
+  .aboute-me-info-item:nth-child(2) {
     text-align: center;
   }
 }

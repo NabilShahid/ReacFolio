@@ -1,4 +1,4 @@
-#navbarDiv {
+#navbar-div {
   position: fixed;
   z-index: 25;
   width: 100%;
@@ -6,7 +6,7 @@
   transition: 0.4s;
 }
 
-.VerticalSlide .animated {
+.vertical-slide .animated {
   height: 100%;
   overflow-y: auto;
 }
@@ -23,7 +23,7 @@
 
 } */
 
-.dividerDiv {
+.divider-div {
   height: 35px;
   opacity: 0.9;
   background: linear-gradient(

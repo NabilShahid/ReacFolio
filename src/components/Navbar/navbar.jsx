@@ -45,7 +45,7 @@ class Navbar extends Component {
           <UserInfo scrollToHome={scrollToHome} userName="Nabil Shahid" />
 
           <div
-            className="navBarToggleButton"
+            className="nav-bar-toggle-button"
             onClick={() =>
               this.setState({ expandableMenuShown: !expandableMenuShown })
             }
@@ -64,8 +64,8 @@ class Navbar extends Component {
                 {options.map((op, index) => (
                   <a
                     className={
-                      "navLink " +
-                      (activeIndex == index ? "selectedNavItem" : "")
+                      "nav-link " +
+                      (activeIndex == index ? "selected-nav-item" : "")
                     }
                     onClick={() => {
                       // changeFullpageSlide(i);
@@ -86,7 +86,7 @@ class Navbar extends Component {
         <div
           style={{ height: this.navbarHeight }}
           className={
-            "opacityAnimDiv " + (activeIndex == 0 && "navbarFirstPage")
+            "opacity-anim-div " + (activeIndex == 0 && "navbar-first-page")
           }
         ></div>
       </div>

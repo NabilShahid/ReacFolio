@@ -32,9 +32,9 @@ class ProjectsPage extends Component {
     const { modalOpen, selectedProject } = this.state;
     return (
       <div id="projectsPage">
-        <div className="pageHeader">
-          <span className="pageHeaderText">Work</span>
-          <div className="pageSubtitleText">
+        <div className="page-header">
+          <span className="page-header-text">Work</span>
+          <div className="page-subtitle-text">
             Following are some of the recent projects that I have worked on.
             Click on the project tile to learn more about it.
           </div>
@@ -44,7 +44,7 @@ class ProjectsPage extends Component {
         </Modal>
 
         {this.projectsArray.map((row, i) => (
-          <div key={i} className="row projectsRow">
+          <div key={i} className="row projects-row">
             {row.map((col, j) => (
               <div key={j} className="col-sm-4" style={{ margin: "30px 0px" }}>
                 <FadeReveal duration={700}>

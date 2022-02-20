@@ -13,34 +13,34 @@ const contactIconsStyle = {
 };
 const Contact = () => {
   return (
-    <div id="contactPage">
-      <div className="pageHeader">
-        <span className="pageHeaderText">Contact</span>
+    <div id="contact-page">
+      <div className="page-header">
+        <span className="page-header-text">Contact</span>
       </div>
       <FadeReveal duration={500}>
-        <div className="contactTypes">
+        <div className="contact-types">
           <div
-            className="pageSubtitleText"
+            className="page-subtitle-text"
             style={{ marginBottom: "20px", textAlign: "center" }}
           >
             Interested in working together and get amazing things done ?<br />{" "}
             Feel free to contact me.
           </div>
-          <div className="contactType">
+          <div className="contact-type">
             <EmailIcon style={contactIconsStyle} />
-            <span className="contactText">nabil110176@gmail.com</span>
+            <span className="contact-text">nabil110176@gmail.com</span>
           </div>
-          <div className="contactType">
+          <div className="contact-type">
             <PhoneIcon style={contactIconsStyle} />
-            <span className="contactText">+923477363136</span>
+            <span className="contact-text">+923477363136</span>
           </div>
-          <div className="contactType">
+          <div className="contact-type">
             <ProfileLinks />
           </div>
         </div>
       </FadeReveal>
 
-      <div className="contactFormContainer">
+      <div className="contact-form-container">
         <ContactForm />
       </div>
     </div>

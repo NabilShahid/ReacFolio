@@ -41,8 +41,8 @@ const ProjectInfo = ({ project }) => {
     imgPath
   );
   return (
-    <div className="projectsInfoDiv">
-      <div className="projectInfoName">
+    <div className="projects-info-div">
+      <div className="project-info-name">
         <span
           style={{ cursor: "pointer" }}
           onClick={() => {
@@ -52,15 +52,15 @@ const ProjectInfo = ({ project }) => {
           }}
         >
           {project.Name}
-          <LinkIcon className="projectLink" />
+          <LinkIcon className="project-link" />
         </span>
       </div>
-      <div className="projectInfoSubtitle">
+      <div className="project-info-subtitle">
         {project.Subtitle + " (" + project.Target + ")"}
       </div>
-      <div className="projectInfoTechnologiesContainer">
+      <div className="project-info-technologies-container">
         {project.Technologies.map((t) => (
-          <span className="projectInfoTechnology">
+          <span className="project-info-technology">
             <span>
               {typeof t == "string" ? (
                 <Icon icon={TechologiesIcons[t]} style={iconStyle} />
@@ -68,14 +68,14 @@ const ProjectInfo = ({ project }) => {
                 <t.Icon style={iconStyle} />
               )}
             </span>
-            <span className="projectInfoTechnologyText">
+            <span className="project-info-technology-text">
               {ICON_LABELS[typeof t == "string" ? t : t.Name]}
             </span>
           </span>
         ))}
       </div>
       <div
-        className="projectInfoDescription"
+        className="project-info-description"
         dangerouslySetInnerHTML={{ __html: project.Description }}
       ></div>
       <div
@@ -84,11 +84,11 @@ const ProjectInfo = ({ project }) => {
             ? openUrl(project.RepoLink)
             : showToastMessage(project.NoRepoReason);
         }}
-        className="projectInfoRepo"
+        className="project-info-repo"
       >
-        <GitHubLogo className="githubRepoIcon" />
+        <GitHubLogo className="github-repo-icon" />
         Github Repository
-        <LinkIcon className="projectInfoRepoLink" />
+        <LinkIcon className="project-info-repo-link" />
       </div>
       <div className="gallery">
         <ImageGallery

@@ -9,34 +9,33 @@
   line-height: 40px;
   color: #ecf0f1;
 }
-.content__container {
+.content-container {
   font-weight: 600;
   overflow: hidden;
   height: 40px;
   padding: 0 40px;
 }
-#rotatingSpans {
+.rotating-spans {
   font-family: "Cairo";
 }
-#rotatingSpans:before {
+.rotating-spans:before {
   content: "[";
   left: -47px;
-  /* top:20px; */
 }
-#rotatingSpans:after {
+.rotating-spans:after {
   content: "]";
   position: absolute;
   right: 0px;
 }
-#rotatingSpans:after,
-#rotatingSpans:before {
+.rotating-spans:after,
+.rotating-spans:before {
   position: absolute;
   top: 35px;
   /* -webkit-transform: scaleX(0.8); */
   -webkit-transform: scaleY(2.5) scaleX(1.9);
   transform: scaleY(2.5) scaleX(1.8);
   color: #ffffff;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 40px;
   -webkit-animation-name: opacity;
   -webkit-animation-duration: 2s;
@@ -45,7 +44,7 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.content__container__list__item {
+.content-container-list-item {
   line-height: 40px;
   margin: 0;
 }
@@ -89,7 +88,7 @@
   }
 }
 
-.textDiv {
+.text-div {
   position: absolute;
   width: 420px;
   left: 10vw;
@@ -101,7 +100,7 @@
   font-family: "Cairo";
 }
 
-.rotateTextP {
+.rotate-text-p {
   /* display: inline-block; */
   vertical-align: top;
   margin: 0;
@@ -136,10 +135,10 @@
   transition: 0.4s;
 }
 
-.iconButtonLink:not(:first-child) {
+.icon-button-link:not(:first-child) {
   margin-left: 6px !important;
 }
-.viewWorkButton {
+.view-work-button {
   font-size: 19px;
   background: #00000021;
   padding: 9px 15px;
@@ -147,7 +146,7 @@
   width: 185px;
   transition: 0.3s;
 }
-.viewWorkIcon {
+.view-work-icon {
   width: 20px;
   fill: white;
   height: 20px;
@@ -155,18 +154,18 @@
 }
 
 @media (max-width: 480px) {
-  .textDiv {
+  .text-div {
     font-size: 25px;
     top: 22vh;
   }
-  #rotatingSpans:before {
+  .rotating-spans:before {
     left: -25px;
   }
-  #rotatingSpans:after {
+  .rotating-spans:after {
     right: 150px;
   }
-  #rotatingSpans:after,
-  #rotatingSpans:before {
+  .rotating-spans:after,
+  .rotating-spans:before {
     transform: scaleY(2.5) scaleX(1.8);
     font-size: 27px;
     top: 12px;
@@ -176,18 +175,18 @@
     transform: translateZ(10px);
     transform-origin: 50% 50% 10px;
   }
-  .viewWorkButton {
+  .view-work-button {
     font-size: 16px;
     width: 170px;
   }
-  .viewWorkIcon {
+  .view-work-icon {
     width: 17px;
     height: 17px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .textDiv {
+  .text-div {
     top: 19vh;
   }
 }

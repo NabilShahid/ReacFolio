@@ -1,25 +1,25 @@
-#contactPage {
+#contact-page {
   padding: 15px 10px 0 10px;
   height: 100%;
   overflow-y: auto;
 }
-.contactText {
+.contact-text {
   margin-left: 10px;
 }
-.contactType {
+.contact-type {
   margin-bottom: 25px;
 }
-.contactTypes {
+.contact-types {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.contactFormContainer {
+.contact-form-container {
   display: flex;
   justify-content: center;
 }
-.colorsAnimText {
+.colors-anim-text {
   color: #fff;
   font-size: 15px;
   background: linear-gradient(

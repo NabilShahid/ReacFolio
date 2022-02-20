@@ -1,14 +1,14 @@
-#userImage {
+#user-image {
   width: 37px;
   border-radius: 30px;
 }
-#userInfoDiv {
+#user-info-div {
   margin-left: 20px;
   margin-top: 9px;
   margin-bottom: 6px;
   cursor: pointer;
 }
-#userName {
+#user-name {
   margin-left: 10px;
   font-size: 21px;
   font-weight: 500;

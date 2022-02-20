@@ -13,7 +13,7 @@ const ProfileLinks = () => {
   let iconStyle = { width: "30px", height: "30px" };
   return (
     <div>
-      <div className="profileIconsRow">
+      <div className="profile-icons-row">
         <IconButton
           Icon={GitHubLogo}
           Text="Github"

@@ -11,32 +11,38 @@ class ProjectCard extends Component {
   state = {};
   technologyIconStyle = { width: "23px", height: "23px", marginRight: "15px" };
   render() {
-    const { Name, Description, Color, ImageFile, Technologies, Platform } =
-      this.props.project;
+    const {
+      Name,
+      Description,
+      Color,
+      ImageFile,
+      Technologies,
+      Platform,
+    } = this.props.project;
     const { action, project } = this.props;
     const PlatformIcon = PLATFORM_ICONS[Platform];
     return (
-      <div className="projectCardContainer">
+      <div className="project-card-container">
         <div
-          className="projectCard"
+          className="project-card"
           onClick={() => {
             action(project);
           }}
           style={{ borderBottomColor: Color }}
         >
-          <div className="projectCardAvatar" style={{ background: Color }}>
+          <div className="project-card-avatar" style={{ background: Color }}>
             <PlatformIcon
               style={{ width: "34px", height: "34px", fill: "white" }}
             />
           </div>
-          <div className="projectCardContentDiv">
-            <div className="projectName">
-              <div className="projectNameText">{Name}</div>
+          <div className="project-card-content-div">
+            <div className="project-name">
+              <div className="project-name-text">{Name}</div>
             </div>
             <ReactTooltip />
-            <div className="projectTechnologies">
+            <div className="project-technologies">
               {Technologies.map((t) => (
-                <span className="projectCardIcons">
+                <span className="project-card-icons">
                   {typeof t == "string" ? (
                     <Icon
                       style={this.technologyIconStyle}
@@ -53,7 +59,7 @@ class ProjectCard extends Component {
               ))}
             </div>
             <img
-              className="projectCardImg"
+              className="project-card-img"
               alt="Projects"
               src={require(`../../assets/images/ProjectsTitleImages/${ImageFile}`)}
             />{" "}
