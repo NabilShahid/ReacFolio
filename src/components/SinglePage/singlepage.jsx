@@ -1,18 +1,14 @@
 import React from "react";
+import "./singlepage.css";
+
 const SinglePage = ({ children, currRef, isFirstPage, id }) => {
   return (
-    <div
+    <section
       ref={currRef}
-      style={{
-        minHeight: "100vh",
-        paddingBottom: isFirstPage ? 0 : "40px",
-        paddingTop: isFirstPage ? 0 : "50px",
-        background: "rgb(247, 247, 247)",
-        boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 4px 0px",
-      }}
+      className={`single-page ${isFirstPage ? "first" : ""}`}
     >
       {children}
-    </div>
+    </section>
   );
 };
 
