@@ -18,7 +18,7 @@
   background: white;
 }
 
-.project-card-info-div {
+.project-card-info {
   /* margin-top: 8px; */
   padding: 0px 8px;
   font-size: 13px;
@@ -34,7 +34,7 @@
   margin-bottom: 10px;
 }
 
-.project-card-content-div {
+.project-card-content {
   text-align: center;
   position: relative;
   border-top-left-radius: 5px;
@@ -66,19 +66,6 @@
   /* font-weight: bold; */
   padding: 4px 2px;
 }
-/* .project-details-i-div {
- position: absolute; 
- width: 100%;
- height: 100%;
-} */
-/* .project-details-i-div {
-   
-  position: absolute;
-  
-  width: 100%;
-  height: 100%;
-} */
-
 .project-card-avatar {
   background: #f661ff;
   position: absolute;

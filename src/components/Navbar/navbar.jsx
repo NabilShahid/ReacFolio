@@ -86,7 +86,7 @@ class Navbar extends Component {
         <div
           style={{ height: this.navbarHeight }}
           className={
-            "opacity-anim-div " + (activeIndex == 0 && "navbar-first-page")
+            "opacity-animationv " + (activeIndex == 0 && "navbar-first-page")
           }
         ></div>
       </div>

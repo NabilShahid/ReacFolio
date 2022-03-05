@@ -14,7 +14,7 @@ const aboutIconsStyle = {
 };
 const AboutPage = () => {
   return (
-    <div className="about-page">
+    <div id="about-page">
       <div className="page-header">
         <span className="page-header-text">About</span>
       </div>
@@ -23,7 +23,7 @@ const AboutPage = () => {
           className="col-md-5"
           style={{ textAlign: "center", borderRight: " 1px solid #d0d0d0" }}
         >
-          <div className="about-me-div">
+          <div className="about-me-wrapper">
             <img src={MyImage} alt="profile" className="profile-image" />
             <FadeReveal duration={700}>
               {/* <div className="aboutMeHeader">About Me</div> */}

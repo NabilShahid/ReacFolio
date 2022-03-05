@@ -4,7 +4,7 @@ import { ReactComponent as Code } from "../../assets/svgs/programming-code-signs
 
 const UserInfo = ({ userName, scrollToHome }) => {
   return (
-    <div id="user-info-div" onClick={scrollToHome}>
+    <div id="user-info-section" onClick={scrollToHome}>
       <Code
         style={{
           width: "30px",

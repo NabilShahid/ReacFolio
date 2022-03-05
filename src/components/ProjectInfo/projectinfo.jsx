@@ -41,7 +41,7 @@ const ProjectInfo = ({ project }) => {
     imgPath
   );
   return (
-    <div className="projects-info-div">
+    <div className="projects-info">
       <div className="project-info-name">
         <span
           style={{ cursor: "pointer" }}

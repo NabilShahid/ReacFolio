@@ -88,7 +88,7 @@
   }
 }
 
-.text-div {
+.main-text-container {
   position: absolute;
   width: 420px;
   left: 10vw;
@@ -154,7 +154,7 @@
 }
 
 @media (max-width: 480px) {
-  .text-div {
+  .main-text-container {
     font-size: 25px;
     top: 22vh;
   }
@@ -186,7 +186,7 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .text-div {
+  .main-text-container {
     top: 19vh;
   }
 }

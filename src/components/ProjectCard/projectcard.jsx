@@ -35,7 +35,7 @@ class ProjectCard extends Component {
               style={{ width: "34px", height: "34px", fill: "white" }}
             />
           </div>
-          <div className="project-card-content-div">
+          <div className="project-card-content">
             <div className="project-name">
               <div className="project-name-text">{Name}</div>
             </div>

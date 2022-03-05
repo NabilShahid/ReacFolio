@@ -31,7 +31,7 @@ class ProjectsPage extends Component {
   render() {
     const { modalOpen, selectedProject } = this.state;
     return (
-      <div id="projectsPage">
+      <div id="projects-page">
         <div className="page-header">
           <span className="page-header-text">Work</span>
           <div className="page-subtitle-text">

@@ -66,7 +66,7 @@ setTimeout(() => {
 }, 1000);
 const IntroText = ({ scrollToWork }) => {
   return (
-    <div className="text-div">
+    <div className="main-text-container">
       <p className="rotate-text-p">Hi, I am a </p>
       <div className="rotating-spans rotate-text-p">
         <span className="word">Full Stack Developer</span>

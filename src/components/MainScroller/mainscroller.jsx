@@ -71,7 +71,7 @@ class MainScroller extends Component {
           position: "relative",
         }}
       >
-        <div id="navbar-div">
+        <div className="navbar-container">
           <Navbar
             activeIndex={activeIndex}
             scrollToRef={this.scrollToRef}
@@ -88,15 +88,15 @@ class MainScroller extends Component {
         <SinglePage currRef={this.refrences.aboutPage}>
           <AboutPage activeIndex={activeIndex} pageIndex={1} />
         </SinglePage>
-        <div className="divider-div" />
+        <div className="section-divider" />
         <SinglePage currRef={this.refrences.projectsPage}>
           <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
         </SinglePage>
-        <div className="divider-div" />
+        <div className="section-divider" />
         <SinglePage currRef={this.refrences.experiencePage}>
           <ExperiencePage />{" "}
         </SinglePage>
-        <div className="divider-div" />
+        <div className="section-divider" />
         <SinglePage currRef={this.refrences.contactPage}>
           <ContactPage activeIndex={activeIndex} pageIndex={4} />
         </SinglePage>
