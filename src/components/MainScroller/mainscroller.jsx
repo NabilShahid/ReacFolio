@@ -36,7 +36,7 @@ class MainScroller extends Component {
       duration: 1300,
       delay: 200,
       smooth: "easeInOutCubic",
-      containerId: "container-element",
+      containerId: "navbar-container-wrapper",
       offset: 150,
     });
     this.activeIndexCopy = activeIndex;
@@ -63,7 +63,7 @@ class MainScroller extends Component {
     return (
       <div
         ref={this.containerReference}
-        id="container-element"
+        id="navbar-container-wrapper"
         style={{
           height: "100vh",
           overflowY: "scroll",
