@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import UserInfo from "../UserInfo/userinfo";
+import UserBadge from "../UserInfo/userinfo";
 import { ReactComponent as Menu } from "../../assets/svgs/menu.svg";
 import Flash from "react-reveal/Fade";
 
@@ -36,12 +36,12 @@ class Navbar extends Component {
     const { options, expandableMenuShown } = this.state;
     const { activeIndex, scrollToRef, scrollToHome } = this.props;
     return (
-      <div className="brackets">
+      <div>
         <nav
           className="navbar navbar-expand-lg navbar-light "
           style={{ height: this.navbarHeight }}
         >
-          <UserInfo scrollToHome={scrollToHome} userName="Nabil Shahid" />
+          <UserBadge scrollToHome={scrollToHome} userName="Nabil Shahid" />
 
           <div
             className="nav-bar-toggle-button"
@@ -60,20 +60,20 @@ class Navbar extends Component {
             >
               <div className="navbar-nav">
                 {options.map((op, index) => (
-                  <a
+                  <button
+                    key={op.refName}
                     className={
-                      "nav-link " +
-                      (activeIndex == index ? "selected-nav-item" : "")
+                      "nav-button " +
+                      (activeIndex === index ? "selected-nav-item" : "")
                     }
-                    onClick={() => {
-                      console.log(this.props.references, op.refName, index);
+                    onClick={(e) => {
+                      e.preventDefault();
                       this.setState({ expandableMenuShown: false });
-
                       scrollToRef(op.refName, index);
                     }}
                   >
                     {op.label}
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
@@ -82,7 +82,7 @@ class Navbar extends Component {
         <div
           style={{ height: this.navbarHeight }}
           className={
-            "opacity-animation " + (activeIndex == 0 && "navbar-first-page")
+            "opacity-animation " + (activeIndex === 0 && "navbar-first-page")
           }
         ></div>
       </div>

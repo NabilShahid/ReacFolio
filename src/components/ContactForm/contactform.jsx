@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ToastContainer, toast, Slide } from "react-toastify";
+import { toast } from "react-toastify";
 import FadeReveal from "react-reveal/Zoom";
 
 import "./contactform.css";
@@ -50,6 +50,7 @@ class ContactForm extends Component {
                 <input
                   value={name}
                   onInput={this.setFieldValue}
+                  onChange={this.setFieldValue}
                   name="name"
                   className="contact-input-field"
                   type="text"
@@ -64,6 +65,7 @@ class ContactForm extends Component {
                 <input
                   value={email}
                   onInput={this.setFieldValue}
+                  onChange={this.setFieldValue}
                   name="email"
                   className="contact-input-field"
                   type="text"
@@ -82,6 +84,7 @@ class ContactForm extends Component {
                   className="contact-input-field"
                   type="text"
                   onInput={this.setFieldValue}
+                  onChange={this.setFieldValue}
                 ></textarea>
               </div>
               <div

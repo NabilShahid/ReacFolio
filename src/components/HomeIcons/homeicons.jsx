@@ -1,7 +1,7 @@
 import React from "react";
 import "./homeicons.css";
 import { Icon, InlineIcon } from "@iconify/react";
-import { TechologiesIcons } from "../../assets/iconifyicons";
+import { TechnologiesIcons } from "../../assets/iconifyicons";
 import Flash from "react-reveal/Flash";
 import AnimatedIcon from "../AnimatedIcon/animatedicon";
 import { ReactComponent as Sql } from "../../assets/svgs/sql.svg";
@@ -23,7 +23,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[0]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Angular}
+              iconType={TechnologiesIcons.Angular}
             />{" "}
           </div>
         </div>
@@ -38,7 +38,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[1]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.React}
+              iconType={TechnologiesIcons.React}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -46,7 +46,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[3]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Npm}
+              iconType={TechnologiesIcons.Npm}
             />{" "}
           </div>
         </div>
@@ -60,7 +60,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[1]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Ionic}
+              iconType={TechnologiesIcons.Ionic}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -68,7 +68,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[5]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Redux}
+              iconType={TechnologiesIcons.Redux}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -76,7 +76,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[2]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Webpack}
+              iconType={TechnologiesIcons.Webpack}
             />{" "}
           </div>
         </div>
@@ -89,7 +89,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[4]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Nest}
+              iconType={TechnologiesIcons.Nest}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -97,7 +97,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[2]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Node}
+              iconType={TechnologiesIcons.Node}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -105,7 +105,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[1]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Css}
+              iconType={TechnologiesIcons.Css}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -113,7 +113,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[5]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Vscode}
+              iconType={TechnologiesIcons.Vscode}
             />{" "}
           </div>
         </div>
@@ -126,7 +126,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[0]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Firebase}
+              iconType={TechnologiesIcons.Firebase}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -134,21 +134,21 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[3]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Javascript}
+              iconType={TechnologiesIcons.Javascript}
             />{" "}
           </div>
           <div className="home-icons-col">
             <AnimatedIcon
               animDuration={durationsFlash[4]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Postgresql}
+              iconType={TechnologiesIcons.Postgresql}
             />{" "}
           </div>
           <div className="home-icons-col">
             <AnimatedIcon
               animDuration={durationsFlash[1]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Babel}
+              iconType={TechnologiesIcons.Babel}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -156,7 +156,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[1]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Html}
+              iconType={TechnologiesIcons.Html}
             />{" "}
           </div>
         </div>
@@ -166,7 +166,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[0]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Rxjs}
+              iconType={TechnologiesIcons.Rxjs}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -174,14 +174,14 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[2]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Csharp}
+              iconType={TechnologiesIcons.Csharp}
             />{" "}
           </div>
           <div className="home-icons-col">
             <AnimatedIcon
               animDuration={durationsFlash[3]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Typescript}
+              iconType={TechnologiesIcons.Typescript}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -190,7 +190,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[1]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Googlecloudfunctions}
+              iconType={TechnologiesIcons.Googlecloudfunctions}
             />{" "}
           </div>
           <div className="home-icons-col">
@@ -198,7 +198,7 @@ const HomeIcons = () => {
             <AnimatedIcon
               animDuration={durationsFlash[5]}
               styleClass="home-icon-large"
-              iconType={TechologiesIcons.Git}
+              iconType={TechnologiesIcons.Git}
             />{" "}
           </div>
           <div className="home-icons-col">

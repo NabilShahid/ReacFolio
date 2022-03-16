@@ -25,7 +25,7 @@ import Python from "@iconify/icons-logos/python";
 import Django from "@iconify/icons-logos/django";
 import Es6 from "@iconify/icons-logos/es6";
 
-export const TechologiesIcons = {
+export const TechnologiesIcons = {
   Postgresql,
   React,
   Angular,

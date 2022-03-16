@@ -5,9 +5,9 @@ import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import "animate.css/animate.min.css";
 import MainScroller from "./components/MainScroller/mainscroller";
-import { reacordUserVisit } from "./services/api";
+import { recordUserVisit } from "./services/api";
 ReactDOM.render(<MainScroller />, document.getElementById("root"));
-// reacordUserVisit();
+recordUserVisit();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

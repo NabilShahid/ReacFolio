@@ -7,7 +7,6 @@ import Navbar from "../Navbar/navbar";
 import ProjectsPage from "../ProjectsPage/projectspage";
 import ExperiencePage from "../ExperiencePage/experiencepage";
 import ContactPage from "../ContactPage/contactpage";
-import HomeIcons from "../HomeIcons/homeicons";
 import AboutPage from "../AboutPage/aboutpage";
 import { ToastContainer } from "react-toastify";
 import { throttle } from "underscore";
@@ -44,7 +43,7 @@ class MainScroller extends Component {
   scrollFn = () => {
     if (!this.autoScroll) {
       const index = this.checkWhichPageIndexInViewport();
-      if (index != -1) this.setState({ activeIndex: index });
+      if (index !== -1) this.setState({ activeIndex: index });
     }
   };
   throttledScrollToFn = throttle(this.scrollFn, 100);
@@ -76,7 +75,7 @@ class MainScroller extends Component {
             activeIndex={activeIndex}
             scrollToRef={this.scrollToRef}
             scrollToHome={() =>
-              activeIndex != 0 && this.scrollToRef("homePage")
+              activeIndex !== 0 && this.scrollToRef("homePage")
             }
           />
         </div>
@@ -127,7 +126,7 @@ class MainScroller extends Component {
     let index = Object.keys(this.refrences).findIndex((ref) =>
       isInViewport(this.refrences[ref].current)
     );
-    return index != this.state.activeIndex ? index : -1;
+    return index !== this.state.activeIndex ? index : -1;
   }
 }
 

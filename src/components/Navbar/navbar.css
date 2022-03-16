@@ -1,19 +1,21 @@
 .nav-bar-toggle-button {
   display: none;
 }
-.nav-link {
+.nav-button {
   position: relative;
   margin: 0px 10px;
   padding: 12px 5px;
   cursor: pointer;
   color: white !important;
+  border: 0;
+  background: none;
 }
 
 .selected-nav-item {
   color: var(--color-6) !important;
 }
-div.brackets a:before,
-div.brackets a:after {
+div.navbar-nav .nav-button:before,
+div.navbar-nav .nav-button:after {
   position: absolute;
   opacity: 0;
   font-size: 27px;
@@ -46,22 +48,22 @@ div.brackets a:after {
   transition: 0.2s;
   opacity: 0;
 }
-div.brackets a:before {
+div.navbar-nav .nav-button:before {
   content: "[";
   left: -10px;
   top: 4px;
   transform: translateX(10px);
 }
 
-div.brackets a:after {
+div.navbar-nav .nav-button:after {
   content: "]";
   right: -10px;
   top: 4px;
   transform: translateX(-10px);
 }
 
-div.brackets a:hover:before,
-div.brackets a:hover:after {
+div.navbar-nav .nav-button:hover:before,
+div.navbar-nav .nav-button:hover:after {
   opacity: 1;
   transform: translateX(0px);
 }
@@ -90,20 +92,17 @@ div.brackets a:hover:after {
   .selected-nav-item {
     border-bottom: 0px;
   }
-  div.brackets a:before {
+  div.navbar-nav .nav-button:before {
     display: none;
   }
 
-  div.brackets a:after {
+  div.navbar-nav .nav-button:after {
     display: none;
   }
   .navbar-nav {
     justify-content: unset;
   }
-  .nav-link {
-    position: relative;
-    padding: 5px 0px;
-  }
+
   .navbar-collapse {
     background: #2b2b2b;
   }

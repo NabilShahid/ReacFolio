@@ -1,7 +1,7 @@
 import React from "react";
 import { SKILLS } from "../../constants";
-import { Icon, InlineIcon } from "@iconify/react";
-import { TechologiesIcons } from "../../assets/iconifyicons";
+import { Icon } from "@iconify/react";
+import { TechnologiesIcons } from "../../assets/iconifyicons";
 import FadeReveal from "react-reveal/Zoom";
 
 import "./skillscard.css";
@@ -17,18 +17,18 @@ const SkillsCard = () => {
       <FadeReveal duration={700}>
         <div className="skills-header">Top Skills</div>
 
-        {SKILLS.map((skillarea) => (
-          <div className="skills-section">
-            <div className="skills-section-header">{skillarea.Title}</div>
+        {SKILLS.map((skill) => (
+          <div key={skill.Title} className="skills-section">
+            <div className="skills-section-header">{skill.Title}</div>
             <div className="skills-section-body">
-              {skillarea.Items.map((item) => (
-                <span className="technology-item">
+              {skill.Items.map((item) => (
+                <span key={item.Name} className="technology-item">
                   <span>
                     {item.IconSvg && <item.Icon style={iconStyle} />}
                     {!item.IconSvg && (
                       <Icon
                         style={iconStyle}
-                        icon={TechologiesIcons[item.Icon]}
+                        icon={TechnologiesIcons[item.Icon]}
                       />
                     )}
                   </span>

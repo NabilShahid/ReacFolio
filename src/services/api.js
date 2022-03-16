@@ -1,8 +1,7 @@
 const API_URL = "https://us-central1-nabilshahid-3baff.cloudfunctions.net/api";
 
-export function reacordUserVisit() {
+export function recordUserVisit() {
   let clientInfo = {};
-  return;
   if (navigator) {
     clientInfo = {
       UserAgent: navigator.userAgent || "",
@@ -14,8 +13,6 @@ export function reacordUserVisit() {
 
   makePostRequest("recordVisit", clientInfo);
 }
-
-// request options
 
 function makePostRequest(method, body) {
   const options = {

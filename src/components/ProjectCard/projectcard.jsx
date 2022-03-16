@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import "./projectcard.css";
-import { Icon, InlineIcon } from "@iconify/react";
-import { TechologiesIcons } from "../../assets/iconifyicons";
-import { PLATFORM_ICONS, ICON_LABELS } from "../../constants.js";
+import { Icon,   } from "@iconify/react";
+import { TechnologiesIcons } from "../../assets/iconifyicons";
+import { PLATFORM_ICONS,   } from "../../constants.js";
 import ReactTooltip from "react-tooltip";
-import FadeReveal from "react-reveal/Fade";
-import { ReactComponent as InfoIcon } from "../../assets/svgs/info.svg";
 
 class ProjectCard extends Component {
   state = {};
@@ -13,7 +11,6 @@ class ProjectCard extends Component {
   render() {
     const {
       Name,
-      Description,
       Color,
       ImageFile,
       Technologies,
@@ -41,19 +38,15 @@ class ProjectCard extends Component {
             </div>
             <ReactTooltip />
             <div className="project-technologies">
-              {Technologies.map((t) => (
-                <span className="project-card-icons">
-                  {typeof t == "string" ? (
+              {Technologies.map((t, index) => (
+                <span key={index} className="project-card-icons">
+                  {typeof t === "string" ? (
                     <Icon
                       style={this.technologyIconStyle}
-                      icon={TechologiesIcons[t]}
-                      // data-tip={ICON_LABELS[t]}
+                      icon={TechnologiesIcons[t]}
                     />
                   ) : (
-                    <t.Icon
-                      style={this.technologyIconStyle}
-                      // data-tip={ICON_LABELS[t.Name]}
-                    />
+                    <t.Icon style={this.technologyIconStyle} />
                   )}
                 </span>
               ))}

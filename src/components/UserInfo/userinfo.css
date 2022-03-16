@@ -2,13 +2,16 @@
   width: 37px;
   border-radius: 30px;
 }
-.user-info-section {
+.user-badge {
   margin-left: 20px;
   margin-top: 9px;
   margin-bottom: 6px;
   cursor: pointer;
+  border: 0;
+  background: none;
+  color: white;
 }
-.user-info-section-name {
+.user-badge-name {
   margin-left: 10px;
   font-size: 21px;
   font-weight: 500;

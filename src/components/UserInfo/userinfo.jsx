@@ -2,9 +2,9 @@ import React from "react";
 import "./userinfo.css";
 import { ReactComponent as Code } from "../../assets/svgs/programming-code-signs.svg";
 
-const UserInfo = ({ userName, scrollToHome }) => {
+const UserBadge = ({ userName, scrollToHome }) => {
   return (
-    <div className="user-info-section" onClick={scrollToHome}>
+    <button className="user-badge" onClick={scrollToHome}>
       <Code
         style={{
           width: "30px",
@@ -13,9 +13,9 @@ const UserInfo = ({ userName, scrollToHome }) => {
           fill: "white",
         }}
       />
-      <span className="user-info-section-name">{userName}</span>
-    </div>
+      <span className="user-badge-name">{userName}</span>
+    </button>
   );
 };
 
-export default UserInfo;
+export default UserBadge;

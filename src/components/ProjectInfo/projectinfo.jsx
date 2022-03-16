@@ -5,7 +5,7 @@ import { ReactComponent as LinkIcon } from "../../assets/svgs/external-link-symb
 import { ReactComponent as GitHubLogo } from "../../assets/svgs/github-logo.svg";
 import { toast } from "react-toastify";
 import { Icon } from "@iconify/react";
-import { TechologiesIcons } from "../../assets/iconifyicons";
+import { TechnologiesIcons } from "../../assets/iconifyicons";
 import { ICON_LABELS } from "../../constants.js";
 
 import "react-toastify/dist/ReactToastify.css";
@@ -62,14 +62,14 @@ const ProjectInfo = ({ project }) => {
         {project.Technologies.map((t) => (
           <span className="project-info-technology">
             <span>
-              {typeof t == "string" ? (
-                <Icon icon={TechologiesIcons[t]} style={iconStyle} />
+              {typeof t === "string" ? (
+                <Icon icon={TechnologiesIcons[t]} style={iconStyle} />
               ) : (
                 <t.Icon style={iconStyle} />
               )}
             </span>
             <span className="project-info-technology-text">
-              {ICON_LABELS[typeof t == "string" ? t : t.Name]}
+              {ICON_LABELS[typeof t === "string" ? t : t.Name]}
             </span>
           </span>
         ))}
