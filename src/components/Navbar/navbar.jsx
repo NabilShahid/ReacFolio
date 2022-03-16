@@ -58,7 +58,6 @@ class Navbar extends Component {
                 "collapse navbar-collapse " +
                 (expandableMenuShown ? "show" : "")
               }
-              id="navbarNavAltMarkup"
             >
               <div className="navbar-nav">
                 {options.map((op, index) => (

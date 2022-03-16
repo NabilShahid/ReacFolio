@@ -13,7 +13,7 @@ const iconStyle = {
 };
 const SkillsCard = () => {
   return (
-    <div id="skills-card">
+    <div className="skills-card">
       <FadeReveal duration={700}>
         <div className="skills-header">Top Skills</div>
 

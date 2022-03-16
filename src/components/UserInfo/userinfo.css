@@ -2,13 +2,13 @@
   width: 37px;
   border-radius: 30px;
 }
-#user-info-section {
+.user-info-section {
   margin-left: 20px;
   margin-top: 9px;
   margin-bottom: 6px;
   cursor: pointer;
 }
-#user-name {
+.user-info-section-name {
   margin-left: 10px;
   font-size: 21px;
   font-weight: 500;

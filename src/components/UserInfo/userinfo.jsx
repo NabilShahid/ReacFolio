@@ -4,7 +4,7 @@ import { ReactComponent as Code } from "../../assets/svgs/programming-code-signs
 
 const UserInfo = ({ userName, scrollToHome }) => {
   return (
-    <div id="user-info-section" onClick={scrollToHome}>
+    <div className="user-info-section" onClick={scrollToHome}>
       <Code
         style={{
           width: "30px",
@@ -13,7 +13,7 @@ const UserInfo = ({ userName, scrollToHome }) => {
           fill: "white",
         }}
       />
-      <span id="user-name">{userName}</span>
+      <span className="user-info-section-name">{userName}</span>
     </div>
   );
 };
