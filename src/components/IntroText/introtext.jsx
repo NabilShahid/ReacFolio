@@ -82,7 +82,7 @@ const IntroText = ({ scrollToWork }) => {
           IconStyle={{ height: "18px", width: "18px", fill: "white" }}
           Icon={DownArrow}
         >
-          <span style={{ color: "white", fontSize: "20px" }}>View My Work</span>
+          <span style={{ color: "white", fontSize: "18px" }}>View My Work</span>
         </IconButton>
       </div>
     </div>

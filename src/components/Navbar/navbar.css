@@ -1,20 +1,3 @@
-.container {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  overflow-x: auto;
-  white-space: nowrap;
-  font-family: "Cairo";
-}
-.container a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  margin: 0px 10px;
-  padding: 8px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
 .nav-bar-toggle-button {
   display: none;
 }
@@ -23,11 +6,11 @@
   margin: 0px 10px;
   padding: 12px 5px;
   cursor: pointer;
+  color: white !important;
 }
 
 .selected-nav-item {
-  color: #75b2ff !important;
-  /* border-bottom: 2px solid #ababab; */
+  color: var(--color-6) !important;
 }
 div.brackets a:before,
 div.brackets a:after {
@@ -42,7 +25,7 @@ div.brackets a:after {
   z-index: 1;
 }
 
-.opacity-animationv {
+.opacity-animation {
   position: absolute;
   width: 100%;
   top: 0;
@@ -122,12 +105,6 @@ div.brackets a:hover:after {
     padding: 5px 0px;
   }
   .navbar-collapse {
-    /* background: linear-gradient(
-      120deg,
-      var(--color-1),
-      var(--color-4),
-      var(--color-5)
-    ); */
     background: #2b2b2b;
   }
   .nav-bar-toggle-button {

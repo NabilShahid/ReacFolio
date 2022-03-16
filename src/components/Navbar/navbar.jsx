@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import UserInfo from "../UserInfo/userinfo";
 import { ReactComponent as Menu } from "../../assets/svgs/menu.svg";
@@ -67,8 +66,6 @@ class Navbar extends Component {
                       (activeIndex == index ? "selected-nav-item" : "")
                     }
                     onClick={() => {
-                      // changeFullpageSlide(i);
-                      // outsideSlideChange(i);
                       console.log(this.props.references, op.refName, index);
                       this.setState({ expandableMenuShown: false });
 
@@ -85,7 +82,7 @@ class Navbar extends Component {
         <div
           style={{ height: this.navbarHeight }}
           className={
-            "opacity-animationv " + (activeIndex == 0 && "navbar-first-page")
+            "opacity-animation " + (activeIndex == 0 && "navbar-first-page")
           }
         ></div>
       </div>
