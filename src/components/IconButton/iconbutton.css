@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   font-weight: normal;
-  padding: 6px 15px;
-
+  padding: 9px 17px;
+  border: 0;
   background: #00000021;
   border-radius: 30px;
   cursor: pointer;
@@ -14,14 +14,9 @@
 }
 
 .icon-button-text {
-  font-size: 13px;
+  font-size: 15px;
   margin-left: 10px;
 }
-/* @media (max-width: 992px) {
-  .iconButtonText{
-    font-size: 13px;
-  }
-} */
 @media (max-width: 480px) {
   .icon-button {
     margin-right: 4px;

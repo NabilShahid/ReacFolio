@@ -2,6 +2,7 @@ import React from "react";
 import "./introtext.css";
 import ProfileLinks from "../ProfileLinks/profilelinks";
 import { ReactComponent as DownArrow } from "../../assets/svgs/down-arrow.svg";
+import IconButton from "../IconButton/iconbutton";
 
 setTimeout(() => {
   var words = document.getElementsByClassName("word");
@@ -77,10 +78,12 @@ const IntroText = ({ scrollToWork }) => {
         <ProfileLinks />
       </div>
       <div style={{ marginTop: "15px" }}>
-        <div onClick={scrollToWork} className="view-work-button button-hover">
-          <DownArrow className="view-work-icon" />
-          View My Work
-        </div>
+        <IconButton
+          IconStyle={{ height: "18px", width: "18px", fill: "white" }}
+          Icon={DownArrow}
+        >
+          <span style={{ color: "white", fontSize: "20px" }}>View My Work</span>
+        </IconButton>
       </div>
     </div>
   );

@@ -16,14 +16,12 @@ const ProfileLinks = () => {
       <div className="profile-icons-row">
         <IconButton
           Icon={GitHubLogo}
-          Text="Github"
-          Style={{ ...iconStyle, margin: "0px -2px" }}
+          IconStyle={{ ...iconStyle, margin: "0px -2px" }}
           onClick={() => openProfileLink("https://github.com/NabilShahid")}
         />
         <IconButton
           Icon={StackOverflowLogo}
-          Text="StackOverflow"
-          Style={{
+          IconStyle={{
             height: "25px",
             width: "27px",
             marginTop: "-4px",
@@ -37,8 +35,7 @@ const ProfileLinks = () => {
         />
         <IconButton
           Icon={LinkedInLogo}
-          Text="LinkedIn"
-          Style={{ height: "24px", width: "24px" }}
+          IconStyle={{ height: "24px", width: "24px" }}
           onClick={() =>
             openProfileLink("https://www.linkedin.com/in/nabil-shahid-a41a6952")
           }
@@ -46,9 +43,8 @@ const ProfileLinks = () => {
 
         <IconButton
           Icon={CvIcon}
-          Text="Download CV"
           Link="Github"
-          Style={{ height: "28px", width: "24px" }}
+          IconStyle={{ height: "28px", width: "24px" }}
           onClick={() =>
             openProfileLink("assets/files/Nabil%20Shahid%20CV.pdf")
           }
