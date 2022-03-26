@@ -15,13 +15,13 @@ class Navbar extends Component {
         refName: "aboutPage",
         label: "About",
       },
-      {
-        refName: "projectsPage",
-        label: "Work",
-      },
+      // {
+      //   refName: "projectsPage",
+      //   label: "Work",
+      // },
       {
         refName: "experiencePage",
-        label: "Experience",
+        label: "Work",
       },
       {
         refName: "contactPage",

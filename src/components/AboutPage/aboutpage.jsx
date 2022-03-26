@@ -16,7 +16,7 @@ const AboutPage = () => {
   return (
     <div id="about-page">
       <div className="page-header">
-        <span className="page-header-text">About</span>
+        <h2 className="page-header-text">About</h2>
       </div>
       <div className="row">
         <div
@@ -46,16 +46,18 @@ const AboutPage = () => {
               </div>
             </FadeReveal>
             <FadeReveal duration={700} delay={200}>
-              <div className="about-me-text">
-                Hey it’s Nabil Shahid. I am Full Stack JavaScript developer.
-                Proficiently skilled in working with most in demand Frontend and
-                Backend technologies including React, Angular, Node, Nest.js,
-                TypeScript and many other. Working on a myriad of professional
-                and personal projects, I have become reasonably skilled in
-                writing clean and reusable code, bug fixing, solving complicated
-                and critical software problems, optimizing code and creating
-                good user experiences.
-              </div>
+              <p className="about-me-text">
+                I am a software developer with 5+ years of experience solving
+                business critical problems through technology. I am passionate
+                about web development and like implementing solutions that have
+                a real impact.
+              </p>{" "}
+              <p className="about-me-text">
+                Experienced in architecting, developing and maintaining small to
+                large scale software systems. Advocate of making processes
+                efficient through integration of right tools and automations.
+                Experienced working both in teams and independently.
+              </p>
             </FadeReveal>
           </div>
         </div>

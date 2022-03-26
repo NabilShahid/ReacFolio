@@ -19,7 +19,7 @@ class ExperiencePage extends Component {
     return (
       <div id="experience-page">
         <div className="page-header">
-          <span className="page-header-text">Experience</span>
+          <h2 className="page-header-text">Work</h2>
         </div>
         <VerticalTimeline>
           <VerticalTimelineElement

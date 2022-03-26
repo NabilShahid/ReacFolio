@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <div id="contact-page">
       <div className="page-header">
-        <span className="page-header-text">Contact</span>
+        <h2 className="page-header-text">Contact</h2>
       </div>
       <FadeReveal duration={500}>
         <div className="contact-types">

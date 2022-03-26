@@ -4,7 +4,7 @@ import Particles from "../Particles/particles";
 import IntroText from "../IntroText/introtext";
 import SinglePage from "../SinglePage/singlepage";
 import Navbar from "../Navbar/navbar";
-import ProjectsPage from "../ProjectsPage/projectspage";
+// import ProjectsPage from "../ProjectsPage/projectspage";
 import ExperiencePage from "../ExperiencePage/experiencepage";
 import ContactPage from "../ContactPage/contactpage";
 import AboutPage from "../AboutPage/aboutpage";
@@ -16,7 +16,7 @@ class MainScroller extends Component {
   refrences = {
     homePage: null,
     aboutPage: null,
-    projectsPage: null,
+    // projectsPage: null,
     experiencePage: null,
     contactPage: null,
   };
@@ -82,22 +82,22 @@ class MainScroller extends Component {
         <SinglePage isFirstPage={true} currRef={this.refrences.homePage}>
           {" "}
           <Particles />
-          <IntroText scrollToWork={() => this.scrollToRef("projectsPage")} />
+          <IntroText scrollToWork={() => this.scrollToRef("experiencePage")} />
         </SinglePage>
         <SinglePage currRef={this.refrences.aboutPage}>
           <AboutPage activeIndex={activeIndex} pageIndex={1} />
         </SinglePage>
-        <div className="section-divider" />
+        {/* <div className="section-divider" />
         <SinglePage currRef={this.refrences.projectsPage}>
           <ProjectsPage activeIndex={activeIndex} pageIndex={2} />
-        </SinglePage>
+        </SinglePage> */}
         <div className="section-divider" />
         <SinglePage currRef={this.refrences.experiencePage}>
-          <ExperiencePage />{" "}
+          <ExperiencePage pageIndex={2} />{" "}
         </SinglePage>
         <div className="section-divider" />
         <SinglePage currRef={this.refrences.contactPage}>
-          <ContactPage activeIndex={activeIndex} pageIndex={4} />
+          <ContactPage activeIndex={activeIndex} pageIndex={3} />
         </SinglePage>
 
         <ToastContainer

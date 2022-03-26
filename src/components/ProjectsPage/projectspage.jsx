@@ -33,7 +33,7 @@ class ProjectsPage extends Component {
     return (
       <div id="projects-page">
         <div className="page-header">
-          <span className="page-header-text">Work</span>
+          <h2 className="page-header-text">Work</h2>
           <div className="page-subtitle-text">
             Following are some of the recent projects that I have worked on.
             Click on the project tile to learn more about it.
