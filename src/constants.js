@@ -278,3 +278,57 @@ export const ICON_LABELS = {
   Django: "Django",
   Es6: "ECMAScript 6",
 };
+
+export const EXPERIENCE = [
+  {
+    Title: "Senior Software Developer",
+    Location: "Islamabad Pakistan",
+    Company: "Emumba Private Limited",
+    Date: "May 2020 - Present",
+    CompanyWebsiteUrl: "https://emumba.com",
+    Responsibilities: [
+      "Work with an Agile based team committed to deliver software with high standards in short time.",
+      "Participate in team discussions related  to design and architecture of products/features.",
+      "Develop high quality, fast and maintainable software using test driven development and following  design patterns  and industry practices.",
+      "Refactoring code and writing tests for existing functionality to increase coverage.",
+      "Participate in pair programming to increase productivity and knowledge of team members.",
+      "Mentor junior developers and conduct technical interviews to identify talented candidates.",
+      "Participate in on-call rotation to ensure the availability & reliability of services and tackle operational issues & customer-impacting outages.",
+    ],
+  },
+  {
+    Title: "Senior Software Developer",
+    Company: "Auxilio Tech",
+    Location: "Islamabad Pakistan",
+    Date: "Aug 2019 - May 2020",
+    CompanyWebsiteUrl: "http://auxilio.tech/",
+    Responsibilities: [
+      "Worked as a technical platform lead of a small team responsible for delivering company's flagship product.",
+      "Participated in architecture and design related discussions.",
+      "Implemented a number of critical areas of the application both on front end and back end.",
+      "Participated in task specifications, breakdown and assignment.",
+      "Participated in code review activity to ensure high code quality.",
+      "Coordinated with Software Quality Assurance Engineers to ensure high-quality deliverables.",
+    ],
+  },
+  {
+    Title: "Senior Software Developer",
+    Location: "Islamabad Pakistan",
+    Company: "AbbVie Inc.",
+    Date: "Mar 2016 - Aug 2019",
+    CompanyWebsiteUrl: "https://www.abbvie.com/",
+    Responsibilities: [
+      "Worked as a developer in company's core technology team for delivering high quality Workflow Automation solutions.",
+      "Efficiently collaborated with the team in designing and implementing productive solutions for workflow automation that replaced existing inefficient implementations .",
+      "Improved system performance by making proactive adjustments and resolving bugs.",
+      "Worked on improving the code coverage by writing unit tests.",
+    ],
+  },
+  {
+    Title: "Bachelor of Science (Computer Science)",
+    Location: "Islamabad Pakistan",
+    Company: "National University of Computer and Emerging Sciences (FAST)",
+    Date: "Mar 2016 - Aug 2019",
+    CompanyWebsiteUrl: "https://nu.edu.pk/",
+  },
+];
