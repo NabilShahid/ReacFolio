@@ -13,10 +13,10 @@ import "./experiencepage.css";
 
 const timelineItemStyles = {
   currentlyWorking: {
-    contentStyle: { background: "var(--color-1)", color: "#fff" },
+    contentStyle: { background: "var(--color-5)", color: "#fff" },
     contentArrowStyle: { borderRight: "7px solid  var(--color-2)" },
     iconStyle: {
-      background: "var(--color-5)",
+      background: "var(--color-1)",
       color: "white",
       fill: "white",
     },
@@ -24,7 +24,7 @@ const timelineItemStyles = {
   previouslyWorked: {
     contentStyle: { borderTop: "3px solid var(--color-5)" },
     contentArrowStyle: {},
-    iconStyle: { background: "#737373", color: "white", fill: "white" },
+    iconStyle: { background: "var(--color-1)", color: "white", fill: "white" },
   },
 };
 class ExperiencePage extends Component {
@@ -47,7 +47,7 @@ class ExperiencePage extends Component {
                 className="vertical-timeline-element--work"
                 contentStyle={itemStyle.contentStyle}
                 contentArrowStyle={itemStyle.contentArrowStyle}
-                date={exp.date}
+                date={exp.Date}
                 iconStyle={itemStyle.iconStyle}
                 icon={<Icon />}
               >

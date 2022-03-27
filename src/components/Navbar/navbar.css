@@ -12,7 +12,7 @@
 }
 
 .selected-nav-item {
-  color: var(--color-6) !important;
+  color: var(--color-6)
 }
 div.navbar-nav .nav-button:before,
 div.navbar-nav .nav-button:after {
@@ -33,7 +33,7 @@ div.navbar-nav .nav-button:after {
   top: 0;
   background: linear-gradient(
     115deg,
-    var(--color-1) 35%,
+    var(--color-1) 10%,
     var(--color-4),
     var(--color-5)
   );
