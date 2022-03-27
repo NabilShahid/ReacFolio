@@ -12,7 +12,7 @@
 }
 
 .selected-nav-item {
-  color: var(--color-6)
+  color: var(--color-6) !important;
 }
 div.navbar-nav .nav-button:before,
 div.navbar-nav .nav-button:after {
@@ -62,8 +62,11 @@ div.navbar-nav .nav-button:after {
   transform: translateX(-10px);
 }
 
-div.navbar-nav .nav-button:hover:before,
-div.navbar-nav .nav-button:hover:after {
+.nav-button:hover {
+  color: var(--text-color-2) !important;
+}
+div.navbar-nav .nav-button.selected-nav-item:before,
+div.navbar-nav .nav-button.selected-nav-item:after {
   opacity: 1;
   transform: translateX(0px);
 }

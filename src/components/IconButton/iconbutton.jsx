@@ -4,6 +4,8 @@ const IconButton = ({
   Icon,
   IconStyle,
   Style,
+  Title,
+  TextStyle,
   onClick = () => {},
   children,
 }) => {
@@ -11,10 +13,15 @@ const IconButton = ({
     <button
       className="icon-button button-hover"
       style={Style}
-      onClick={() => onClick()}
+      onClick={() => onClick}
+      title={Title}
     >
       <Icon style={IconStyle} />
-      {children && <span className="icon-button-text">{children}</span>}
+      {children && (
+        <span style={TextStyle} className="icon-button-text">
+          {children}
+        </span>
+      )}
     </button>
   );
 };

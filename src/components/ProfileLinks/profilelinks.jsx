@@ -15,12 +15,14 @@ const ProfileLinks = () => {
     <div>
       <div className="profile-icons-row">
         <IconButton
+          Title="Github"
           Icon={GitHubLogo}
           IconStyle={{ ...iconStyle, margin: "0px -2px" }}
           onClick={() => openProfileLink("https://github.com/NabilShahid")}
         />
         <IconButton
           Icon={StackOverflowLogo}
+          Title="Stackoverflow"
           IconStyle={{
             height: "25px",
             width: "27px",
@@ -34,6 +36,7 @@ const ProfileLinks = () => {
           }
         />
         <IconButton
+          Title="LinkedIn"
           Icon={LinkedInLogo}
           IconStyle={{ height: "24px", width: "24px" }}
           onClick={() =>
@@ -42,8 +45,8 @@ const ProfileLinks = () => {
         />
 
         <IconButton
+          Title="Download CV in PDF"
           Icon={CvIcon}
-          Link="Github"
           IconStyle={{ height: "28px", width: "24px" }}
           onClick={() =>
             openProfileLink("assets/files/Nabil%20Shahid%20CV.pdf")

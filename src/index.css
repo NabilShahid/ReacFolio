@@ -53,7 +53,7 @@ div {
   -webkit-text-fill-color: transparent; */
 }
 .button-hover:hover {
-  background: #04c2c9;
+  background:var(--color-4);
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(0.9);
   cursor: pointer;

@@ -78,13 +78,13 @@ const IntroText = ({ scrollToWork }) => {
         <ProfileLinks />
       </div>
       <div style={{ marginTop: "15px" }}>
-        <IconButton
+        {/* <IconButton
           IconStyle={{ height: "18px", width: "18px", fill: "white" }}
           Icon={DownArrow}
           onClick={scrollToWork}
         >
           <span style={{ color: "white", fontSize: "18px" }}>View My Work</span>
-        </IconButton>
+        </IconButton> */}
       </div>
     </div>
   );

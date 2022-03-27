@@ -16,7 +16,7 @@ const timelineItemStyles = {
     contentStyle: { background: "var(--color-5)", color: "#fff" },
     contentArrowStyle: { borderRight: "7px solid  var(--color-2)" },
     iconStyle: {
-      background: "var(--color-1)",
+      background: "var(--color-5)",
       color: "white",
       fill: "white",
     },
