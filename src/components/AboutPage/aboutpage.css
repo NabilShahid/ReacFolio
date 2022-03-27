@@ -5,14 +5,12 @@
   overflow-x: hidden;
 }
 .profile-image {
-  border-radius: 50%;
-  width: 190px;
-  /* box-shadow: 0 1px 5px 0px rgb(115, 119, 255); */
-  background: #e8e8e8;
+  width: 22%;
+  border-radius: 10px;
+  filter: grayscale(30%);
 }
-.about-me-header {
-  font-size: 25px;
-  margin: 10px 0px;
+.about-me-container {
+  margin-top: 40px;
 }
 
 .about-me-text {

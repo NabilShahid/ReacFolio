@@ -1,17 +1,9 @@
 import React from "react";
 import SkillsCard from "../SkillsCard/skillscard";
-import MyImage from "../../assets/images/CVPICNBG.png";
-import { ReactComponent as Graduation } from "../../assets/svgs/college-graduation.svg";
-import { ReactComponent as Work } from "../../assets/svgs/briefcase.svg";
+import MyImage from "../../assets/images/Me/image2.jpg";
 import "./aboutpage.css";
 import FadeReveal from "react-reveal/Zoom";
-const aboutIconsStyle = {
-  height: "25px",
-  width: "25px",
-  marginRight: "5px",
-  marginTop: "-5px",
-  fill: "#737373",
-};
+
 const AboutPage = () => {
   return (
     <div id="about-page">
@@ -21,7 +13,7 @@ const AboutPage = () => {
       <div className="row">
         <div
           className="col-md-5"
-          style={{ textAlign: "center", borderRight: " 1px solid #d0d0d0" }}
+          style={{ textAlign: "center", borderRight: "1px solid #d0d0d0" }}
         >
           <div className="about-me-wrapper">
             <img src={MyImage} alt="profile" className="profile-image" />
@@ -46,19 +38,21 @@ const AboutPage = () => {
               </div> */}
             </FadeReveal>
             <FadeReveal duration={700} delay={200}>
-              <p className="about-me-text">Hello 👋</p>
-              <p className="about-me-text">
-                My Name is Nabil Shahid and I am a software developer with 5+
-                years of experience solving business critical problems through
-                technology. I am passionate about web development and like
-                implementing solutions that have a real impact.
-              </p>{" "}
-              <p className="about-me-text">
-                Experienced in architecting, developing and maintaining small to
-                large scale software systems. Advocate of making processes
-                efficient through integration of right tools and automations.
-                Experienced working both in teams and independently.
-              </p>
+              <section className="about-me-container">
+                <p className="about-me-text">Hello 👋</p>
+                <p className="about-me-text">
+                  My Name is Nabil Shahid and I am a software developer with 5+
+                  years of experience solving business critical problems through
+                  technology. I am passionate about web development and like
+                  implementing solutions that have a real impact.
+                </p>{" "}
+                <p className="about-me-text">
+                  Experienced in architecting, developing and maintaining small
+                  to large scale software systems. Advocate of making processes
+                  efficient through integration of right tools and automations.
+                  Experienced working both in teams and independently.
+                </p>
+              </section>
             </FadeReveal>
           </div>
         </div>
