@@ -12,7 +12,6 @@
 }
 .about-me-header {
   font-size: 25px;
-  color: #1b3a57;
   margin: 10px 0px;
 }
 
@@ -20,7 +19,6 @@
   font-size: 16px;
   text-align: left;
   margin-bottom: 15px;
-  color: #1b3a57;
 }
 
 .about-me-wrapper {
@@ -31,8 +29,6 @@
   margin-top: 20px;
   margin-bottom: 12px;
   font-size: 15px;
-  color: #1b3a57;
-  /* color: #797979; */
 }
 
 .about-me-info-items-seperator {

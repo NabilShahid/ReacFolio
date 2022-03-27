@@ -1,6 +1,4 @@
 .projects-info {
-  /* height: 75vh; */
-  color: #1b3a57;
   padding: 5px 10px;
 }
 .styles_modal__gNwvD {
@@ -17,7 +15,6 @@
 }
 .project-info-name {
   font-size: 27px;
-  color: #1b3a57;
   margin-top: 7px;
 }
 .project-info-subtitle {
@@ -64,7 +61,6 @@ height: 350px;
 .project-link {
   height: 20px;
   width: 20px;
-  fill: #1b3a57;
   margin-bottom: 4px;
   margin-left: 5px;
 }
@@ -85,7 +81,6 @@ height: 350px;
 .project-info-repo-link {
   height: 17px;
   width: 17px;
-  fill: #1b3a57;
   margin-bottom: 1px;
   margin-left: 5px;
 }

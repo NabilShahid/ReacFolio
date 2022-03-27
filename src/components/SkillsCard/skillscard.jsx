@@ -5,6 +5,7 @@ import { TechnologiesIcons } from "../../assets/iconifyicons";
 import FadeReveal from "react-reveal/Zoom";
 
 import "./skillscard.css";
+
 const iconStyle = {
   width: "25px",
   height: "25px",
@@ -23,7 +24,7 @@ const SkillsCard = () => {
             <div className="skills-section-body">
               {skill.Items.map((item) => (
                 <span key={item.Name} className="technology-item">
-                  <span>
+                  {/* <span>
                     {item.IconSvg && <item.Icon style={iconStyle} />}
                     {!item.IconSvg && (
                       <Icon
@@ -31,7 +32,7 @@ const SkillsCard = () => {
                         icon={TechnologiesIcons[item.Icon]}
                       />
                     )}
-                  </span>
+                  </span> */}
                   <p>{item.Name}</p>
                 </span>
               ))}

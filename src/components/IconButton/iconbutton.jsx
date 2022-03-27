@@ -13,7 +13,7 @@ const IconButton = ({
     <button
       className="icon-button button-hover"
       style={Style}
-      onClick={() => onClick}
+      onClick={onClick}
       title={Title}
     >
       <Icon style={IconStyle} />

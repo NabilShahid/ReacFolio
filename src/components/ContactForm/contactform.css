@@ -12,7 +12,6 @@
 .contact-form-label {
   font-size: 21px;
   margin-bottom: 5px;
-  color: #1b3a57;
 }
 .contact-form-field {
   margin-bottom: 15px;
@@ -22,6 +21,7 @@
   margin-left: auto;
   cursor: pointer;
   background: var(--color-1);
+  border: 0;
   color: white;
   padding: 5px 40px;
   border-radius: 20px;

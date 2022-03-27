@@ -27,7 +27,7 @@ const AboutPage = () => {
             <img src={MyImage} alt="profile" className="profile-image" />
             <FadeReveal duration={700}>
               {/* <div className="aboutMeHeader">About Me</div> */}
-              <div className="row about-me-info-item-container">
+              {/* <div className="row about-me-info-item-container">
                 <div className="aboute-me-info-item col-md-6 about-me-info-items-seperator">
                   <Graduation style={{ ...aboutIconsStyle }} /> BS Computer
                   Science
@@ -43,14 +43,15 @@ const AboutPage = () => {
                   />{" "}
                   4+ Years Experience
                 </div>
-              </div>
+              </div> */}
             </FadeReveal>
             <FadeReveal duration={700} delay={200}>
+              <p className="about-me-text">Hello 👋</p>
               <p className="about-me-text">
-                I am a software developer with 5+ years of experience solving
-                business critical problems through technology. I am passionate
-                about web development and like implementing solutions that have
-                a real impact.
+                My Name is Nabil Shahid and I am a software developer with 5+
+                years of experience solving business critical problems through
+                technology. I am passionate about web development and like
+                implementing solutions that have a real impact.
               </p>{" "}
               <p className="about-me-text">
                 Experienced in architecting, developing and maintaining small to

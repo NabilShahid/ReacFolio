@@ -20,7 +20,7 @@ div.navbar-nav .nav-button:after {
   opacity: 0;
   font-size: 27px;
   top: 0px;
-  transition: all 0.6s;
+  transition: all 0.3s;
 }
 .navbar {
   padding: 0;

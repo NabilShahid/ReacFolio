@@ -32,8 +32,7 @@ class MainScroller extends Component {
   scrollToRef = (targetRef, activeIndex) => {
     this.autoScroll = true;
     scroll.scrollTo(this.refrences[targetRef].current.offsetTop, {
-      duration: 1300,
-      delay: 200,
+      duration: 800,
       smooth: "easeInOutCubic",
       containerId: "navbar-container-wrapper",
       offset: 150,

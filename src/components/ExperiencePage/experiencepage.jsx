@@ -13,7 +13,11 @@ import "./experiencepage.css";
 
 const timelineItemStyles = {
   currentlyWorking: {
-    contentStyle: { background: "var(--color-5)", color: "#fff" },
+    contentStyle: {
+      background: "var(--color-5)",
+      color: "#fff",
+      borderTop: "3px solid var(--color-5)",
+    },
     contentArrowStyle: { borderRight: "7px solid  var(--color-2)" },
     iconStyle: {
       background: "var(--color-5)",
@@ -44,7 +48,9 @@ class ExperiencePage extends Component {
             const Icon = index === EXPERIENCE.length - 1 ? Graduation : Work;
             return (
               <VerticalTimelineElement
-                className="vertical-timeline-element--work"
+                className={`vertical-timeline-element--work ${
+                  index === 0 ? "ignore-global-text-color" : ""
+                }`}
                 contentStyle={itemStyle.contentStyle}
                 contentArrowStyle={itemStyle.contentArrowStyle}
                 date={exp.Date}

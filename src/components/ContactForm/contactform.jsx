@@ -91,12 +91,12 @@ class ContactForm extends Component {
                 className="contact-form-control"
                 style={{ display: "flex", marginTop: "20px" }}
               >
-                <span
+                <button
                   onClick={this.sendEmail}
                   className="send-message-button button-hover"
                 >
                   Send
-                </span>
+                </button>
               </div>
             </div>
           </FadeReveal>
