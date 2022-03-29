@@ -16,29 +16,29 @@ const SkillsCard = () => {
   return (
     <div className="skills-card">
       <FadeReveal duration={700}>
-        <div className="skills-header">Top Skills</div>
-
-        {SKILLS.map((skill) => (
-          <div key={skill.Title} className="skills-section">
-            <div className="skills-section-header">{skill.Title}</div>
-            <div className="skills-section-body">
-              {skill.Items.map((item) => (
-                <span key={item.Name} className="technology-item">
-                  {/* <span>
-                    {item.IconSvg && <item.Icon style={iconStyle} />}
-                    {!item.IconSvg && (
-                      <Icon
-                        style={iconStyle}
-                        icon={TechnologiesIcons[item.Icon]}
-                      />
-                    )}
-                  </span> */}
-                  <p>{item.Name}</p>
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
+        <h4 className="skills-header">Skills</h4>
+        <p className="skills-intro">
+          During my experience as a Software Developer, I have worked closely
+          with a number of technologies while working on front end views, back
+          end APIs, databases, asynchronous processing, setting up CI/CD
+          pipelines, configuring servers, application monitoring etc. Among all,
+          I consider myself proficient at working with the following
+          technologies:
+        </p>
+        <ul className="un-styled-list">
+          {SKILLS.map((skill) => (
+            <li key={skill.Title} className="skills-section">
+              <div className="skills-section-header">{skill.Title}</div>
+              <ul className="skills-section-body un-styled-list">
+                {skill.Items.map((item) => (
+                  <li key={item.Name} className="technology-item">
+                    <p>{item.Name}</p>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
       </FadeReveal>
     </div>
   );

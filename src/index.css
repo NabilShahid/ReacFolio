@@ -3,13 +3,6 @@
 @import "./assets//styleVars.css";
 @import "./styles/technology-item.css";
 
-:root {
-  /* Global colors */
-  --main-blue: #1c7aca;
-  --main-green: #1ad4b1;
-  --main-gradient: linear-gradient(to left, #277abf, #0c5397);
-}
-
 html {
   overflow: hidden;
 }
@@ -77,4 +70,11 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #cccccc;
   }
+}
+
+.un-styled-list {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
 }
