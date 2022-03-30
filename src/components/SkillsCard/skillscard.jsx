@@ -31,8 +31,8 @@ const SkillsCard = () => {
               <div className="skills-section-header">{skill.Title}</div>
               <ul className="skills-section-body un-styled-list">
                 {skill.Items.map((item) => (
-                  <li key={item.Name} className="technology-item">
-                    <p>{item.Name}</p>
+                  <li key={item} className="technology-item">
+                    <p>{item}</p>
                   </li>
                 ))}
               </ul>

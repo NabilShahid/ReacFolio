@@ -178,70 +178,66 @@ export const PROJECTS = [
 ];
 export const SKILLS = [
   {
+    Title: "Programming Languages",
+    Items: ["JavaScript", "TypeScript", "Python"],
+  },
+  {
     Title: "Front End",
     Items: [
-      { Name: "Angular", Icon: "Angular" },
-      { Name: "React", Icon: "React" },
-      { Name: "JavaScript", Icon: "Javascript" },
-      { Name: "ECMAScript 6", Icon: "Es6" },
-      { Name: "TypeScript", Icon: "Typescript" },
-      { Name: "Redux", Icon: "Redux" },
-      { Name: "Webpack", Icon: "Webpack" },
-      { Name: "Babel", Icon: "Babel" },
-      { Name: "Rxjs", Icon: "Rxjs" },
-      { Name: "HTML", Icon: "Html" },
-      { Name: "CSS", Icon: "Css" },
+      "VueJS",
+      "Vuex",
+      "React",
+      "Redux",
+      "Angular",
+      "Webpack",
+      "Vite",
+      "Gulp",
+      "Babel",
+      "HTML",
+      "CSS",
+      "SASS",
+      "Tailwind",
     ],
   },
   {
     Title: "Back End",
     Items: [
-      { Name: "Node.js", Icon: "Node" },
-      { Name: "NestJS", Icon: "Nest" },
-      { Name: "CSharp", Icon: "Csharp" },
-      { Name: ".Net", Icon: "Dotnet" },
-      { Name: "JavaScript", Icon: "Javascript" },
-      { Name: "ECMAScript 6", Icon: "Es6" },
-
-      { Name: "TypeScript", Icon: "Typescript" },
-      { Name: "Express.js", Icon: "Express" },
-      {
-        Name: "Google Cloud Functions",
-
-        Icon: "Googlecloudfunctions",
-      },
+      "NodeJS",
+      "NestJS",
+      "ExpressJS",
+      "Flask",
+      "FastAPI",
+      "Celery",
+      "AWS SQS",
+      "SQLAlchemy",
+      "Mongoose",
     ],
   },
   {
     Title: "Database",
-    Items: [
-      { Name: "Postgresql", Icon: "Postgresql" },
-      { Name: "Firestore", Icon: "Firebase" },
-      { Name: "SQL", Icon: Sql, IconSvg: true },
-      {
-        Name: "MS SQL Server",
-
-        Icon: Sqlserver,
-        IconSvg: true,
-      },
-    ],
+    Items: ["SQL", "PostgresSQL", "MSSQL", "MongoDB", "Google Firestore"],
   },
   {
-    Title: "Version Control",
-    Items: [{ Name: "Git", Icon: "Git" }],
+    Title: "Serverless",
+    Items: ["AWS Lambdas", "Google Cloud Functions"],
+  },
+  { Title: "Source Control Management", Items: ["Git"] },
+  {
+    Title: "CI/CD",
+    Items: ["Gitlab Pipelines", "Github Actions", "AWS Code pipeline"],
   },
   {
-    /*
-   #575fcf #596275  #0984e3 #ff5e57 #8e44ad #1289A7
-    */
-    Title: "Other",
+    Title: "Monitoring Tools",
+    Items: ["Datadog", "Sentry", "AWS Cloudwatch"],
+  },
+  {
+    Title: "Testing",
     Items: [
-      { Name: "Debugging" },
-      { Name: "Troubleshooting" },
-      { Name: "Functional Programming" },
-      { Name: "Object Oriented Programming" },
-      { Name: "Database Indexing and Tuning" },
-      { Name: "Query Optimization" },
+      "Jest",
+      "React Testing Library",
+      "Vue Test Utils",
+      "Pytest",
+      "Supertest",
     ],
   },
 ];
